@@ -89,6 +89,8 @@ public class CTGClient extends BaseClient {
 //			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
 //			analyzer.analyze();
 //		}
+
+		System.out.println("++++++++here !!!++++");
 		System.out.println("Successfully analyze with CTGClient.");
 	}
 
@@ -172,6 +174,9 @@ public class CTGClient extends BaseClient {
 		outer.writeDotFile(ictgFolder, dotname2, ictgOptModel, false);
 		if (ictgMergedModel.getConnectionSize() < 1800)
 			GraphUtils.generateDotFile(ictgFolder + dotname2, "pdf");
+
+		//+++
+		outer.writeIC3Output(ictgFolder,"IccModel.txt", ictgOptModel);
 
 		// outer.writeIccLinksConfigFile(summary_app_dir +
 		// ConstantUtils.ICTGFOLDETR, ConstantUtils.LINKFILE, ictgOptModel);

@@ -146,6 +146,13 @@ public class SetIntentExtraHandler extends UnitHandler {
 			key = getVarInExtraStmt(u, idKey);
 			val = getVarInExtraStmt(u, idVal);
 		} catch (Exception e) {
+			// System.out.print("u is :");
+			// System.out.println(u.toString());
+			// System.out.print("idVal is :");
+			// System.out.println(idVal);
+			// System.out.print("idKey is :");
+			// System.out.println(idKey);
+			
 			e.printStackTrace();
 			return null;
 		}
