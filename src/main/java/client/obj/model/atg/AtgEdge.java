@@ -32,6 +32,7 @@ public class AtgEdge {
 		setInstructionId(temp.instructionId);
 		setMethodSig(temp.methodSig);
 		setType(AtgType.Act2Act);
+		setIntentSummary(temp.intentSummary);
 	}
 
 	public String getDescribtion() {
