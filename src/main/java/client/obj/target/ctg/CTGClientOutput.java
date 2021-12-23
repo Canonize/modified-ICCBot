@@ -208,13 +208,18 @@ public class CTGClientOutput {
 //			System.out.println("name: "+className);
 
 			for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
-				iccModelString.append("\texit_points {\n\t\tinstruction {\n");
+				// iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 
 				if(edge==null){
 					System.out.println("ATGEdge NULL-------------");
 					continue;
 				}
+
+				iccModelString.append("\t\tedge: ").append(edge).append("\"\n");
+				iccModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
+				iccModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
 				if (edge.getIntentSummary() != null){
+				iccModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
 				for(UnitNode curNode:edge.getIntentSummary().getNodes()){
 
 					if(curNode==null){
@@ -222,16 +227,37 @@ public class CTGClientOutput {
 					continue;
 				}
 					if (curNode.getType()!=null && curNode.getType().equals("PassOutIntent")){
+						iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 						iccModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
-					}
-				}
-				}
+
+					  //+++
+						iccModelString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
+						iccModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
+						iccModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
+						iccModelString.append("\t\t}\n");
+						iccModelString.append("\t\tintents {\n");
+		//				System.out.println("\tintents {");
+
+						// CLASS
+						iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
+						iccModelString.append("\t\t\t}\n");
+
+		//				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
+		//                System.out.println("\t\t}");
+
+						// PACKAGE
+						iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
+						iccModelString.append("\t\t\t}\n");
+						iccModelString.append("\t\t}\n\t}\n");
+							}
+						}
+						}
 
 
-				iccModelString.append("\t\t\tclass_name: \"").append(className).append("\"\n");
-				iccModelString.append("\t\t\tmethod: \"").append(edge.getMethodSig()).append("\"\n");
-				iccModelString.append("\t\t\tid: ").append(edge.getInstructionId()).append("\n");
-				iccModelString.append("\t\t}\n");
+				// iccModelString.append("\t\t\tclass_name: \"").append(className).append("\"\n");
+				// iccModelString.append("\t\t\tmethod: \"").append(edge.getMethodSig()).append("\"\n");
+				// iccModelString.append("\t\t\tid: ").append(edge.getInstructionId()).append("\n");
+				// iccModelString.append("\t\t}\n");
 				
 //				System.out.println("exit_points {\n\tinstruction {");
 //				System.out.println("\t\tclass_name: "+className);
@@ -241,19 +267,19 @@ public class CTGClientOutput {
 
 //				System.out.println("\tkind: ???");
 
-				iccModelString.append("\t\tintents {\n");
-//				System.out.println("\tintents {");
+// 				iccModelString.append("\t\tintents {\n");
+// //				System.out.println("\tintents {");
 
-				// CLASS
-				iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
-                iccModelString.append("\t\t\t}\n");
+// 				// CLASS
+// 				iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
+//                 iccModelString.append("\t\t\t}\n");
 
-//				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
-//                System.out.println("\t\t}");
+// //				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
+// //                System.out.println("\t\t}");
 
-                // PACKAGE
-				iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
-				iccModelString.append("\t\t\t}\n");
+//                 // PACKAGE
+// 				iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
+// 				iccModelString.append("\t\t\t}\n");
 
 
 
@@ -288,8 +314,8 @@ public class CTGClientOutput {
 //
 //
 //				}
-				iccModelString.append("\t\t}\n\t}\n");
-//				System.out.println("\t}\n}");
+				// iccModelString.append("\t\t}\n\t}\n");
+
 
 
 			}
