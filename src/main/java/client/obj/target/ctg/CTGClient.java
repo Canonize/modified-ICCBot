@@ -176,7 +176,8 @@ public class CTGClient extends BaseClient {
 			GraphUtils.generateDotFile(ictgFolder + dotname2, "pdf");
 
 		//+++
-		outer.writeIC3Output(ictgFolder,"IccModel.txt", ictgOptModel);
+		// outer.writeIC3Output(ictgFolder,"IccModel.txt", ictgOptModel);
+		outer.writeIC3Output(ictgFolder,"IccModel.txt", Global.v().getiCTGModel().getOptModel());
 
 		// outer.writeIccLinksConfigFile(summary_app_dir +
 		// ConstantUtils.ICTGFOLDETR, ConstantUtils.LINKFILE, ictgOptModel);
