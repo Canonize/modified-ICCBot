@@ -188,14 +188,15 @@ public class CTGClientOutput {
 	}
 
      //+++
-		public void writeIC3Output(String dir, String file, ATGModel atgModel){
+	public void writeIC3Output(String dir, String file, ATGModel atgModel){
 		System.out.println("writeIC3Output-----------------------");
 		if(atgModel==null){
 			System.out.println("AtgModel NULL-------------");
 			return;
 		}
 		StringBuilder iccModelString= new StringBuilder();
-		for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
+		// for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
+		for (String className: atgModel.getAtgEdges().keySet()) {
 
 			System.out.println("name: "+className);
 			iccModelString.append("components {\n");
