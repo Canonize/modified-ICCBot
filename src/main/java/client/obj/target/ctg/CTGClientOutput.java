@@ -197,7 +197,7 @@ public class CTGClientOutput {
 		StringBuilder iccModelString= new StringBuilder();
 		// for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
 		for (String className: atgModel.getAtgEdges().keySet()) {
-			if(!Global.v().getAppModel().getComponentMap().contains(className)){
+			if(!Global.v().getAppModel().getComponentMap().keySet().contains(className)){
 				iccModelString.append("Not component point: ").append(className);
 				continue;
 			}
