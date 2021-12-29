@@ -195,10 +195,57 @@ public class CTGClientOutput {
 			return;
 		}
 		StringBuilder iccModelString= new StringBuilder();
+
+		StringBuilder otherModelString=new StringBuilder();
+
 		// for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
 		for (String className: atgModel.getAtgEdges().keySet()) {
+
+			// test no component point
 			if(!Global.v().getAppModel().getComponentMap().keySet().contains(className)){
-				iccModelString.append("Not component point: ").append(className);
+				otherModelString.append("Not component point: ").append(className)..append("\n");
+
+				for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
+					
+						
+					if (edge.getIntentSummary() != null){
+						otherModelString.append("\t\tedge: ").append(edge).append("\"\n");
+						otherModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
+						otherModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
+						otherModelString.append()
+						for(UnitNode curNode:edge.getIntentSummary().getNodes()){
+
+							if(curNode==null){
+								System.out.println("curNode NULL-------------");
+								continue;
+							}
+							if (curNode.getType()!=null && curNode.getType().equals("PassOutIntent")){
+								otherModelString.append("\texit_points {\n\t\tinstruction {\n");
+								otherModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
+
+							//+++
+								otherModelString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
+								otherModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
+								otherModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
+								otherModelString.append("\t\t}\n");
+								otherModelString.append("\t\tintents {\n");
+				//				System.out.println("\tintents {");
+
+								// CLASS
+								otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
+								otherModelString.append("\t\t\t}\n");
+
+				//				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
+				//                System.out.println("\t\t}");
+
+								// PACKAGE
+								otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
+								otherModelString.append("\t\t\t}\n");
+								otherModelString.append("\t\t}\n\t}\n");
+							}
+						}
+					}
+				}
 				continue;
 			}
 
