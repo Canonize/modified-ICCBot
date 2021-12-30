@@ -198,56 +198,58 @@ public class CTGClientOutput {
 
 		StringBuilder otherModelString=new StringBuilder();
 
+		StringBuilder idNegativeString=new StringBuilder();
+
 		// for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
 		for (String className: atgModel.getAtgEdges().keySet()) {
 
 			// test no component point
-			if(!Global.v().getAppModel().getComponentMap().keySet().contains(className)){
-				otherModelString.append("Not component point: ").append(className)..append("\n");
+			// if(!Global.v().getAppModel().getComponentMap().keySet().contains(className)){
+			// 	otherModelString.append("Not component point: ").append(className).append("\n");
 
-				for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
+			// 	for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
 					
 						
-					if (edge.getIntentSummary() != null){
-						otherModelString.append("\t\tedge: ").append(edge).append("\"\n");
-						otherModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
-						otherModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
-						otherModelString.append()
-						for(UnitNode curNode:edge.getIntentSummary().getNodes()){
+			// 		if (edge.getIntentSummary() != null){
+			// 			otherModelString.append("\t\tedge: ").append(edge).append("\"\n");
+			// 			otherModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
+			// 			otherModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
+			// 			otherModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
+			// 			for(UnitNode curNode:edge.getIntentSummary().getNodes()){
 
-							if(curNode==null){
-								System.out.println("curNode NULL-------------");
-								continue;
-							}
-							if (curNode.getType()!=null && curNode.getType().equals("PassOutIntent")){
-								otherModelString.append("\texit_points {\n\t\tinstruction {\n");
-								otherModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
+			// 				if(curNode==null){
+			// 					System.out.println("curNode NULL-------------");
+			// 					continue;
+			// 				}
+			// 				if (curNode.getType()!=null && curNode.getType().equals("PassOutIntent")){
+			// 					otherModelString.append("\texit_points {\n\t\tinstruction {\n");
+			// 					otherModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
 
-							//+++
-								otherModelString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
-								otherModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
-								otherModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
-								otherModelString.append("\t\t}\n");
-								otherModelString.append("\t\tintents {\n");
-				//				System.out.println("\tintents {");
+			// 				//+++
+			// 					otherModelString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
+			// 					otherModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
+			// 					otherModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
+			// 					otherModelString.append("\t\t}\n");
+			// 					otherModelString.append("\t\tintents {\n");
+			// 	//				System.out.println("\tintents {");
 
-								// CLASS
-								otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
-								otherModelString.append("\t\t\t}\n");
+			// 					// CLASS
+			// 					otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
+			// 					otherModelString.append("\t\t\t}\n");
 
-				//				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
-				//                System.out.println("\t\t}");
+			// 	//				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
+			// 	//                System.out.println("\t\t}");
 
-								// PACKAGE
-								otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
-								otherModelString.append("\t\t\t}\n");
-								otherModelString.append("\t\t}\n\t}\n");
-							}
-						}
-					}
-				}
-				continue;
-			}
+			// 					// PACKAGE
+			// 					otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
+			// 					otherModelString.append("\t\t\t}\n");
+			// 					otherModelString.append("\t\t}\n\t}\n");
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// 	// continue;
+			// }
 
 			System.out.println("name: "+className);
 			iccModelString.append("components {\n");
@@ -262,16 +264,23 @@ public class CTGClientOutput {
 			for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
 				// iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 
+				// check if the destination is component
+				if(Global.v().getAppModel().getComponentMap().keySet().contains(edge.getDestnation().getName())==false){
+					continue;
+				}
+
+
+
 				if(edge==null){
 					System.out.println("ATGEdge NULL-------------");
 					continue;
 				}
 
-				iccModelString.append("\t\tedge: ").append(edge).append("\"\n");
-				iccModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
-				iccModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
+				// iccModelString.append("\t\tedge: ").append(edge).append("\"\n");
+				// iccModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
+				// iccModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
 				if (edge.getIntentSummary() != null){
-				iccModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
+				// iccModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
 				for(UnitNode curNode:edge.getIntentSummary().getNodes()){
 
 					if(curNode==null){
@@ -279,6 +288,16 @@ public class CTGClientOutput {
 					continue;
 				}
 					if (curNode.getType()!=null && curNode.getType().equals("PassOutIntent")){
+
+						// check id is -1
+						if(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())==-1){
+							idNegativeString.append("\tname: \"").append(className).append("\"\n");
+							idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
+							idNegativeString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
+							idNegativeString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n\n");
+							continue;
+						}
+
 						iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 						iccModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
 
@@ -378,6 +397,9 @@ public class CTGClientOutput {
 
 
 		FileUtils.writeText2File(dir+File.separator+file,iccModelString.toString(),true);
+		// FileUtils.writeText2File(dir+File.separator+"otherPointModel.txt",otherModelString.toString(),true);
+		FileUtils.writeText2File(dir+File.separator+"idNegitiveStatement.txt",idNegativeString.toString(),true);
+		// FileUtils.writeText2File(dir+File.separator+"componentMap.txt",PrintUtils.printMap(Global.v().getAppModel().getComponentMap()),true);
 		System.out.println("writeIC3Output-----------------------");
 	}
 

@@ -32,22 +32,23 @@ def analyzeApk(apkPath, resPath, sdk):
 
 
 if __name__ == '__main__' :
-    apkPath = "/home/lw/Auth_Risk_Analysis_tool/apk/test/"
+    apkPath = "/home/lw/Auth_Risk_Analysis_tool/apk/test2/"
     # apkPath = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/"
 
-    resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_tmp2_nodebug/"
+    # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_tmp2_nodebug/"
+    resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
 
-    jarFile = "iccmodeltmp2-ICCBot-nodebug.jar"
+    jarFile = "S_ICCBot_SaveIdNegative.jar"
     # jarFile = "ICCBot.jar"
     
-    # os.system("mvn -f pom.xml package -q")
-    # if os.path.exists("target/ICCBot.jar"):
-    #     print("Successfully build! generate jar-with-dependencies in folder target/")
-    #     shutil.copy("target/ICCBot.jar", jarFile)
-    #     print("copy jar to the root directory.")
-    # else:
-    #     print("Fail to build! Please run \"mvn -f pom.xml package\" to see the detail info.")
+    os.system("mvn -f pom.xml package -q")
+    if os.path.exists("target/ICCBot.jar"):
+        print("Successfully build! generate jar-with-dependencies in folder target/")
+        shutil.copy("target/ICCBot.jar", jarFile)
+        print("copy jar to the root directory.")
+    else:
+        print("Fail to build! Please run \"mvn -f pom.xml package\" to see the detail info.")
     
     sdk = "lib/"    
-    analyzeApk(apkPath, resPath, sdk)
+    # analyzeApk(apkPath, resPath, sdk)
     
