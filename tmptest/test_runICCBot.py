@@ -4,7 +4,7 @@ import shutil
 
 
 
-def analyzeApk(apkPath, resPath, sdk):
+def analyzeApk(apkFile, resPath, sdk):
 
     logDir = resPath+"/logs"
     outputDir = resPath+"/output"
@@ -12,43 +12,44 @@ def analyzeApk(apkPath, resPath, sdk):
         os.makedirs(logDir) 
     if(not os.path.exists(outputDir)): 
         os.makedirs(outputDir) 
-        
-    if(os.path.exists(apkPath)): 
-        apks = os.listdir(apkPath)
+    try:
+        apk = os.path.basename(apkFile)
+        apkPath = os.path.dirname(apkFile)
         extraArgs = ""
-        for apk in apks:
-            if apk[-4:] ==".apk":
-                # print("java -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms  "+ extraArgs +" -time 30 -maxPathNumber 100 -client MainClient  -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-                # print("java -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms  "+ extraArgs +" -time 30 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-                # os.system("java -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 60 -maxPathNumber 100 -client MainClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-                try:
-                    print("==============={}=============".format(apk))
-                    # os.system("open")
-                    os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 360 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-                    print("==============={}=============".format(apk))
-                except:
-                    print("{} run error".format(apk))
+        print("==============={}=============".format(apk))
+        # print(apkPath)
+        os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        print("==============={}=============".format(apk))
+    except:
+        print("{} run error".format(apk))
 
 
 
 if __name__ == '__main__' :
-    apkPath = "/home/lw/Auth_Risk_Analysis_tool/apk/test2/"
-    # apkPath = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.ctid.open.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.epoint.mobileframe.wssb.qinghai.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.ccb.fintech.app.productions.hnga.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/cn.hsa.app.apk"
+    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.jd.jrapp_6.1.90_410.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.guangdong.gov.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/cn.xuexi.android.apk"
 
-    # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_tmp2_nodebug/"
-    resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
+    # resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
+    resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_SaveIdNegative/"
+
 
     jarFile = "S_ICCBot_SaveIdNegative.jar"
-    # jarFile = "ICCBot.jar"
+
     
-    os.system("mvn -f pom.xml package -q")
-    if os.path.exists("target/ICCBot.jar"):
-        print("Successfully build! generate jar-with-dependencies in folder target/")
-        shutil.copy("target/ICCBot.jar", jarFile)
-        print("copy jar to the root directory.")
-    else:
-        print("Fail to build! Please run \"mvn -f pom.xml package\" to see the detail info.")
+    # os.system("mvn -f pom.xml package -q")
+    # if os.path.exists("target/ICCBot.jar"):
+    #     print("Successfully build! generate jar-with-dependencies in folder target/")
+    #     shutil.copy("target/ICCBot.jar", jarFile)
+    #     print("copy jar to the root directory.")
+    # else:
+    #     print("Fail to build! Please run \"mvn -f pom.xml package\" to see the detail info.")
     
     sdk = "lib/"    
-    # analyzeApk(apkPath, resPath, sdk)
+    analyzeApk(apkFile, resPath, sdk)
     
