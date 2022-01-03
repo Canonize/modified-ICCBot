@@ -8,35 +8,33 @@
   
 1.改输出目录resPath，jar包名字jarFile
 
-```
+ ```
     resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_tmp2_nodebug/"
 
     jarFile = "ICCBot.jar"
-```
+ ```
 
 2.打包
-
-```
+ 
+ ```
  os.system("mvn -f pom.xml package -q")
-```
+ ```
 
 3.并复制jar包到当前文件夹
 
-```
+ ```
     if os.path.exists("target/ICCBot.jar"):
         print("Successfully build! generate jar-with-dependencies in folder target/")
         shutil.copy("target/ICCBot.jar", jarFile)
         print("copy jar to the root directory.")
     else:
         print("Fail to build! Please run \"mvn -f pom.xml package\" to see the detail info.")
-```
-
+ ```
 4.分析apk
-
-```
+ ```
     sdk = "lib/"    
     analyzeApk(apkPath, resPath, sdk)
-```
+ ```
 
 
 - 注：
