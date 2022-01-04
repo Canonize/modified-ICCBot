@@ -292,9 +292,15 @@ public class CTGClientOutput {
 						// check id is -1
 						if(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())==-1){
 							idNegativeString.append("\tname: \"").append(className).append("\"\n");
+							// idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
 							idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
 							idNegativeString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
 							idNegativeString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n\n");
+							continue;
+						}
+
+						// do not include putExtra method into ICC
+						if(curNode.getUnit().toString().contains("putExtra(")){
 							continue;
 						}
 
