@@ -272,7 +272,7 @@ public class CTGClientOutput {
 				// iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 
 				// check if the destination is component
-				if(Global.v().getAppModel().getComponentMap().keySet().contains(edge.getDestnation().getName())==false){
+				if(Global.v().getAppModel().getComponentMap().keySet().contains(edge.getDestnation().getClassName())==false){
 					continue;
 				}
 
