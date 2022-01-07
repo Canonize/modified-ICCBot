@@ -200,6 +200,13 @@ public class CTGClientOutput {
 
 		StringBuilder idNegativeString=new StringBuilder();
 
+		for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
+			iccModelString.append("components {\n");
+			iccModelString.append("\tname: \"").append(className).append("\"\n");
+			iccModelString.append("}\n");
+		}
+
+
 		// for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
 		for (String className: atgModel.getAtgEdges().keySet()) {
 

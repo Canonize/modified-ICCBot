@@ -23,6 +23,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/soot-infoflow-dummy.jar</systemPath>
+			<!-- <systemPath>${project.basedir}/lib/soot-infoflow-android-classes.jar</systemPath> -->
 		</dependency>
 		<!-- <dependency>
 			<groupId>soot-infoflow-cmd-2.9.0-jar-with-dependencies</groupId>

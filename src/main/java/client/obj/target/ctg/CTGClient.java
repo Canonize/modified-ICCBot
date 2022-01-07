@@ -30,6 +30,8 @@ import main.java.client.soot.IROutputClient;
 import main.java.client.statistic.model.StatisticResult;
 import main.java.client.toolEvaluate.ToolEvaluateClient;
 
+import main.java.client.obj.target.ctg.flow;
+
 import org.dom4j.DocumentException;
 
 import soot.SootMethod;
@@ -92,6 +94,10 @@ public class CTGClient extends BaseClient {
 
 		System.out.println("++++++++here !!!++++");
 		System.out.println("Successfully analyze with CTGClient.");
+
+		// test outputCG
+		flow.analyseOne("/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/nodeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/edgeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/tmp_soot_output","/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_OutputComp/output/com.hanweb.android.zhejiang.activity/CTGResult/IccModel.txt");
+
 	}
 
 	protected void setMySwitch1() {
