@@ -170,6 +170,8 @@ public class MainClass {
 
 		/** input **/
 		options.addOption("name", true, "-name: Set the name of the apk under analysis.");
+		//+++
+		options.addOption("targetClass", true, "-targetClass: Set the targetClass of the apk under analysis.");
 		options.addOption("path", true, "-path: Set the path to the apk under analysis.");
 		options.addOption("androidJar", true, "-androidJar: Set the path of android.jar.");
 		options.addOption("version", true, "-version [default:23]: Version of Android SDK.");
@@ -260,6 +262,8 @@ public class MainClass {
 		/** run config **/
 		MyConfig.getInstance().setJimple(true);
 		MyConfig.getInstance().setAppName(mCmd.getOptionValue("name", ""));
+		//+++
+		MyConfig.getInstance().setTargetClass(mCmd.getOptionValue("targetClass", ""));
 		MyConfig.getInstance().setAppPath(mCmd.getOptionValue("path", System.getProperty("user.dir")) + File.separator);
 		MyConfig.getInstance().setAndroidJar(mCmd.getOptionValue("androidJar", "lib") + File.separator);
 		MyConfig.getInstance().setAndroidVersion("android-" + mCmd.getOptionValue("version", "23"));

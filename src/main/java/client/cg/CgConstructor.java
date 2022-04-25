@@ -33,7 +33,10 @@ import soot.jimple.infoflow.android.resources.LayoutFileParser;
 import soot.options.Options;
 import soot.util.HashMultiMap;
 import soot.util.MultiMap;
-
+//+++
+import javax.xml.stream.XMLStreamException;
+import org.xml.sax.SAXException;
+import org.xmlpull.v1.XmlPullParserException;
 /**
  * generate callgraph
  * 
@@ -99,11 +102,22 @@ public class CgConstructor extends Analyzer {
 	 * dummy constuct, call back collect, fragment collect
 	 * 
 	 */
-	private void constructDummyMainMethods() {
+	private void constructDummyMainMethods() throws IOException, XmlPullParserException, SAXException {
 		setupApplication.getConfig().getCallbackConfig().setCallbackAnalysisTimeout(120);
+		//+++
 		setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.AutomaticSelection);
+		//setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.CHA);
 		setupApplication.getConfig().setMergeDexFiles(true);
-		setupApplication.runInfoflow_dummy();
+		//setupApplication.getConfig().setTargetClass("com.alibaba.zjzwfw.account.ZWLoginActivityV3");
+		//setupApplication.getConfig().setTargetClass("com.ctid.open.activity.LoginActivity");
+		//setupApplication.getConfig().setTargetClass("com.ccb.fintech.app.productions.hnga.ui.user.login.LoginActivity");
+		//setupApplication.getConfig().setTargetClass("cn.hsa.app.login.ui.LoginActivity");
+		//set target entrypoint
+		setupApplication.getConfig().setTargetClass(MyConfig.getInstance().getTargetClass());
+		//+++use our jar
+		//setupApplication.runInfoflow_dummy();
+		//setupApplication.runInfoflow();
+		setupApplication.constructCallgraph();
 
 		String summary_app_dir = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName()
 				+ File.separator;

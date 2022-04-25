@@ -59,7 +59,8 @@ public class Switch {
 
 		summaryStrategy = SummaryLevel.object;
 		vfgStrategy = true;
-		cgAnalyzeGroupedStrategy = false;
+		//+++ activate cgAnalyzeGroupedStrategy
+		cgAnalyzeGroupedStrategy = true;
 		getAttributeStrategy = false;
 		setAttributeStrategy = false;
 

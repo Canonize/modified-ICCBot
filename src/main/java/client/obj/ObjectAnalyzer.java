@@ -81,6 +81,7 @@ public abstract class ObjectAnalyzer extends Analyzer {
 		/** according to the topology order **/
 		Global.v().id = 0;
 		for (SootMethod m : topoQueue) {
+		//for (SootMethod m : Global.v().getAppModel().getTopoMethodQueue()) {
 			if (this instanceof CTGAnalyzer) {
 				Global.v().id++;
 				if (Global.v().id % 200 == 0)

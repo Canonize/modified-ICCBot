@@ -16,6 +16,8 @@ public class MyConfig {
 	private boolean isJimple = true;
 	private boolean testGeneration = false;
 	private boolean writeSootOutput = false;
+	//+++
+	private String targetClass;
 	private String androidVersion;
 	private String resultFolder;
 	private String resultWarpperFolder;
@@ -301,5 +303,25 @@ public class MyConfig {
 	 */
 	public void setGatorClient(String gatorClient) {
 		this.gatorClient = gatorClient;
+	}
+	//+++
+	/**
+	* Gets the target Class on which the data flow analysis shall be conducted
+	* 
+	* @return The target Class on which the data flow analysis shall be
+	*         conducted
+	*/
+	public String getTargetClass() {
+			return targetClass;
+		}
+
+	/**
+	* Sets the target Class on which the data flow analysis shall be conducted
+	* 
+	* @param targetClass The target Class on which the data flow analysis
+	*                      shall be conducted
+	*/
+	public void setTargetClass(String targetClass) {
+		this.targetClass = targetClass;
 	}
 }

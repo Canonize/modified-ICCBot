@@ -139,6 +139,8 @@ public class CTGAnalyzer extends ObjectAnalyzer {
 		for (String des : intentSummary.getSetDestinationList()) {
 			ComponentModel comp = appModel.getComponentMap().get(des);
 			AtgEdge edge;
+			//+++
+			addTopoForTargetClass(des);
 			if (comp == null || !method.getActiveBody().getUnits().contains(unit))
 				edge = new AtgEdge(new AtgNode(src), new AtgNode(des), method.getSignature(), -1, "c");
 			else
@@ -323,4 +325,25 @@ public class CTGAnalyzer extends ObjectAnalyzer {
 		}
 	}
 
+	//+++ add new topo method through ICC
+	private void addTopoForTargetClass(String des) {
+		//List<SootMethod> subTopo = new ArrayList<SootMethod>();
+		//Global.v().getAppModel().getTopoMethodQueueSet().add(subTopo);
+		//for (SootClass sc : Scene.v().getTargetClass()) {
+		SootClass sc = Scene.v().getSootClassUnsafe(des);
+		//System.out.println(des);
+		if (!MyConfig.getInstance().getMySwithch().allowLibCodeSwitch()) {
+			if (!SootUtils.isNonLibClass(sc.getName()))
+				return;
+		}
+		for (SootMethod sm : sc.getMethods()) {
+			if (SootUtils.hasSootActiveBody(sm) == false)
+				return;
+			if (!Global.v().getAppModel().getTopoMethodQueue().contains(sm)) {
+				Global.v().getAppModel().getNewTopoMethods().add(sm);
+				//subTopo.add(sm);
+			}
+		}
+		//}
+	}
 }

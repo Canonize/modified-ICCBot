@@ -45,17 +45,26 @@ public class CgModify extends Analyzer {
 			List<CallGraph> cgs = new ArrayList<CallGraph>();
 			List<Set<SootMethod>> methodSets = new ArrayList<Set<SootMethod>>();
 			seperateCG2multiple(appModel.getCg(), methodSets, cgs);
-			// System.out.println("seperateCG2multiple"+cgs.size());
+			System.out.println("seperateCG2multiple"+cgs.size());
 			for (int i = 0; i < cgs.size(); i++) {
 				CallGraph cg = cgs.get(i);
 				Set<SootMethod> methodSet = methodSets.get(i);
-				Map<SootMethod, Integer> inDegreeMap = constructInDregreeMap(cg, methodSet);
-				removeCirclefromCG(inDegreeMap, cg);
-				Map<SootMethod, Integer> outDegreeMap = constructOutDregreeMap(cg, methodSet);
-				sortCG(outDegreeMap, cg);
-				// System.out.println("sortCG");
-			}
-			addTopoForSupplyMulti();
+				//+++ keep cgs that contain methods belong to target class
+				for(SootMethod curmethod : methodSet) {
+						//System.out.println(curmethod.getDeclaringClass().getName());			
+						//if(curmethod.getDeclaringClass().getName() == "com.ccb.fintech.app.productions.hnga.ui.user.login.LoginActivity")
+						if(curmethod.getDeclaringClass().getName().contains(MyConfig.getInstance().getTargetClass()))
+						{
+							System.out.println("sortCG");
+							Map<SootMethod, Integer> inDegreeMap = constructInDregreeMap(cg, methodSet);
+							removeCirclefromCG(inDegreeMap, cg);					
+							Map<SootMethod, Integer> outDegreeMap = constructOutDregreeMap(cg, methodSet);
+							sortCG(outDegreeMap, cg);
+							break;
+						}
+					}
+				}
+			//addTopoForSupplyMulti();
 		} else {
 			/** single topo queue **/
 			Map<SootMethod, Integer> inDegreeMap = constructInDregreeMap(appModel.getCg());
@@ -178,6 +187,9 @@ public class CgModify extends Analyzer {
 	 */
 	private void addEdgesByOurAnalyze(CallGraph callGraph) {
 		for (SootClass sc : Scene.v().getApplicationClasses()) {
+			//+++ add edges for target class and its inner class
+			if(!sc.getName().contains(MyConfig.getInstance().getTargetClass()))
+				continue;
 			if (!MyConfig.getInstance().getMySwithch().allowLibCodeSwitch()) {
 				if (!SootUtils.isNonLibClass(sc.getName()))
 					continue;

@@ -272,9 +272,9 @@ public class CTGClientOutput {
 				// iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 
 				// check if the destination is component
-				if(Global.v().getAppModel().getComponentMap().keySet().contains(edge.getDestnation().getClassName())==false){
-					continue;
-				}
+				//if(Global.v().getAppModel().getComponentMap().keySet().contains(edge.getDestnation().getClassName())==false){
+				//	continue;
+				//}
 
 
 
@@ -294,14 +294,15 @@ public class CTGClientOutput {
 					System.out.println("curNode NULL-------------");
 					continue;
 				}
-					if (curNode.getType()!=null && curNode.getType().equals("PassOutIntent")){
-
+				//+++ add new output type: SendIntent2ICC
+					if (curNode.getType()!=null && (curNode.getType().equals("PassOutIntent") || curNode.getType().equals("SendIntent2ICC"))){
+					//if (curNode.getType()!=null) {
 						// check id is -1
 						if(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())==-1){
 							idNegativeString.append("\tname: \"").append(className).append("\"\n");
 							// idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
 							idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
-							idNegativeString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
+							idNegativeString.append("\t\t\tclass_name: \"").append(edge.getSource().getClassName()).append("\"\n");
 							idNegativeString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n\n");
 							continue;
 						}
@@ -314,8 +315,8 @@ public class CTGClientOutput {
 						iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 						iccModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
 
-					  //+++
-						iccModelString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
+					  //+++ use class_name output the actual source class
+						iccModelString.append("\t\t\tclass_name: \"").append(edge.getSource().getClassName()).append("\"\n");
 						iccModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
 						iccModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
 						iccModelString.append("\t\t}\n");

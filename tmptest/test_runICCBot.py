@@ -4,7 +4,7 @@ import shutil
 
 
 
-def analyzeApk(apkFile, resPath, sdk):
+def analyzeApk(apkFile, targetClass, resPath, sdk):
 
     logDir = resPath+"/logs"
     outputDir = resPath+"/output"
@@ -19,7 +19,7 @@ def analyzeApk(apkFile, resPath, sdk):
         print("==============={}=============".format(apk))
         # print(apkPath)
         # os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-        os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client IROutputClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClass "+targetClass+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
@@ -31,15 +31,17 @@ if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.epoint.mobileframe.wssb.qinghai.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.ccb.fintech.app.productions.hnga.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/cn.hsa.app.apk"
-    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.jd.jrapp_6.1.90_410.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.guangdong.gov.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/cn.xuexi.android.apk"
-
+    # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
+    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/SMSLogin.apk"
+    targetClass = "com.example.smslogin.SMSLoginActivity"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_SaveIdNegative/"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
-    resPath = "/home/flash/singledetect/ICCBotOotputResult/zhejaingsootIR"
+    resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
 
 
     # jarFile = "S_ICCBot_SaveIdNegative.jar"
@@ -55,6 +57,6 @@ if __name__ == '__main__' :
     else:
         print("Fail to build! Please run \"mvn -f pom.xml package\" to see the detail info.")
     
-    # sdk = "lib/"    
-    # analyzeApk(apkFile, resPath, sdk)
+    sdk = "lib/"    
+    analyzeApk(apkFile,targetClass,resPath, sdk)
     

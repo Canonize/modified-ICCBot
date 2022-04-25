@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+//+++
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -86,6 +88,18 @@ public class CTGClient extends BaseClient {
 			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
 			analyzer.analyze();
 		}
+		//+++ iterate to add new topo method(no rule)
+		while(Global.v().getAppModel().getNewTopoMethods().size() != 0) {
+			System.out.println("Successfully analyze new: " + Global.v().getAppModel().getNewTopoMethods().size());
+			Global.v().getAppModel().getTopoMethodQueue().addAll(Global.v().getAppModel().getNewTopoMethods());
+			List<SootMethod> topoQueue = new ArrayList<SootMethod>(Global.v().getAppModel().getNewTopoMethods());
+			//topoQueue.addAll(Global.v().getAppModel().getNewTopoMethods());
+			Global.v().getAppModel().getNewTopoMethods().clear();
+			System.out.println("toposize: " + topoQueue.size());
+			System.out.println("analyze new method size: " + Global.v().getAppModel().getTopoMethodQueue().size());
+			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
+			analyzer.analyze();
+		}
 //		setMySwitch2();
 //		for (List<SootMethod> topoQueue : Global.v().getAppModel().getTopoMethodQueueSet()) {
 //			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
@@ -96,7 +110,7 @@ public class CTGClient extends BaseClient {
 		System.out.println("Successfully analyze with CTGClient.");
 
 		// test outputCG
-		flow.analyseOne("/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/nodeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/edgeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/tmp_soot_output","/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_OutputComp/output/com.hanweb.android.zhejiang.activity/CTGResult/IccModel.txt");
+		//flow.analyseOne("/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/nodeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/edgeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/tmp_soot_output","/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_OutputComp/output/com.hanweb.android.zhejiang.activity/CTGResult/IccModel.txt");
 
 	}
 
