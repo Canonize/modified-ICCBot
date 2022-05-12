@@ -316,7 +316,12 @@ public class CTGClientOutput {
 						iccModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
 
 					  //+++ use class_name output the actual source class
-						iccModelString.append("\t\t\tclass_name: \"").append(edge.getSource().getClassName()).append("\"\n");
+						iccModelString.append("\t\t\tclass_name: \"").append(edge.getMethodSig()).append("\"\n");
+						//iccModelString.append("\t\t\tmethod: \"").append(edge.getMethodSig()).append("\"\n");
+						//if(edge.getInstructionId() == -1)
+						//	iccModelString.append("\t\t\tid: ").append("0").append("\n");
+						//else
+						//	iccModelString.append("\t\t\tid: ").append(edge.getInstructionId()).append("\n");
 						iccModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
 						iccModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
 						iccModelString.append("\t\t}\n");
