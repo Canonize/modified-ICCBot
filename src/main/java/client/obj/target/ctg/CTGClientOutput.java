@@ -210,54 +210,6 @@ public class CTGClientOutput {
 		// for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
 		for (String className: atgModel.getAtgEdges().keySet()) {
 
-			// test no component point
-			// if(!Global.v().getAppModel().getComponentMap().keySet().contains(className)){
-			// 	otherModelString.append("Not component point: ").append(className).append("\n");
-
-			// 	for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
-					
-						
-			// 		if (edge.getIntentSummary() != null){
-			// 			otherModelString.append("\t\tedge: ").append(edge).append("\"\n");
-			// 			otherModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
-			// 			otherModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
-			// 			otherModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
-			// 			for(UnitNode curNode:edge.getIntentSummary().getNodes()){
-
-			// 				if(curNode==null){
-			// 					System.out.println("curNode NULL-------------");
-			// 					continue;
-			// 				}
-			// 				if (curNode.getType()!=null && curNode.getType().equals("PassOutIntent")){
-			// 					otherModelString.append("\texit_points {\n\t\tinstruction {\n");
-			// 					otherModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
-
-			// 				//+++
-			// 					otherModelString.append("\t\t\tclass_name: \"").append(curNode.getMethod().getDeclaringClass()).append("\"\n");
-			// 					otherModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
-			// 					otherModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
-			// 					otherModelString.append("\t\t}\n");
-			// 					otherModelString.append("\t\tintents {\n");
-			// 	//				System.out.println("\tintents {");
-
-			// 					// CLASS
-			// 					otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
-			// 					otherModelString.append("\t\t\t}\n");
-
-			// 	//				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
-			// 	//                System.out.println("\t\t}");
-
-			// 					// PACKAGE
-			// 					otherModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
-			// 					otherModelString.append("\t\t\t}\n");
-			// 					otherModelString.append("\t\t}\n\t}\n");
-			// 				}
-			// 			}
-			// 		}
-			// 	}
-			// 	// continue;
-			// }
-
 			System.out.println("name: "+className);
 			iccModelString.append("components {\n");
 			iccModelString.append("\tname: \"").append(className).append("\"\n");
@@ -269,61 +221,36 @@ public class CTGClientOutput {
 //			System.out.println("name: "+className);
 
 			for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
-				// iccModelString.append("\texit_points {\n\t\tinstruction {\n");
-
-				// check if the destination is component
-				//if(Global.v().getAppModel().getComponentMap().keySet().contains(edge.getDestnation().getClassName())==false){
-				//	continue;
-				//}
-
-
 
 				if(edge==null){
 					System.out.println("ATGEdge NULL-------------");
 					continue;
 				}
 
-				// iccModelString.append("\t\tedge: ").append(edge).append("\"\n");
-				// iccModelString.append("\t\tdes: ").append(edge.getDestnation().getName()).append("\"\n");
-				// iccModelString.append("\t\tsrc: ").append(edge.getSource().getName()).append("\"\n");
 				if (edge.getIntentSummary() != null){
-				// iccModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
-				for(UnitNode curNode:edge.getIntentSummary().getNodes()){
-
-					if(curNode==null){
-					System.out.println("curNode NULL-------------");
-					continue;
-				}
-				//+++ add new output type: SendIntent2ICC
-					if (curNode.getType()!=null && (curNode.getType().equals("PassOutIntent") || curNode.getType().equals("SendIntent2ICC"))){
-					//if (curNode.getType()!=null) {
-						// check id is -1
-						if(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())==-1){
-							idNegativeString.append("\tname: \"").append(className).append("\"\n");
-							// idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
-							idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
-							idNegativeString.append("\t\t\tclass_name: \"").append(edge.getSource().getClassName()).append("\"\n");
-							idNegativeString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n\n");
-							continue;
-						}
-
-						// do not include putExtra method into ICC
-						if(curNode.getUnit().toString().contains("putExtra(")){
-							continue;
-						}
+					UnitNode passNode = null;
+					UnitNode contextNode = null;
+					// iccModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
+					for(UnitNode curNode:edge.getIntentSummary().getNodes())
+						if(curNode != null)
+							if (curNode.getType().length() <= 0) 
+								contextNode = curNode;								
+							else if(curNode.getType().equals("PassOutIntent"))
+								passNode = curNode;
+					//+++ add new output type: SendIntent2ICC
+					if(passNode != null ) {
 
 						iccModelString.append("\texit_points {\n\t\tinstruction {\n");
-						iccModelString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
+						iccModelString.append("\t\t\tstatement: \"").append(passNode.getUnit()).append("\"\n");
 
-					  //+++ use class_name output the actual source class
-						iccModelString.append("\t\t\tclass_name: \"").append(edge.getMethodSig()).append("\"\n");
-						//iccModelString.append("\t\t\tmethod: \"").append(edge.getMethodSig()).append("\"\n");
-						//if(edge.getInstructionId() == -1)
-						//	iccModelString.append("\t\t\tid: ").append("0").append("\n");
-						//else
-						//	iccModelString.append("\t\t\tid: ").append(edge.getInstructionId()).append("\n");
-						iccModelString.append("\t\t\tmethod: \"").append(curNode.getMethod()).append("\"\n");
-						iccModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(curNode.getUnit(),curNode.getMethod())).append("\n");
+						//+++ use class_name output the actual source class
+						if(contextNode != null)
+							iccModelString.append("\t\t\tclass_name: \"").append(contextNode.getMethod()).append("#").append(SootUtils.getIdForUnit(contextNode.getUnit(),contextNode.getMethod())).append("\"\n");
+						else
+							iccModelString.append("\t\t\tclass_name: \"").append(passNode.getMethod()).append("#").append(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())).append("\"\n");
+
+						iccModelString.append("\t\t\tmethod: \"").append(passNode.getMethod()).append("\"\n");
+						iccModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())).append("\n");
 						iccModelString.append("\t\t}\n");
 						iccModelString.append("\t\tintents {\n");
 		//				System.out.println("\tintents {");
@@ -332,66 +259,13 @@ public class CTGClientOutput {
 						iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
 						iccModelString.append("\t\t\t}\n");
 
-		//				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
-		//                System.out.println("\t\t}");
-
 						// PACKAGE
 						iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
 						iccModelString.append("\t\t\t}\n");
 						iccModelString.append("\t\t}\n\t}\n");
-							}
-						}
-						}
-
-
-				// iccModelString.append("\t\t\tclass_name: \"").append(className).append("\"\n");
-				// iccModelString.append("\t\t\tmethod: \"").append(edge.getMethodSig()).append("\"\n");
-				// iccModelString.append("\t\t\tid: ").append(edge.getInstructionId()).append("\n");
-				// iccModelString.append("\t\t}\n");
-				
-//				System.out.println("exit_points {\n\tinstruction {");
-//				System.out.println("\t\tclass_name: "+className);
-//				System.out.println("\t\tmethod: "+edge.getMethodSig());
-//				System.out.println("\t\tid: "+edge.getInstructionId());
-//				System.out.println("\t}");
-
-//				System.out.println("\tkind: ???");
-
-// 				iccModelString.append("\t\tintents {\n");
-// //				System.out.println("\tintents {");
-
-// 				// CLASS
-// 				iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
-//                 iccModelString.append("\t\t\t}\n");
-
-// //				System.out.println("\t\tattributes {\n\t\t\tkind: CLASS\n\t\t\tvalue: "+edge.getDestnation().getClassName().replace(".","/"));
-// //                System.out.println("\t\t}");
-
-//                 // PACKAGE
-// 				iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
-// 				iccModelString.append("\t\t\t}\n");
-
-
-
-
-
-//                System.out.println("\t\tattributes {\n\t\t\tkind: PACKAGE\n\t\t\tvalue: "+Global.v().getAppModel().getPackageName());
-//				System.out.println("\t\t}");
-
-//				if (edge.getIntentSummary() != null) {
-//					if (edge.getIntentSummary().getSetActionValueList().size() > 0){
-//						for(String curAction:edge.getIntentSummary().getSetActionValueList()){
-//							System.out.println("\t\tattributes {\n\t\t\tkind: ACTION\n\t\t\tvalue: "+curAction);
-//							System.out.println("\t\t}");
-//						}
-//					}
-//
-//					if (edge.getIntentSummary().getSetCategoryValueList().size() > 0){
-//						for(String curAction:edge.getIntentSummary().getSetCategoryValueList()){
-//							System.out.println("\t\tattributes {\n\t\t\tkind: CATEGORY\n\t\t\tvalue: "+curAction);
-//							System.out.println("\t\t}");
-//						}
-//					}
+					}
+										
+				}
 //
 //					// TODO: Class 不确定是不是这样写,先跳过把
 //
@@ -401,13 +275,6 @@ public class CTGClientOutput {
 //						System.out.println("\t\tattributes {\n\t\t\tkind: EXTRA\n\t\t\tvalue: "+edge.getIntentSummary().getSetExtrasValueList().toString());
 //						System.out.println("\t\t}");
 //					}
-//
-//
-//				}
-				// iccModelString.append("\t\t}\n\t}\n");
-
-
-
 			}
 
 			iccModelString.append("}\n");
@@ -415,9 +282,9 @@ public class CTGClientOutput {
 		}
 
 
-		FileUtils.writeText2File(dir+File.separator+file,iccModelString.toString(),true);
+		FileUtils.writeText2File(dir+File.separator+file,iccModelString.toString(),false);
 		// FileUtils.writeText2File(dir+File.separator+"otherPointModel.txt",otherModelString.toString(),true);
-		FileUtils.writeText2File(dir+File.separator+"idNegitiveStatement.txt",idNegativeString.toString(),true);
+		FileUtils.writeText2File(dir+File.separator+"idNegitiveStatement.txt",idNegativeString.toString(),false);
 		// FileUtils.writeText2File(dir+File.separator+"componentMap.txt",PrintUtils.printMap(Global.v().getAppModel().getComponentMap()),true);
 		System.out.println("writeIC3Output-----------------------");
 	}

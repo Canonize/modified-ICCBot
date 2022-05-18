@@ -502,6 +502,8 @@ public abstract class ObjectAnalyzer extends Analyzer {
 							handler2.init(handleTarget.getMethod(), handleTarget.getUnit());
 							handler2.handleSingleObject(objContext, singleObject, targetUnit);
 							singleObject.addNode(handleTarget);
+							//+++
+							singleObject.addNode(node);
 							findPassing =true;
 						}
 					}
