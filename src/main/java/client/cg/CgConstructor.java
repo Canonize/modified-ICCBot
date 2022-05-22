@@ -108,12 +108,8 @@ public class CgConstructor extends Analyzer {
 		setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.AutomaticSelection);
 		//setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.CHA);
 		setupApplication.getConfig().setMergeDexFiles(true);
-		//setupApplication.getConfig().setTargetClass("com.alibaba.zjzwfw.account.ZWLoginActivityV3");
-		//setupApplication.getConfig().setTargetClass("com.ctid.open.activity.LoginActivity");
-		//setupApplication.getConfig().setTargetClass("com.ccb.fintech.app.productions.hnga.ui.user.login.LoginActivity");
-		//setupApplication.getConfig().setTargetClass("cn.hsa.app.login.ui.LoginActivity");
 		//set target entrypoint
-		setupApplication.getConfig().setTargetClass(MyConfig.getInstance().getTargetClass());
+		setupApplication.getConfig().setTargetClasses(MyConfig.getInstance().getTargetClasses());
 		//+++use our jar
 		//setupApplication.runInfoflow_dummy();
 		//setupApplication.runInfoflow();

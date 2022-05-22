@@ -1,6 +1,8 @@
 package main.java;
 
 import main.java.MyConfig;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * config information for current run
@@ -17,7 +19,7 @@ public class MyConfig {
 	private boolean testGeneration = false;
 	private boolean writeSootOutput = false;
 	//+++
-	private String targetClass;
+	private List<String> targetClasses = new ArrayList<String>();
 	private String androidVersion;
 	private String resultFolder;
 	private String resultWarpperFolder;
@@ -311,8 +313,8 @@ public class MyConfig {
 	* @return The target Class on which the data flow analysis shall be
 	*         conducted
 	*/
-	public String getTargetClass() {
-			return targetClass;
+	public List<String> getTargetClasses() {
+			return targetClasses;
 		}
 
 	/**
@@ -321,7 +323,7 @@ public class MyConfig {
 	* @param targetClass The target Class on which the data flow analysis
 	*                      shall be conducted
 	*/
-	public void setTargetClass(String targetClass) {
-		this.targetClass = targetClass;
+	public void setTargetClasses(List<String> targetClasses) {
+		this.targetClasses = targetClasses;
 	}
 }

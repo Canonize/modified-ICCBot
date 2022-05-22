@@ -4,7 +4,7 @@ import shutil
 
 
 
-def analyzeApk(apkFile, targetClass, resPath, sdk):
+def analyzeApk(apkFile, targetClasses, resPath, sdk):
 
     logDir = resPath+"/logs"
     outputDir = resPath+"/output"
@@ -19,7 +19,7 @@ def analyzeApk(apkFile, targetClass, resPath, sdk):
         print("==============={}=============".format(apk))
         # print(apkPath)
         # os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-        os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClass "+targetClass+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
@@ -38,7 +38,7 @@ if __name__ == '__main__' :
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/SMSLogin.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/TwoHandlerTest.apk"
-    targetClass = "com.alibaba.zjzwfw.account.ZWLoginActivityV3"
+    targetClasses = "com.alibaba.zjzwfw.account.ZWLoginActivityV3,com.alibaba.zjzwfw.account.ZWLoginActivity"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_SaveIdNegative/"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
@@ -59,5 +59,5 @@ if __name__ == '__main__' :
         print("Fail to build! Please run \"mvn -f pom.xml package\" to see the detail info.")
     
     sdk = "lib/"    
-    analyzeApk(apkFile,targetClass,resPath, sdk)
+    analyzeApk(apkFile,targetClasses,resPath, sdk)
     

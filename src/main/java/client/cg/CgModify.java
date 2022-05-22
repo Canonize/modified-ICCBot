@@ -50,20 +50,8 @@ public class CgModify extends Analyzer {
 				CallGraph cg = cgs.get(i);
 				Set<SootMethod> methodSet = methodSets.get(i);
 				//+++ keep cgs that contain methods belong to target class
-				for(SootMethod curmethod : methodSet) {
-						//System.out.println(curmethod.getDeclaringClass().getName());			
-						//if(curmethod.getDeclaringClass().getName() == "com.ccb.fintech.app.productions.hnga.ui.user.login.LoginActivity")
-						if(curmethod.getDeclaringClass().getName().contains(MyConfig.getInstance().getTargetClass()))
-						{
-							System.out.println("sortCG");
-							Map<SootMethod, Integer> inDegreeMap = constructInDregreeMap(cg, methodSet);
-							removeCirclefromCG(inDegreeMap, cg);					
-							Map<SootMethod, Integer> outDegreeMap = constructOutDregreeMap(cg, methodSet);
-							sortCG(outDegreeMap, cg);
-							break;
-						}
-					}
-				}
+				sortTargetCG(methodSet,cg);
+			}
 			//addTopoForSupplyMulti();
 		} else {
 			/** single topo queue **/
@@ -187,32 +175,37 @@ public class CgModify extends Analyzer {
 	 */
 	private void addEdgesByOurAnalyze(CallGraph callGraph) {
 		for (SootClass sc : Scene.v().getApplicationClasses()) {
-			//+++ add edges for target class and its inner class
-			if(!sc.getName().contains(MyConfig.getInstance().getTargetClass()))
-				continue;
 			if (!MyConfig.getInstance().getMySwithch().allowLibCodeSwitch()) {
 				if (!SootUtils.isNonLibClass(sc.getName()))
 					continue;
 			}
-			ArrayList<SootMethod> methodList = new ArrayList<SootMethod>(sc.getMethods());
-			for (SootMethod sm : methodList) {
-				if (SootUtils.hasSootActiveBody(sm) == false)
-					continue;
-				Iterator<Unit> it = SootUtils.getSootActiveBody(sm).getUnits().iterator();
-				while (it.hasNext()) {
-					Unit u = it.next();
-					InvokeExpr exp = SootUtils.getInvokeExp(u);
-					if (exp == null)
-						continue;
-					InvokeExpr invoke = SootUtils.getSingleInvokedMethod(u);
-					if (invoke != null) { // u is invoke stmt
-						Set<SootMethod> targetSet = SootUtils.getInvokedMethodSet(sm, u);
-						for (SootMethod target : targetSet) {
-							Edge e = new Edge(sm, (Stmt) u, target);
-							callGraph.addEdge(e);
+			//+++ add edges for target class and its inner class
+			for(String targetClass : MyConfig.getInstance().getTargetClasses()) {
+
+				if(sc.getName().contains(targetClass)) {
+					ArrayList<SootMethod> methodList = new ArrayList<SootMethod>(sc.getMethods());
+					for (SootMethod sm : methodList) {
+						if (SootUtils.hasSootActiveBody(sm) == false)
+							continue;
+						Iterator<Unit> it = SootUtils.getSootActiveBody(sm).getUnits().iterator();
+						while (it.hasNext()) {
+							Unit u = it.next();
+							InvokeExpr exp = SootUtils.getInvokeExp(u);
+							if (exp == null)
+								continue;
+							InvokeExpr invoke = SootUtils.getSingleInvokedMethod(u);
+							if (invoke != null) { // u is invoke stmt
+								Set<SootMethod> targetSet = SootUtils.getInvokedMethodSet(sm, u);
+								for (SootMethod target : targetSet) {
+									Edge e = new Edge(sm, (Stmt) u, target);
+									callGraph.addEdge(e);
+								}
+							}
 						}
 					}
+				break;						
 				}
+				
 			}
 		}
 	}
@@ -498,5 +491,21 @@ public class CgModify extends Analyzer {
 				inDegreeMap.put(edge.getTgt().method(), inDegreeMap.get(edge.getTgt()) + 1);
 		}
 		return inDegreeMap;
+	}
+
+	private void sortTargetCG(Set<SootMethod> methodSet, CallGraph cg) {
+		for(SootMethod curmethod : methodSet) {
+			for(String targetClass : MyConfig.getInstance().getTargetClasses()) {
+				if(curmethod.getDeclaringClass().getName().contains(targetClass))
+				{
+					System.out.println("sortCG");
+					Map<SootMethod, Integer> inDegreeMap = constructInDregreeMap(cg, methodSet);
+					removeCirclefromCG(inDegreeMap, cg);					
+					Map<SootMethod, Integer> outDegreeMap = constructOutDregreeMap(cg, methodSet);
+					sortCG(outDegreeMap, cg);
+					return;
+				}	
+			}
+		}
 	}
 }
