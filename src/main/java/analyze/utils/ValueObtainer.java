@@ -101,7 +101,7 @@ public class ValueObtainer {
 						continue;
 					if (defUnit instanceof JAssignStmt) {
 						JAssignStmt jas2 = (JAssignStmt) defUnit;
-						Value val = jas2.rightBox.getValue();
+						Value val = jas2.getRightOpBox().getValue();
 						if (val instanceof JInstanceFieldRef) {
 							JInstanceFieldRef jifr = (JInstanceFieldRef) val;
 							if (jifr.getBase() == strVal)
@@ -369,22 +369,22 @@ public class ValueObtainer {
 		NestableObj resVal = new NestableObj(u.toString());
 		if (u.toString().contains("toString")) {
 			JAssignStmt jas1 = (JAssignStmt) u;
-			Value invoke = jas1.rightBox.getValue();
+			Value invoke = jas1.getRightOpBox().getValue();
 			if (invoke instanceof AbstractInstanceInvokeExpr || invoke instanceof JStaticInvokeExpr) {
 				Value strVal = getValueFromInvokeExpr(invoke);
 				resVal = getValueofVar(strVal, u, depth + 1);
 			}
 		} else if (u.toString().contains("append") || u.toString().contains("concat")) {
 			JAssignStmt jas1 = (JAssignStmt) u;
-			if (jas1.rightBox.getValue() instanceof AbstractInstanceInvokeExpr) {
-				AbstractInstanceInvokeExpr invokeStmt = (AbstractInstanceInvokeExpr) jas1.rightBox.getValue();
+			if (jas1.getRightOpBox().getValue() instanceof AbstractInstanceInvokeExpr) {
+				AbstractInstanceInvokeExpr invokeStmt = (AbstractInstanceInvokeExpr) jas1.getRightOpBox().getValue();
 				Value lv = invokeStmt.getBase();
 				if (invokeStmt.getArgCount() == 0)
 					resVal = getValueofVar(lv, u, depth + 1);
 				else {
 					Value rv = invokeStmt.getArg(0);
 					for (String l : getValueofVar(lv, u, depth + 1).getValues()) {
-						if (u.toString().contains("append") &&lv == jas1.leftBox.getValue()) {
+						if (u.toString().contains("append") &&lv == jas1.getLeftOpBox().getValue()) {
 							resVal.addValue(l);
 							continue;
 						}
@@ -402,7 +402,7 @@ public class ValueObtainer {
 			}
 		} else if (u.toString().contains("substring")) {
 			JAssignStmt jas1 = (JAssignStmt) u;
-			AbstractInstanceInvokeExpr invokeStmt = (AbstractInstanceInvokeExpr) jas1.rightBox.getValue();
+			AbstractInstanceInvokeExpr invokeStmt = (AbstractInstanceInvokeExpr) jas1.getRightOpBox().getValue();
 			Value strVal = invokeStmt.getBase();
 			int b = 0;
 			if (invokeStmt.getArgCount() > 0) {
@@ -451,7 +451,7 @@ public class ValueObtainer {
 			}
 		} else if (u.toString().contains("toLowerCase")) {
 			JAssignStmt jas1 = (JAssignStmt) u;
-			Value invoke = jas1.rightBox.getValue();
+			Value invoke = jas1.getRightOpBox().getValue();
 			if (invoke instanceof AbstractInstanceInvokeExpr || invoke instanceof JStaticInvokeExpr) {
 				Value strVal = getValueFromInvokeExpr(invoke);
 				for (String old : getValueofVar(strVal, u, depth + 1).getValues())
@@ -459,7 +459,7 @@ public class ValueObtainer {
 			}
 		} else if (u.toString().contains("toUpperCase")) {
 			JAssignStmt jas1 = (JAssignStmt) u;
-			Value invoke = jas1.rightBox.getValue();
+			Value invoke = jas1.getRightOpBox().getValue();
 			if (invoke instanceof AbstractInstanceInvokeExpr || invoke instanceof JStaticInvokeExpr) {
 				Value strVal = getValueFromInvokeExpr(invoke);
 				for (String old : getValueofVar(strVal, u, depth + 1).getValues())
@@ -467,7 +467,7 @@ public class ValueObtainer {
 			}
 		} else if (u.toString().contains("trim")) {
 			JAssignStmt jas1 = (JAssignStmt) u;
-			Value invoke = jas1.rightBox.getValue();
+			Value invoke = jas1.getRightOpBox().getValue();
 			if (invoke instanceof AbstractInstanceInvokeExpr || invoke instanceof JStaticInvokeExpr) {
 				Value strVal = getValueFromInvokeExpr(invoke);
 				for (String old : getValueofVar(strVal, u, depth + 1).getValues())

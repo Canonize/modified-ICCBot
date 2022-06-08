@@ -17,22 +17,21 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     		<artifactId>commons-cli</artifactId>
     		<version>1.4</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>soot-infoflow-dummy</groupId>
 			<artifactId>soot-infoflow-dummy</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/soot-infoflow-dummy.jar</systemPath>
-			<!-- <systemPath>${project.basedir}/lib/soot-infoflow-android-classes.jar</systemPath> -->
-		</dependency>
-		<!-- <dependency>
-			<groupId>soot-infoflow-cmd-2.9.0-jar-with-dependencies</groupId>
-			<artifactId>soot-infoflow-cmd-2.9.0-jar-with-dependencies</artifactId>
-			<version>2.9</version>
+		</dependency> -->
+		<dependency>
+			<groupId>soot-infoflow-cmd-jar-with-dependencies</groupId>
+			<artifactId>soot-infoflow-cmd-jar-with-dependencies</artifactId>
+			<version>2.11.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/soot-infoflow-cmd-2.9.0-jar-with-dependencies.jar</systemPath>
+			<systemPath>${project.basedir}/lib/soot-infoflow-cmd-jar-with-dependencies.jar</systemPath>
 		</dependency>
-		 -->
+
 		<dependency>
 			<groupId>de.tud.sse</groupId>
 			<artifactId>soot-infoflow</artifactId>

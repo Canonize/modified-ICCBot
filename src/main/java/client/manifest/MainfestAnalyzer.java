@@ -19,6 +19,9 @@ import main.java.client.obj.model.component.ServiceModel;
 
 import soot.jimple.infoflow.android.axml.AXmlNode;
 import soot.jimple.infoflow.android.manifest.ProcessManifest;
+import soot.jimple.infoflow.android.manifest.binary.AbstractBinaryAndroidComponent;
+import soot.jimple.infoflow.android.manifest.binary.BinaryAndroidApplication;
+import soot.jimple.infoflow.android.manifest.binary.BinaryManifestActivity;
 
 /**
  * This class is used to parse a manifest XML file Extract all the exported
@@ -55,7 +58,7 @@ public class MainfestAnalyzer extends Analyzer {
 		appModel.setPackageName(pkg);
 		appModel.getExtendedPakgs().add(pkg);
 		appModel.setVersionCode(manifestManager.getVersionCode());
-		AXmlNode appNode = manifestManager.getApplication();
+		AXmlNode appNode = ((BinaryAndroidApplication)manifestManager.getApplication()).getAXmlNode();
 		// get permissions
 		if (appNode.getAttribute("permission") != null) {
 			appModel.setPermission(appNode.getAttribute("permission").getValue().toString());// which
@@ -63,10 +66,10 @@ public class MainfestAnalyzer extends Analyzer {
 		}
 		appModel.setUsesPermissionSet(manifestManager.getPermissions());
 
-		parseComponent(manifestManager.getActivities(), "Activity");
-		parseComponent(manifestManager.getServices(), "Service");
-		parseComponent(manifestManager.getProviders(), "Provider");
-		parseComponent(manifestManager.getReceivers(), "Receiver");
+		parseComponent(manifestManager.getActivities().asList(), "Activity");
+		parseComponent(manifestManager.getServices().asList(), "Service");
+		parseComponent(manifestManager.getContentProviders().asList(), "Provider");
+		parseComponent(manifestManager.getBroadcastReceivers().asList(), "Receiver");
 
 		mergeAllComponents();
 
@@ -92,11 +95,12 @@ public class MainfestAnalyzer extends Analyzer {
 	 * parse activity + service + contentProvider + broadcastReceiver node in
 	 * manifest
 	 */
-	private void parseComponent(List<AXmlNode> components, String type) {
+	private void parseComponent(List<? extends AbstractBinaryAndroidComponent> components, String type) {
 		// get components
 		HashMap<String, ComponentModel> componentMap = getComponentMap(type);
-		for (AXmlNode componentNode : components) {
+		for (AbstractBinaryAndroidComponent component : components) {
 			// new ActivityData instance
+			AXmlNode componentNode = component.getAXmlNode();
 			String componentName = componentNode.getAttribute("name").getValue().toString();
 			if (!Global.v().getAppModel().getApplicationClassNames().contains(componentName)) {
 				if (!componentName.contains(appModel.getPackageName())) {

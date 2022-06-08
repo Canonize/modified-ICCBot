@@ -826,10 +826,10 @@ public class SootUtils {
 								visitiedSootMethods));
 					} else if (unit instanceof JAssignStmt) {
 						JAssignStmt assignStmt = (JAssignStmt) unit;
-						if (assignStmt.rightBox == null) {
+						if (assignStmt.getRightOpBox() == null) {
 							continue;
 						}
-						Type type = assignStmt.rightBox.getValue().getType();
+						Type type = assignStmt.getRightOpBox().getValue().getType();
 						if (type instanceof RefType) {
 							RefType refType = (RefType) type;
 							SootClass refClass = refType.getSootClass();
@@ -1149,7 +1149,7 @@ public class SootUtils {
 		String className = "";
 		if (defUnit instanceof JAssignStmt) {
 			JAssignStmt assignDefUnit = (JAssignStmt) defUnit;
-			Value rValue = assignDefUnit.rightBox.getValue();
+			Value rValue = assignDefUnit.getRightOpBox().getValue();
 			if (rValue instanceof JInstanceFieldRef) {
 				JInstanceFieldRef fieldRef = (JInstanceFieldRef) rValue;
 				if (fieldRef.getBase().getType() instanceof PrimType)
@@ -1194,7 +1194,7 @@ public class SootUtils {
 			}
 		} else if (defUnit instanceof JIdentityStmt) {
 			JIdentityStmt identifyDefUnit = (JIdentityStmt) defUnit;
-			Value rValue = identifyDefUnit.rightBox.getValue();
+			Value rValue = identifyDefUnit.getRightOpBox().getValue();
 			if (rValue instanceof ThisRef) {
 				ThisRef thisRef = (ThisRef) rValue;
 				className = thisRef.getType().toString();
@@ -1217,7 +1217,7 @@ public class SootUtils {
 		String className = "";
 		if (defUnit instanceof JAssignStmt) {
 			JAssignStmt assignDefUnit = (JAssignStmt) defUnit;
-			Value rValue = assignDefUnit.rightBox.getValue();
+			Value rValue = assignDefUnit.getRightOpBox().getValue();
 			if (rValue instanceof JInstanceFieldRef) {
 				JInstanceFieldRef fieldRef = (JInstanceFieldRef) rValue;
 				if (fieldRef.getField().getType() instanceof PrimType)
@@ -1278,7 +1278,7 @@ public class SootUtils {
 			}
 		} else if (defUnit instanceof JIdentityStmt) {
 			JIdentityStmt identifyDefUnit = (JIdentityStmt) defUnit;
-			Value rValue = identifyDefUnit.rightBox.getValue();
+			Value rValue = identifyDefUnit.getRightOpBox().getValue();
 			if (rValue instanceof ThisRef) {
 				ThisRef thisRef = (ThisRef) rValue;
 				className = thisRef.getType().toString();
