@@ -16,6 +16,7 @@ import main.java.client.obj.target.fragment.FragmentRemoveClient;
 import main.java.client.related.gator.GatorATGResultEvaluateClient;
 import main.java.client.related.ic3.IC3ResultEvaluateClient;
 import main.java.client.related.ic3dial.IC3DIALDroidResultEvaluateClient;
+import main.java.client.soot.GetApiGenClient;
 import main.java.client.soot.IROutputClient;
 import main.java.client.testcase.TestGenerationClient;
 import main.java.client.toolEvaluate.ICCBotResultEvaluateClient;
@@ -111,6 +112,9 @@ public class MainClass {
 				break;
 			case "MainClient":
 				client = new CTGClient();
+				break;
+			case "GetApiGenClient":
+				client = new GetApiGenClient();
 				break;
 			case "IROutputClient":
 				client = new IROutputClient();

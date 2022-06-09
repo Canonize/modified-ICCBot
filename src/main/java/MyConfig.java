@@ -37,6 +37,7 @@ public class MyConfig {
 	private boolean isManifestClientFinish;
 	private boolean isFragemenClientFinish;
 	private boolean isCallGraphClientFinish;
+	private boolean isCTGClientFinish;
 	private boolean isStaitiucValueAnalyzeFinish;
 	private boolean isOracleConstructionClientFinish;
 	private Switch mySwithch = new Switch();
@@ -217,6 +218,21 @@ public class MyConfig {
 	 */
 	public void setCallGraphAnalyzeFinish(boolean isCallGraphAnalyzeFinish) {
 		this.isCallGraphClientFinish = isCallGraphAnalyzeFinish;
+	}
+
+	/**
+	 * @return the isCTGAnalyzeFinish
+	 */
+	public boolean isCTGAnalyzeFinish() {
+		return isCTGClientFinish;
+	}
+
+	/**
+	 * @param isCTGAnalyzeFinish
+	 *            the isCTGAnalyzeFinish to set
+	 */
+	public void setCTGAnalyzeFinish(boolean isCTGAnalyzeFinish) {
+		this.isCTGClientFinish = isCTGAnalyzeFinish;
 	}
 
 	/**
