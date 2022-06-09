@@ -58,6 +58,7 @@ public class MainfestAnalyzer extends Analyzer {
 		appModel.setPackageName(pkg);
 		appModel.getExtendedPakgs().add(pkg);
 		appModel.setVersionCode(manifestManager.getVersionCode());
+		System.out.println("1:");
 		AXmlNode appNode = ((BinaryAndroidApplication)manifestManager.getApplication()).getAXmlNode();
 		// get permissions
 		if (appNode.getAttribute("permission") != null) {
@@ -70,6 +71,8 @@ public class MainfestAnalyzer extends Analyzer {
 		parseComponent(manifestManager.getServices().asList(), "Service");
 		parseComponent(manifestManager.getContentProviders().asList(), "Provider");
 		parseComponent(manifestManager.getBroadcastReceivers().asList(), "Receiver");
+
+		System.out.println("2:");
 
 		mergeAllComponents();
 
@@ -88,6 +91,7 @@ public class MainfestAnalyzer extends Analyzer {
 				appModel.getExportedComponentMap().put(component.getComponetName(), component);
 			}
 		}
+		System.out.println("3:");
 
 	}
 

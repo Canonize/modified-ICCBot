@@ -17,6 +17,7 @@ import soot.Scene;
 import soot.SootClass;
 import soot.SootMethod;
 import soot.Unit;
+import soot.Kind;
 import soot.jimple.InvokeExpr;
 import soot.jimple.Stmt;
 import soot.jimple.toolkits.callgraph.CallGraph;
@@ -120,9 +121,11 @@ public class CgModify extends Analyzer {
 	 */
 	private void seperateCG2multiple(CallGraph callGraph, List<Set<SootMethod>> methodSets, List<CallGraph> cgs) {
 		for (Edge edge : callGraph) {
+			if(edge.isInvalid())
+				continue;
 			int srcId = -1, tgtId = -1;
-			SootMethod srcMtd = edge.getSrc().method();
-			SootMethod tgtMtd = edge.getTgt().method();
+			SootMethod srcMtd = edge.src();
+			SootMethod tgtMtd = edge.tgt();
 			for (int i = 0; i < methodSets.size(); i++) {
 				if (methodSets.get(i).contains(srcMtd)) {
 					srcId = i;
@@ -137,19 +140,19 @@ public class CgModify extends Analyzer {
 			}
 			if (srcId == -1 && tgtId == -1) {
 				Set<SootMethod> newSet = new HashSet<SootMethod>();
-				newSet.add(edge.getSrc().method());
-				newSet.add(edge.getTgt().method());
+				newSet.add(edge.src());
+				newSet.add(edge.tgt());
 				methodSets.add(newSet);
 				CallGraph cg = new CallGraph();
 				Edge edgeCopy = new Edge(edge.getSrc(), edge.srcStmt(), edge.getTgt(), edge.kind());
 				cg.addEdge(edgeCopy);
 				cgs.add(cg);
 			} else if (srcId != -1 && tgtId == -1) {
-				methodSets.get(srcId).add(edge.getTgt().method());
+				methodSets.get(srcId).add(edge.tgt());
 				Edge edgeCopy = new Edge(edge.getSrc(), edge.srcStmt(), edge.getTgt(), edge.kind());
 				cgs.get(srcId).addEdge(edgeCopy);
 			} else if (srcId == -1 && tgtId != -1) {
-				methodSets.get(tgtId).add(edge.getSrc().method());
+				methodSets.get(tgtId).add(edge.src());
 				Edge edgeCopy = new Edge(edge.getSrc(), edge.srcStmt(), edge.getTgt(), edge.kind());
 				cgs.get(tgtId).addEdge(edgeCopy);
 			} else if (srcId != -1 && tgtId != -1) {
@@ -219,6 +222,8 @@ public class CgModify extends Analyzer {
 			Iterator<Edge> it = callGraph.iterator();
 			while (it.hasNext()) {
 				Edge edge = it.next();
+				if(edge.isInvalid())
+					continue;
 				if (edge.src() == null || edge.tgt() == null)
 					toBeDeletedSet.add(edge);
 				else if (!SootUtils.isNonLibClass(edge.src().getDeclaringClass().getName()))
@@ -239,7 +244,7 @@ public class CgModify extends Analyzer {
 		Iterator<Edge> it = callGraph.iterator();
 		while (it.hasNext()) {
 			Edge edge = it.next();
-			if (edge.getSrc().method() == edge.getTgt().method()) {
+			if (edge.getSrc() == edge.getTgt()) {
 				toBeDeletedSet.add(edge);
 			}
 		}
@@ -256,7 +261,7 @@ public class CgModify extends Analyzer {
 		Iterator<Edge> it = callGraph.iterator();
 		while (it.hasNext()) {
 			Edge edge = it.next();
-			String sig = edge.src().getSignature() + edge.tgt().getSignature();
+			String sig = edge.toString();
 			if (edgeSet.contains(sig))
 				toBeDeletedSet.add(edge);
 			else
@@ -276,7 +281,7 @@ public class CgModify extends Analyzer {
 		Iterator<Edge> it = callGraph.iterator();
 		while (it.hasNext()) {
 			Edge edge = it.next();
-			SootMethod me = edge.getTgt().method();
+			SootMethod me = edge.tgt();
 			if (SootUtils.hasSootActiveBody(me) == false)
 				toBeDeletedSet.add(edge);
 		}
@@ -312,7 +317,7 @@ public class CgModify extends Analyzer {
 					boolean allVisited = true;
 					while (it.hasNext()) {
 						Edge edge = it.next();
-						SootMethod nextMethod = edge.getTgt().method();
+						SootMethod nextMethod = edge.tgt();
 						if (!nodeStatus.containsKey(nextMethod)) {
 							allVisited = false;
 							nodeStatus.put(nextMethod, -1);
@@ -364,7 +369,7 @@ public class CgModify extends Analyzer {
 						Iterator<Edge> it2 = callGraph.edgesInto(mcTar);
 						while (it2.hasNext()) {// for nodes whose link to
 												// removed nodes, outdegree -1
-							SootMethod mcSource = it2.next().getSrc().method();
+							SootMethod mcSource = it2.next().src();
 							if (!outDegreeMap.containsKey(mcSource))
 								continue;
 							outDegreeMap.put(mcSource, outDegreeMap.get(mcSource) - 1);
@@ -402,10 +407,12 @@ public class CgModify extends Analyzer {
 		Iterator<Edge> it = callGraph.iterator();
 		while (it.hasNext()) {
 			Edge edge = it.next();
-			if (SootUtils.hasSootActiveBody(edge.getTgt().method()) == false)
+			if(edge.isInvalid())
 				continue;
-			if (outDegreeMap.containsKey(edge.getSrc().method()))
-				outDegreeMap.put(edge.getSrc().method(), outDegreeMap.get(edge.getSrc()) + 1);
+			if (SootUtils.hasSootActiveBody(edge.tgt()) == false)
+				continue;
+			if (outDegreeMap.containsKey(edge.src()))
+				outDegreeMap.put(edge.src(), outDegreeMap.get(edge.getSrc()) + 1);
 		}
 		return outDegreeMap;
 	}
@@ -431,10 +438,12 @@ public class CgModify extends Analyzer {
 		Iterator<Edge> it = callGraph.iterator();
 		while (it.hasNext()) {
 			Edge edge = it.next();
-			if (SootUtils.hasSootActiveBody(edge.getSrc().method()) == false)
+			if(edge.isInvalid())
 				continue;
-			if (inDegreeMap.containsKey(edge.getTgt().method()))
-				inDegreeMap.put(edge.getTgt().method(), inDegreeMap.get(edge.getTgt()) + 1);
+			if (SootUtils.hasSootActiveBody(edge.src()) == false)
+				continue;
+			if (inDegreeMap.containsKey(edge.tgt()))
+				inDegreeMap.put(edge.tgt(), inDegreeMap.get(edge.getTgt()) + 1);
 		}
 		return inDegreeMap;
 	}
@@ -458,10 +467,12 @@ public class CgModify extends Analyzer {
 		Iterator<Edge> it = callGraph.iterator();
 		while (it.hasNext()) {
 			Edge edge = it.next();
-			if (SootUtils.hasSootActiveBody(edge.getTgt().method()) == false)
+			if(edge.isInvalid())
 				continue;
-			if (outDegreeMap.containsKey(edge.getSrc().method()))
-				outDegreeMap.put(edge.getSrc().method(), outDegreeMap.get(edge.getSrc()) + 1);
+			if (SootUtils.hasSootActiveBody(edge.tgt()) == false)
+				continue;
+			if (outDegreeMap.containsKey(edge.src()))
+				outDegreeMap.put(edge.src(), outDegreeMap.get(edge.getSrc()) + 1);
 		}
 		return outDegreeMap;
 	}
@@ -485,10 +496,12 @@ public class CgModify extends Analyzer {
 		Iterator<Edge> it = callGraph.iterator();
 		while (it.hasNext()) {
 			Edge edge = it.next();
-			if (SootUtils.hasSootActiveBody(edge.getSrc().method()) == false)
+			if(edge.isInvalid())
 				continue;
-			if (inDegreeMap.containsKey(edge.getTgt().method()))
-				inDegreeMap.put(edge.getTgt().method(), inDegreeMap.get(edge.getTgt()) + 1);
+			if (SootUtils.hasSootActiveBody(edge.src()) == false)
+				continue;
+			if (inDegreeMap.containsKey(edge.tgt()))
+				inDegreeMap.put(edge.tgt(), inDegreeMap.get(edge.getTgt()) + 1);
 		}
 		return inDegreeMap;
 	}

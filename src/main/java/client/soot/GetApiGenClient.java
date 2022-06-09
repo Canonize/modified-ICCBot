@@ -26,15 +26,17 @@ public class GetApiGenClient extends BaseClient {
 			MyConfig.getInstance().setCTGAnalyzeFinish(true);
 		}
 
+		String appname = MyConfig.getInstance().getAppPath() + MyConfig.getInstance().getAppName();
+
         String out = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName() + File.separator
 				+ ConstantUtils.SOOTOUTPUT;
 
         String iccmodelPath = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName() + File.separator
-				+ ConstantUtils.ICTGFOLDETR + "IccModel";
+				+ ConstantUtils.ICTGFOLDETR + "IccModel.txt";
 
         FlowDroidAnalyzer flowdroidAnalyzer = new FlowDroidAnalyzer();
 
-        flowdroidAnalyzer.analyseOne(MyConfig.getInstance().getAppPath(),out,iccmodelPath);
+        flowdroidAnalyzer.analyseOne(appname,out,iccmodelPath);
 
 		System.out.println("Successfully analyze with GetApiGenClient.");
 	}
