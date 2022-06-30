@@ -22,6 +22,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import main.java.analyze.model.analyzeModel.UnitNode;
+import soot.Unit;
+import soot.jimple.Stmt;
 import soot.SootMethod;
 import soot.jimple.infoflow.android.iccta.Ic3Data.Application.Component.ExitPoint.Uri;
 import main.java.Global;
@@ -248,7 +250,13 @@ public class CTGClientOutput {
 							iccModelString.append("\t\t\tclass_name: \"").append(contextNode.getMethod()).append("#").append(SootUtils.getIdForUnit(contextNode.getUnit(),contextNode.getMethod())).append("\"\n");
 						else
 							iccModelString.append("\t\t\tclass_name: \"").append(passNode.getMethod()).append("#").append(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())).append("\"\n");
-
+						// if(contextNode != null) {
+						// 	int i = 0;
+						// 	for (Iterator<Unit> iter = contextNode.getMethod().retrieveActiveBody().getUnits().snapshotIterator(); iter.hasNext();i++) {
+						// 		Stmt stmt = (Stmt) iter.next();
+						// 		System.out.println(i + " : "+ stmt+"\n");
+						// 	}
+						// }
 						iccModelString.append("\t\t\tmethod: \"").append(passNode.getMethod()).append("\"\n");
 						iccModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())).append("\n");
 						iccModelString.append("\t\t}\n");

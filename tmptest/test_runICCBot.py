@@ -2,7 +2,7 @@ import os
 import sys
 import shutil
 import datetime
-
+import subprocess
 
 def analyzeApk(apkFile, targetClasses, resPath, sdk):
 
@@ -19,7 +19,7 @@ def analyzeApk(apkFile, targetClasses, resPath, sdk):
         print("==============={}=============".format(apk))
         # print(apkPath)
         # os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-        os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        os.system("java -Xms12g -Xmx24g -Xss3m -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
@@ -64,7 +64,7 @@ def merge_node_edge(flowdroid_output_path,apk_name,merge_output):
                         f.write(k+" -> " +i+"\n")
 
 if __name__ == '__main__' :
-    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.ctid.open.apk"
+    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.ctid.open.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.epoint.mobileframe.wssb.qinghai.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.ccb.fintech.app.productions.hnga.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/cn.hsa.app.apk"
@@ -75,10 +75,14 @@ if __name__ == '__main__' :
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/SMSLogin.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/TwoHandlerTest.apk"
-    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/complex2FA.apk"
-    # targetClasses = "com.alibaba.zjzwfw.account.ZWLoginActivityV3,com.alibaba.zjzwfw.account.ZWLoginActivity"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/complex2FA_1.apk"
+    # apkFiles = os.listdir("/home/lw/Auth_Risk_Analysis_tool/apk/icc_apk")
+    targetClasses = "com.ctid.open.activity.LoginActivity"
+    # targetClasses = "com.ccb.fintech.app.productions.hnga.ui.user.login.LoginActivity"
+    # targetClasses = "com.example.handlertest.MainActivity"
+    # targetClasses = "com.alibaba.zjzwfw.account.ZWLoginActivityV3"
     # targetClasses = "com.example.smslogin.SMSLoginActivity"
-    targetClasses = "com.example.complexp2fa.MainActivity"
+    # targetClasses = "com.example.complexp2fa.LoginActivity"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_SaveIdNegative/"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
@@ -90,6 +94,11 @@ if __name__ == '__main__' :
     jarFile = "M_ICCBot_Merge.jar"
     apk_name = os.path.basename(apkFile)[:-4]
     merge_icc_output = os.path.join(resPath,"output",apk_name,"SootIRInfo")
+
+    node_file = os.path.join(merge_icc_output,apk_name+'_node.txt')
+    edge_file = os.path.join(merge_icc_output,apk_name+'_edge.txt')
+    subprocess.run(args= 'rm -rf '+node_file,shell=True)
+    subprocess.run(args= 'rm -rf '+edge_file,shell=True)
 
     s_time = datetime.datetime.now()
 

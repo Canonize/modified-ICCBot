@@ -26,6 +26,7 @@ import soot.Unit;
 import soot.Value;
 import soot.jimple.InvokeExpr;
 import soot.jimple.infoflow.InfoflowConfiguration.CallgraphAlgorithm;
+import soot.jimple.infoflow.InfoflowConfiguration.CodeEliminationMode;
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.android.callbacks.AndroidCallbackDefinition;
 import soot.jimple.infoflow.android.resources.ARSCFileParser;
@@ -110,6 +111,7 @@ public class CgConstructor extends Analyzer {
 		setupApplication.getConfig().setMergeDexFiles(true);
 		//set target entrypoint
 		setupApplication.getConfig().setTargetClasses(MyConfig.getInstance().getTargetClasses());
+		setupApplication.getConfig().setCodeEliminationMode(CodeEliminationMode.NoCodeElimination);
 		//+++use our jar
 		//setupApplication.runInfoflow_dummy();
 		//setupApplication.runInfoflow();

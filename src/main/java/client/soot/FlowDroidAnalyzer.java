@@ -21,8 +21,8 @@ import main.java.MyConfig;
 
 public class FlowDroidAnalyzer {
     //设置android的jar包目录
-    //public final static String androidPlatformPath = "/home/flash/singledetect/platforms";
-    public final static String androidPlatformPath = MyConfig.getInstance().getAndroidJar();
+    public final static String androidPlatformPath = "/home/flash/singledetect/platforms";
+    //public final static String androidPlatformPath = MyConfig.getInstance().getAndroidJar();
 
     private static Map<String,Boolean> visited = new HashMap<String,Boolean>();
 
@@ -60,6 +60,8 @@ public class FlowDroidAnalyzer {
         soot.G.reset();
 
         //构造调用图，但是不进行数据流分析
+        app.getConfig().setTargetClasses(MyConfig.getInstance().getTargetClasses());
+        app.getConfig().setCodeEliminationMode(InfoflowConfiguration.CodeEliminationMode.NoCodeElimination);
         app.constructCallgraph();
 
         //SootMethod 获取函数调用图
