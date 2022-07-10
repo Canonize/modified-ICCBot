@@ -35,6 +35,7 @@ import soot.jimple.infoflow.android.axml.AXmlAttribute;
 import soot.jimple.infoflow.android.axml.AXmlHandler;
 import soot.jimple.infoflow.android.axml.AXmlNode;
 import soot.jimple.infoflow.android.manifest.ProcessManifest;
+import soot.jimple.infoflow.android.manifest.binary.BinaryManifestActivity;
 import soot.jimple.internal.JIdentityStmt;
 import soot.jimple.internal.JInvokeStmt;
 import soot.jimple.internal.JSpecialInvokeExpr;
@@ -196,9 +197,10 @@ public class InstrumentAnalyzer extends Analyzer {
 			if (!instrumentedApk.exists())
 				FileUtils.copyFile(appPath, instrumentedApkPath);
 			manifestManager = new ProcessManifest(instrumentedApkPath);
-			List<AXmlNode> acts = manifestManager.getActivities();
-			for (AXmlNode actNode : acts) {
+			List<BinaryManifestActivity> acts = manifestManager.getActivities().asList();
+			for (BinaryManifestActivity act : acts) {
 				// get the attributes of the activity element
+				AXmlNode actNode = act.getAXmlNode();
 				AXmlAttribute<String> attr = new AXmlAttribute<String>("exported", "true",
 						AXmlHandler.ANDROID_NAMESPACE);
 				actNode.addAttribute(attr);

@@ -26,6 +26,7 @@ import soot.Unit;
 import soot.Value;
 import soot.jimple.InvokeExpr;
 import soot.jimple.infoflow.InfoflowConfiguration.CallgraphAlgorithm;
+import soot.jimple.infoflow.InfoflowConfiguration.CodeEliminationMode;
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.android.callbacks.AndroidCallbackDefinition;
 import soot.jimple.infoflow.android.resources.ARSCFileParser;
@@ -33,7 +34,10 @@ import soot.jimple.infoflow.android.resources.LayoutFileParser;
 import soot.options.Options;
 import soot.util.HashMultiMap;
 import soot.util.MultiMap;
-
+//+++
+import javax.xml.stream.XMLStreamException;
+import org.xml.sax.SAXException;
+import org.xmlpull.v1.XmlPullParserException;
 /**
  * generate callgraph
  * 
@@ -99,11 +103,19 @@ public class CgConstructor extends Analyzer {
 	 * dummy constuct, call back collect, fragment collect
 	 * 
 	 */
-	private void constructDummyMainMethods() {
+	private void constructDummyMainMethods() throws IOException, XmlPullParserException, SAXException {
 		setupApplication.getConfig().getCallbackConfig().setCallbackAnalysisTimeout(120);
+		//+++
 		setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.AutomaticSelection);
+		//setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.CHA);
 		setupApplication.getConfig().setMergeDexFiles(true);
-		setupApplication.runInfoflow_dummy();
+		//set target entrypoint
+		setupApplication.getConfig().setTargetClasses(MyConfig.getInstance().getTargetClasses());
+		setupApplication.getConfig().setCodeEliminationMode(CodeEliminationMode.NoCodeElimination);
+		//+++use our jar
+		//setupApplication.runInfoflow_dummy();
+		//setupApplication.runInfoflow();
+		setupApplication.constructCallgraph();
 
 		String summary_app_dir = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName()
 				+ File.separator;

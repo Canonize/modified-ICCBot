@@ -1,6 +1,8 @@
 package main.java;
 
 import main.java.MyConfig;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * config information for current run
@@ -16,6 +18,8 @@ public class MyConfig {
 	private boolean isJimple = true;
 	private boolean testGeneration = false;
 	private boolean writeSootOutput = false;
+	//+++
+	private List<String> targetClasses = new ArrayList<String>();
 	private String androidVersion;
 	private String resultFolder;
 	private String resultWarpperFolder;
@@ -33,6 +37,7 @@ public class MyConfig {
 	private boolean isManifestClientFinish;
 	private boolean isFragemenClientFinish;
 	private boolean isCallGraphClientFinish;
+	private boolean isCTGClientFinish;
 	private boolean isStaitiucValueAnalyzeFinish;
 	private boolean isOracleConstructionClientFinish;
 	private Switch mySwithch = new Switch();
@@ -216,6 +221,21 @@ public class MyConfig {
 	}
 
 	/**
+	 * @return the isCTGAnalyzeFinish
+	 */
+	public boolean isCTGAnalyzeFinish() {
+		return isCTGClientFinish;
+	}
+
+	/**
+	 * @param isCTGAnalyzeFinish
+	 *            the isCTGAnalyzeFinish to set
+	 */
+	public void setCTGAnalyzeFinish(boolean isCTGAnalyzeFinish) {
+		this.isCTGClientFinish = isCTGAnalyzeFinish;
+	}
+
+	/**
 	 * @return the isOracleConstructionClientFinish
 	 */
 	public boolean isOracleConstructionClientFinish() {
@@ -301,5 +321,25 @@ public class MyConfig {
 	 */
 	public void setGatorClient(String gatorClient) {
 		this.gatorClient = gatorClient;
+	}
+	//+++
+	/**
+	* Gets the target Class on which the data flow analysis shall be conducted
+	* 
+	* @return The target Class on which the data flow analysis shall be
+	*         conducted
+	*/
+	public List<String> getTargetClasses() {
+			return targetClasses;
+		}
+
+	/**
+	* Sets the target Class on which the data flow analysis shall be conducted
+	* 
+	* @param targetClass The target Class on which the data flow analysis
+	*                      shall be conducted
+	*/
+	public void setTargetClasses(List<String> targetClasses) {
+		this.targetClasses = targetClasses;
 	}
 }

@@ -182,7 +182,7 @@ public class GetIntentExtraHandler extends UnitHandler {
 		Value res = null;
 		if (u instanceof JAssignStmt) {
 			JAssignStmt jas = (JAssignStmt) u;
-			ValueBox ads = jas.rightBox;
+			ValueBox ads = jas.getRightOpBox();
 			Value v = ads.getValue();
 			if (v instanceof JVirtualInvokeExpr) {
 				JVirtualInvokeExpr jvie = (JVirtualInvokeExpr) v;

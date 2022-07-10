@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+//+++
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -29,6 +31,8 @@ import main.java.client.obj.target.fragment.FragmentClient;
 import main.java.client.soot.IROutputClient;
 import main.java.client.statistic.model.StatisticResult;
 import main.java.client.toolEvaluate.ToolEvaluateClient;
+
+import main.java.client.obj.target.ctg.flow;
 
 import org.dom4j.DocumentException;
 
@@ -84,12 +88,30 @@ public class CTGClient extends BaseClient {
 			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
 			analyzer.analyze();
 		}
+		//+++ iterate to add new topo method(no rule)
+		while(Global.v().getAppModel().getNewTopoMethods().size() != 0) {
+			System.out.println("Successfully analyze new: " + Global.v().getAppModel().getNewTopoMethods().size());
+			Global.v().getAppModel().getTopoMethodQueue().addAll(Global.v().getAppModel().getNewTopoMethods());
+			List<SootMethod> topoQueue = new ArrayList<SootMethod>(Global.v().getAppModel().getNewTopoMethods());
+			//topoQueue.addAll(Global.v().getAppModel().getNewTopoMethods());
+			Global.v().getAppModel().getNewTopoMethods().clear();
+			System.out.println("toposize: " + topoQueue.size());
+			System.out.println("analyze new method size: " + Global.v().getAppModel().getTopoMethodQueue().size());
+			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
+			analyzer.analyze();
+		}
 //		setMySwitch2();
 //		for (List<SootMethod> topoQueue : Global.v().getAppModel().getTopoMethodQueueSet()) {
 //			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
 //			analyzer.analyze();
 //		}
+
+		System.out.println("++++++++here !!!++++");
 		System.out.println("Successfully analyze with CTGClient.");
+
+		// test outputCG
+		//flow.analyseOne("/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/nodeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/flowdroid_icc_output_CHA"+"/edgeResult","/home/lw/Auth_Risk_Analysis_tool/test_auto/by_Iccbot/tmp_soot_output","/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_OutputComp/output/com.hanweb.android.zhejiang.activity/CTGResult/IccModel.txt");
+
 	}
 
 	protected void setMySwitch1() {
@@ -172,6 +194,10 @@ public class CTGClient extends BaseClient {
 		outer.writeDotFile(ictgFolder, dotname2, ictgOptModel, false);
 		if (ictgMergedModel.getConnectionSize() < 1800)
 			GraphUtils.generateDotFile(ictgFolder + dotname2, "pdf");
+
+		//+++
+		// outer.writeIC3Output(ictgFolder,"IccModel.txt", ictgOptModel);
+		outer.writeIC3Output(ictgFolder,"IccModel.txt", Global.v().getiCTGModel().getOptModel());
 
 		// outer.writeIccLinksConfigFile(summary_app_dir +
 		// ConstantUtils.ICTGFOLDETR, ConstantUtils.LINKFILE, ictgOptModel);

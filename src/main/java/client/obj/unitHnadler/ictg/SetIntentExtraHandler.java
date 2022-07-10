@@ -146,6 +146,13 @@ public class SetIntentExtraHandler extends UnitHandler {
 			key = getVarInExtraStmt(u, idKey);
 			val = getVarInExtraStmt(u, idVal);
 		} catch (Exception e) {
+			// System.out.print("u is :");
+			// System.out.println(u.toString());
+			// System.out.print("idVal is :");
+			// System.out.println(idVal);
+			// System.out.print("idKey is :");
+			// System.out.println(idKey);
+			
 			e.printStackTrace();
 			return null;
 		}
@@ -340,7 +347,7 @@ public class SetIntentExtraHandler extends UnitHandler {
 		Value res = null;
 		if (u instanceof JAssignStmt) {
 			JAssignStmt jas = (JAssignStmt) u;
-			ValueBox ads = jas.rightBox;
+			ValueBox ads = jas.getRightOpBox();
 			Value v = ads.getValue();
 			if (v instanceof JVirtualInvokeExpr) {
 				JVirtualInvokeExpr jvie = (JVirtualInvokeExpr) v;
@@ -375,7 +382,7 @@ public class SetIntentExtraHandler extends UnitHandler {
 		Value res = null;
 		if (u instanceof JAssignStmt) {
 			JAssignStmt jas = (JAssignStmt) u;
-			ValueBox ads = jas.rightBox;
+			ValueBox ads = jas.getRightOpBox();
 			Value v = ads.getValue();
 			if (v instanceof JVirtualInvokeExpr) {
 				JVirtualInvokeExpr jvie = (JVirtualInvokeExpr) v;

@@ -47,6 +47,8 @@ public class AppModel implements Serializable {
 	private CallGraph cg;
 	private ReachableMethods reachableMethodsFromCg;
 	private List<SootMethod> topoMethodQueue;
+	//+++
+	private List<SootMethod> newTopoMethods;
 	private Set<List<SootMethod>> topoMethodQueueSet;
 
 	// components
@@ -98,6 +100,8 @@ public class AppModel implements Serializable {
 
 		allMethods = new HashSet<>();
 		entryMethods = new HashSet<>();
+		//+++
+		newTopoMethods = new ArrayList<SootMethod>();
 		topoMethodQueue = new ArrayList<SootMethod>();
 		topoMethodQueueSet = new HashSet<List<SootMethod>>();
 
@@ -252,6 +256,11 @@ public class AppModel implements Serializable {
 		return topoMethodQueue;
 	}
 
+	//+++
+	public List<SootMethod> getNewTopoMethods() {
+		return newTopoMethods;
+	}
+
 	public CallGraph getCg() {
 		return cg;
 	}
@@ -331,6 +340,11 @@ public class AppModel implements Serializable {
 
 	public Set<List<SootMethod>> getTopoMethodQueueSet() {
 		return topoMethodQueueSet;
+	}
+
+	//+++
+	public void setTopoMethodQueue(List<SootMethod> topoMethodQueue) {
+		this.topoMethodQueue = topoMethodQueue;
 	}
 
 	public void setTopoMethodQueueSet(Set<List<SootMethod>> topoMethodQueueSet) {

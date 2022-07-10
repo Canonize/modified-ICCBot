@@ -21,6 +21,9 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import main.java.analyze.model.analyzeModel.UnitNode;
+import soot.Unit;
+import soot.jimple.Stmt;
 import soot.SootMethod;
 import soot.jimple.infoflow.android.iccta.Ic3Data.Application.Component.ExitPoint.Uri;
 import main.java.Global;
@@ -129,7 +132,7 @@ public class CTGClientOutput {
 			eleList = result.getXmlStatistic().getAllMethodSummaryEleList();
 		}
 		for (Element e : eleList) {
-			root.add(e);
+			root.add(e.detach());
 		}
 		FileUtils.xmlWriteEnd(dir, file, document);
 	}
@@ -155,7 +158,7 @@ public class CTGClientOutput {
 		}
 
 		for (Element e : eleList) {
-			root.add(e);
+			root.add(e.detach());
 		}
 		FileUtils.xmlWriteEnd(dir, file, document);
 	}
@@ -180,11 +183,120 @@ public class CTGClientOutput {
 			eleList = result.getXmlStatistic().getAllIntentSummaryEleList();
 		}
 		for (Element e : eleList) {
-			root.add(e);
+			root.add(e.detach());
 		}
 		FileUtils.xmlWriteEnd(dir, file, document);
 
 	}
+
+     //+++
+	public void writeIC3Output(String dir, String file, ATGModel atgModel){
+		System.out.println("writeIC3Output-----------------------");
+		if(atgModel==null){
+			System.out.println("AtgModel NULL-------------");
+			return;
+		}
+		StringBuilder iccModelString= new StringBuilder();
+
+		StringBuilder otherModelString=new StringBuilder();
+
+		StringBuilder idNegativeString=new StringBuilder();
+
+		for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
+			iccModelString.append("components {\n");
+			iccModelString.append("\tname: \"").append(className).append("\"\n");
+			iccModelString.append("}\n");
+		}
+
+
+		// for (String className: Global.v().getAppModel().getComponentMap().keySet()) {
+		for (String className: atgModel.getAtgEdges().keySet()) {
+
+			System.out.println("name: "+className);
+			iccModelString.append("components {\n");
+			iccModelString.append("\tname: \"").append(className).append("\"\n");
+
+			if(!atgModel.getAtgEdges().containsKey(className)) {
+				iccModelString.append("}\n");
+				continue;
+			}
+//			System.out.println("name: "+className);
+
+			for (AtgEdge edge : atgModel.getAtgEdges().get(className)) {
+
+				if(edge==null){
+					System.out.println("ATGEdge NULL-------------");
+					continue;
+				}
+
+				if (edge.getIntentSummary() != null){
+					UnitNode passNode = null;
+					UnitNode contextNode = null;
+					// iccModelString.append("\t\tintentSummaryMethod: ").append(edge.getIntentSummary().getMethod()).append("\"\n");
+					for(UnitNode curNode:edge.getIntentSummary().getNodes())
+						if(curNode != null)
+							if (curNode.getType().length() <= 0) 
+								contextNode = curNode;								
+							else if(curNode.getType().equals("PassOutIntent"))
+								passNode = curNode;
+					//+++ add new output type: SendIntent2ICC
+					if(passNode != null ) {
+
+						iccModelString.append("\texit_points {\n\t\tinstruction {\n");
+						iccModelString.append("\t\t\tstatement: \"").append(passNode.getUnit()).append("\"\n");
+
+						//+++ use class_name output the actual source class
+						if(contextNode != null)
+							iccModelString.append("\t\t\tclass_name: \"").append(contextNode.getMethod()).append("#").append(SootUtils.getIdForUnit(contextNode.getUnit(),contextNode.getMethod())).append("\"\n");
+						else
+							iccModelString.append("\t\t\tclass_name: \"").append(passNode.getMethod()).append("#").append(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())).append("\"\n");
+						// if(contextNode != null) {
+						// 	int i = 0;
+						// 	for (Iterator<Unit> iter = contextNode.getMethod().retrieveActiveBody().getUnits().snapshotIterator(); iter.hasNext();i++) {
+						// 		Stmt stmt = (Stmt) iter.next();
+						// 		System.out.println(i + " : "+ stmt+"\n");
+						// 	}
+						// }
+						iccModelString.append("\t\t\tmethod: \"").append(passNode.getMethod()).append("\"\n");
+						iccModelString.append("\t\t\tid: ").append(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())).append("\n");
+						iccModelString.append("\t\t}\n");
+						iccModelString.append("\t\tintents {\n");
+		//				System.out.println("\tintents {");
+
+						// CLASS
+						iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: CLASS\n\t\t\t\tvalue: \"").append(edge.getDestnation().getClassName().replace(".", "/")).append("\"\n");
+						iccModelString.append("\t\t\t}\n");
+
+						// PACKAGE
+						iccModelString.append("\t\t\tattributes {\n\t\t\t\tkind: PACKAGE\n\t\t\t\tvalue: \"").append(Global.v().getAppModel().getPackageName()).append("\"\n");
+						iccModelString.append("\t\t\t}\n");
+						iccModelString.append("\t\t}\n\t}\n");
+					}
+										
+				}
+//
+//					// TODO: Class 不确定是不是这样写,先跳过把
+//
+//
+//					// EXTRA的形式和前面的不太一样
+//					if (edge.getIntentSummary().getSetExtrasValueList() != null){
+//						System.out.println("\t\tattributes {\n\t\t\tkind: EXTRA\n\t\t\tvalue: "+edge.getIntentSummary().getSetExtrasValueList().toString());
+//						System.out.println("\t\t}");
+//					}
+			}
+
+			iccModelString.append("}\n");
+
+		}
+
+
+		FileUtils.writeText2File(dir+File.separator+file,iccModelString.toString(),false);
+		// FileUtils.writeText2File(dir+File.separator+"otherPointModel.txt",otherModelString.toString(),true);
+		FileUtils.writeText2File(dir+File.separator+"idNegitiveStatement.txt",idNegativeString.toString(),false);
+		// FileUtils.writeText2File(dir+File.separator+"componentMap.txt",PrintUtils.printMap(Global.v().getAppModel().getComponentMap()),true);
+		System.out.println("writeIC3Output-----------------------");
+	}
+
 
 	/**
 	 * writeATGModel
