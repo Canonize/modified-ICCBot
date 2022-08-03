@@ -66,10 +66,7 @@ public class FlowDroidAnalyzer {
 
         //SootMethod 获取函数调用图
         SootMethod entryPoint = app.getDummyMainMethod();
-        CallGraph cg = Scene.v().getCallGraph();
-
-
-        PackManager.v().writeOutput();
+        CallGraph cg = Scene.v().getCallGraph();     
 
         File oFile = new File(curedgepath+File.separator+basenameOfapp+"_edge.txt");
         //可视化函数调用图
@@ -82,6 +79,11 @@ public class FlowDroidAnalyzer {
             Map.Entry entry = entries.next();
             writerow(nodeFile,entry.getKey()+"\t"+entry.getValue());
         }
+
+        Scene.v().removeClass(Scene.v().getSootClass("dummyMainClass"));
+        //app.removeSimulatedCodeElements();
+        PackManager.v().writeOutput();
+        
     }
 
     private void visit(CallGraph cg,SootMethod m,File oFile,String pString,int curDepth){

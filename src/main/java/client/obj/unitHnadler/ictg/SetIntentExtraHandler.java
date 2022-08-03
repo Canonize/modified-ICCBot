@@ -133,7 +133,8 @@ public class SetIntentExtraHandler extends UnitHandler {
 	public Map<String, List<ExtraData>> getParamListNormal(Unit u) {
 		Value key = null;
 		Value val = null;
-		int idKey = 0, idVal = 1;
+		//+++ original code : idVal = 1,cause ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+		int idKey = 0, idVal = 0;
 		Context objContextInnerKey = new Context();
 		if (oldContextwithRealValue != null) {
 			objContextInnerKey = constructContextObj(idKey + 1, unit);

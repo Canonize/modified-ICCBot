@@ -22,7 +22,7 @@ def analyzeApk(apkFile, targetClasses, resPath, sdk):
         print("==============={}=============".format(apk))
         # print(apkPath)
         # os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-        os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -noLibCode "+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
@@ -75,11 +75,23 @@ if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.jd.jrapp_6.1.90_410.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.guangdong.gov.apk"
-    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/cn.xuexi.android.apk"
+    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/test2/cn.xuexi.android.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.wudaokou.hippo.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/SMSLogin.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/me.ele.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/TwoHandlerTest.apk"
-    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/complex2FA_1.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi/com.doweidu.android.haoshiqi.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi/bubei.tingshu.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi/com.taobao.idlefish.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi/com.chaozh.iReaderFree15.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.duowan.kiwi.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.huajiao.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/Simple2FA_4.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/complex2FA_1.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.autonavi.minimap.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.huajiao.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.zhihu.android.apk"
     # apkFiles = os.listdir("/home/lw/Auth_Risk_Analysis_tool/apk/icc_apk")
     # targetClasses = "com.ctid.open.activity.LoginActivity"
     # targetClasses = "ctrip.android.login.view.thirdlogin.binder.ToThirdAccountBindActivity,ctrip.android.login.view.thirdlogin.binder.ToThirdSimBindActivity,ctrip.android.login.view.thirdlogin.binder.ToThirdOtherBindActivity"
@@ -87,12 +99,26 @@ if __name__ == '__main__' :
     # targetClasses = "com.example.handlertest.MainActivity"
     # targetClasses = "com.alibaba.zjzwfw.account.ZWLoginActivityV3"
     # targetClasses = "com.example.smslogin.SMSLoginActivity"
-    targetClasses = "com.example.complexp2fa.LoginActivity"
+    # targetClasses = "com.example.complexp2fa.LoginActivity"
+    # targetClasses = "com.autonavi.map.activity.NewMapActivity"
+    # targetClasses = "com.huajiao.user.NewSmsLoginActivity"
+    # targetClasses = "com.ali.user.mobile.login.ui.UserLoginActivity"
+    # targetClasses = "com.zhihu.android.app.ui.activity.HostActivity"
+    # targetClasses = "com.taobao.fleamarket.setting.activity.SettingsActivity"
+    # targetClasses = "com.zhangyue.iReader.ui.activity.AppLockActivity,com.zhangyue.iReader.account.Login.ui.AuthorActivity"
+    # targetClasses = "com.duowan.kiwi.loginui.impl.gamesdk.GameSdkLoginActivity,com.duowan.kiwi.teenager.impl.activity.TeenagerLockActivity,com.duowan.kiwi.debug.DebugSoftwareSetting,com.duowan.kiwi.userinfo.UserInfoActivity,com.duowan.kiwi.scan.impl.CaptureActivity"
+    # targetClasses = "com.huajiao.user.RegisterActivity,com.huajiao.me.accountswitch.AccountSwitchActivity,com.huajiao.user.ModifyPwdActivity,com.huajiao.user.MobileCertActivity,com.huajiao.sharelink.ShareLinkTipsDialog,com.huajiao.user.SetPwdActivity,com.huajiao.user.SmsLoginActivity,com.huajiao.user.ForgetPwdActivity,com.huajiao.user.ReceiveSmsCodeActivity,com.huajiao.user.ValidateCodeActivity,com.huajiao.user.LoginAndRegisterActivity,com.huajiao.user.NewSmsLoginActivity,com.huajiao.user.LoginActivity"
+    # targetClasses = "com.example.simple2fa_4.LoginActivity"
+    # targetClasses = "cn.hsa.app.login.ui.LoginActivity"
+    targetClasses = "com.alibaba.android.user.login.SignUpWithPwdActivity"
+    # targetClasses = "com.ali.user.mobile.login.ui.UserLoginActivity"
+    # targetClasses = "bubei.tingshu.listen.account.ui.activity.BindAccountOneKeyLastLoginActivity,bubei.tingshu.listen.account.ui.activity.AccountSecurityAuthActivity,bubei.tingshu.listen.account.ui.activity.ThirdSubscribeAccountActivity,bubei.tingshu.listen.account.ui.activity.VerifyCodeLoginActivity,bubei.tingshu.listen.account.ui.activity.LoginActivity,bubei.tingshu.listen.account.ui.activity.FindPasswordActivity,bubei.tingshu.listen.account.ui.activity.NewVerifyCodeLoginActivity,bubei.tingshu.listen.account.ui.activity.FindPasswordInputActivity,bubei.tingshu.listen.setting.ui.activity.SettingActivity,bubei.tingshu.listen.youngmode.ui.YoungModePwdActivity,bubei.tingshu.listen.account.ui.activity.ThirdLoginBindPhoneActivity,bubei.tingshu.listen.account.ui.activity.OneKeyLoginActivity"
+    # targetClasses = "com.doweidu.android.haoshiqi.newversion.activity.BindWeChatActivity,com.doweidu.android.haoshiqi.user.OneclickLoginActivity,com.doweidu.android.haoshiqi.about.SettingActivity,com.doweidu.android.haoshiqi.user.LoginBackActivity,com.doweidu.android.haoshiqi.user.LoginQuickActivity"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_SaveIdNegative/"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
-    # resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
-    resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/2FA_test"
+    resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
+    # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/2FA_test"
 
 
     # jarFile = "S_ICCBot_SaveIdNegative.jar"

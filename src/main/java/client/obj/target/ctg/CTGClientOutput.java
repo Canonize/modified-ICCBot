@@ -250,11 +250,12 @@ public class CTGClientOutput {
 							iccModelString.append("\t\t\tclass_name: \"").append(contextNode.getMethod()).append("#").append(SootUtils.getIdForUnit(contextNode.getUnit(),contextNode.getMethod())).append("\"\n");
 						else
 							iccModelString.append("\t\t\tclass_name: \"").append(passNode.getMethod()).append("#").append(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())).append("\"\n");
-						// if(contextNode != null) {
-						// 	int i = 0;
-						// 	for (Iterator<Unit> iter = contextNode.getMethod().retrieveActiveBody().getUnits().snapshotIterator(); iter.hasNext();i++) {
-						// 		Stmt stmt = (Stmt) iter.next();
-						// 		System.out.println(i + " : "+ stmt+"\n");
+						// if(passNode != null) {
+						// System.out.println(passNode.getMethod().getSubSignature()+"\n");
+						// int i = 0;
+						// for (Iterator<Unit> iter = passNode.getMethod().retrieveActiveBody().getUnits().snapshotIterator(); iter.hasNext();i++) {
+						// 	Stmt stmt = (Stmt) iter.next();
+						// 	System.out.println(i + " : "+ stmt+"\n");
 						// 	}
 						// }
 						iccModelString.append("\t\t\tmethod: \"").append(passNode.getMethod()).append("\"\n");
@@ -571,15 +572,15 @@ public class CTGClientOutput {
 			
 			writer.write("subgraph cluster_component{ \n"); 
 			
-			for (String component : Global.v().getAppModel().getActivityMap().keySet()) {
-				writeWithColor(writer, component, aColor);
-			}
-			for (String component : Global.v().getAppModel().getServiceMap().keySet()) {
-				writeWithColor(writer, component, sColor);
-			}
-			for (String component : Global.v().getAppModel().getRecieverMap().keySet()) {
-				writeWithColor(writer, component, rColor);
-			}
+			// for (String component : Global.v().getAppModel().getActivityMap().keySet()) {
+			// 	writeWithColor(writer, component, aColor);
+			// }
+			// for (String component : Global.v().getAppModel().getServiceMap().keySet()) {
+			// 	writeWithColor(writer, component, sColor);
+			// }
+			// for (String component : Global.v().getAppModel().getRecieverMap().keySet()) {
+			// 	writeWithColor(writer, component, rColor);
+			// }
 			// for (String component :
 			// Global.v().getAppModel().getProviderMap().keySet()) {
 			// writeWithColor(writer, component, pColor);
@@ -611,6 +612,17 @@ public class CTGClientOutput {
 					String edgeStr = s + "->" + e + endString;
 
 					if (!histroy.contains(edgeStr)) {
+						switch(SootUtils.getTypeofClassName(en.getKey())) {
+							case "activity": 
+								writeWithColor(writer, en.getKey(), aColor);
+								break;
+							case "service": 
+								writeWithColor(writer, en.getKey(), sColor);
+								break;
+							case "receiver": 
+								writeWithColor(writer, en.getKey(), rColor);
+								break;
+						}
 						writer.write(edgeStr);
 						histroy.add(edgeStr);
 					}

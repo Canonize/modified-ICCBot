@@ -1,0 +1,5 @@
+App,Entry
+com.tongcheng.android,com.tongcheng.android.module.account.LoginActivity
+com.citic21.user,com.ali.user.mobile.login.ui.UserLoginActivity
+com.alibaba.android.rimet,com.alibaba.android.user.login.SignUpWithPwdActivity
+com.baidu.netdisk,com.baidu.sapi2.activity.LoginActivity

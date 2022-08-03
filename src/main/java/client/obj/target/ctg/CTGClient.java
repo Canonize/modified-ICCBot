@@ -32,8 +32,6 @@ import main.java.client.soot.IROutputClient;
 import main.java.client.statistic.model.StatisticResult;
 import main.java.client.toolEvaluate.ToolEvaluateClient;
 
-import main.java.client.obj.target.ctg.flow;
-
 import org.dom4j.DocumentException;
 
 import soot.SootMethod;
@@ -89,13 +87,16 @@ public class CTGClient extends BaseClient {
 			analyzer.analyze();
 		}
 		//+++ iterate to add new topo method(no rule)
-		while(Global.v().getAppModel().getNewTopoMethods().size() != 0) {
+		int maxIterateTime = 5;
+		int i = 0;
+		while(Global.v().getAppModel().getNewTopoMethods().size() != 0 && i < maxIterateTime ) {
+			i++;
 			System.out.println("Successfully analyze new: " + Global.v().getAppModel().getNewTopoMethods().size());
 			Global.v().getAppModel().getTopoMethodQueue().addAll(Global.v().getAppModel().getNewTopoMethods());
 			List<SootMethod> topoQueue = new ArrayList<SootMethod>(Global.v().getAppModel().getNewTopoMethods());
 			//topoQueue.addAll(Global.v().getAppModel().getNewTopoMethods());
 			Global.v().getAppModel().getNewTopoMethods().clear();
-			System.out.println("toposize: " + topoQueue.size());
+			System.out.println("IterateTime: " + i);
 			System.out.println("analyze new method size: " + Global.v().getAppModel().getTopoMethodQueue().size());
 			ObjectAnalyzer analyzer = new CTGAnalyzer(topoQueue, result);
 			analyzer.analyze();

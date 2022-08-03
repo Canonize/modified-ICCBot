@@ -48,6 +48,7 @@ import soot.jimple.internal.JSpecialInvokeExpr;
 import soot.jimple.internal.JStaticInvokeExpr;
 import soot.jimple.internal.JVirtualInvokeExpr;
 import soot.jimple.internal.JimpleLocal;
+import soot.jimple.infoflow.entryPointCreators.SimulatedCodeElementTag;
 import soot.shimple.ShimpleBody;
 import soot.shimple.internal.SPhiExpr;
 import soot.shimple.toolkits.scalar.ShimpleLocalDefs;
@@ -1315,6 +1316,9 @@ public class SootUtils {
 		if (body == null)
 			return -1;
 		for (Unit currentUnit : body.getUnits()) {
+			if(((Stmt)currentUnit).hasTag(SimulatedCodeElementTag.TAG_NAME)){
+				continue;
+			}
 			if (currentUnit == unit) {
 				return id;
 			}
