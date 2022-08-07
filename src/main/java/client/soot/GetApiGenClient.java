@@ -4,6 +4,7 @@ import java.io.File;
 
 import main.java.MyConfig;
 import main.java.analyze.utils.ConstantUtils;
+import main.java.analyze.utils.output.FileUtils;
 import main.java.client.BaseClient;
 import main.java.client.soot.GetApiGenClient;
 import main.java.client.soot.FlowDroidAnalyzer;
@@ -30,7 +31,7 @@ public class GetApiGenClient extends BaseClient {
 
         String out = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName() + File.separator
 				+ ConstantUtils.SOOTOUTPUT;
-
+		FileUtils.createFolder(out + File.separator);
         String iccmodelPath = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName() + File.separator
 				+ ConstantUtils.ICTGFOLDETR + "IccModel.txt";
 

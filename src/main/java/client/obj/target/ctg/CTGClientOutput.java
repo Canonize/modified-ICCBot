@@ -242,6 +242,20 @@ public class CTGClientOutput {
 					//+++ add new output type: SendIntent2ICC
 					if(passNode != null ) {
 
+						// check id is -1
+						if(SootUtils.getIdForUnit(passNode.getUnit(),passNode.getMethod())==-1){
+							idNegativeString.append("\tname: \"").append(className).append("\"\n");
+							// idNegativeString.append("\t\t\tstatement: \"").append(curNode.getUnit()).append("\"\n");
+							idNegativeString.append("\t\t\tstatement: \"").append(passNode.getUnit()).append("\"\n");
+							idNegativeString.append("\t\t\tclass_name: \"").append(passNode.getMethod().getDeclaringClass()).append("\"\n");
+							idNegativeString.append("\t\t\tmethod: \"").append(passNode.getMethod()).append("\"\n\n");
+							continue;
+						}
+						// do not include putExtra method into ICC
+						if(passNode.getUnit().toString().contains("putExtra(")){
+							continue;
+						}
+
 						iccModelString.append("\texit_points {\n\t\tinstruction {\n");
 						iccModelString.append("\t\t\tstatement: \"").append(passNode.getUnit()).append("\"\n");
 

@@ -68,25 +68,59 @@ public class FlowDroidAnalyzer {
         SootMethod entryPoint = app.getDummyMainMethod();
         CallGraph cg = Scene.v().getCallGraph();     
 
-        File oFile = new File(curedgepath+File.separator+basenameOfapp+"_edge.txt");
         //可视化函数调用图
 
-        visit(cg,entryPoint,oFile,entryPoint.getSignature(),0);
+        System.out.println("Writing cg.txt..."+cg.size());
+        System.out.println("Writing to"+curedgepath);
+        File oFile = new File(curedgepath+File.separator+basenameOfapp+"_edge.txt");
 
-        File nodeFile=new File(curnodepath+File.separator+basenameOfapp+"_node.txt");
-        Iterator<Map.Entry<String,String>> entries = node_map.entrySet().iterator();
-        while(entries.hasNext()){
-            Map.Entry entry = entries.next();
-            writerow(nodeFile,entry.getKey()+"\t"+entry.getValue());
+        try {
+            if (!oFile.exists())
+                oFile.createNewFile();
+            FileWriter fw = new FileWriter(oFile,true);
+            PrintWriter pw = new PrintWriter(fw);
+
+            visit(cg,entryPoint,pw,entryPoint.getSignature(),0);
+
+            pw.flush();
+            fw.flush();
+            pw.close();
+            fw.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            System.out.println("Writing Exception!");
+            e.printStackTrace(System.out);
         }
 
+        File nodeFile=new File(curnodepath+File.separator+basenameOfapp+"_node.txt");
+
+        Iterator<Map.Entry<String,String>> entries = node_map.entrySet().iterator();
+        try {
+            if (!nodeFile.exists())
+                nodeFile.createNewFile();
+            FileWriter fw = new FileWriter(nodeFile,true);
+            PrintWriter pw = new PrintWriter(fw);
+            while(entries.hasNext()){
+                Map.Entry entry = entries.next();
+                pw.println(entry.getKey()+"\t"+entry.getValue());
+            }
+            pw.flush();
+            fw.flush();
+            pw.close();
+            fw.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            System.out.println("Writing Exception!");
+            e.printStackTrace(System.out);
+        }
         Scene.v().removeClass(Scene.v().getSootClass("dummyMainClass"));
         //app.removeSimulatedCodeElements();
+        System.out.println("Writing .class output...");
         PackManager.v().writeOutput();
         
     }
 
-    private void visit(CallGraph cg,SootMethod m,File oFile,String pString,int curDepth){
+    private void visit(CallGraph cg,SootMethod m,PrintWriter oFile,String pString,int curDepth){
         //在soot中，函数的signature就是由该函数的类名，函数名，参数类型，以及返回值类型组成的字符串
         String identifier = m.getSignature();
 
@@ -120,7 +154,7 @@ public class FlowDroidAnalyzer {
                     globalIndex=globalIndex+1;
                 }
                 identifier_child=node_map.get(identifier_child);
-                writerow(oFile,node_map.get(identifier)+"\t"+ identifier_child);
+                oFile.println(node_map.get(identifier)+"\t"+ identifier_child);
 
 
                 if(curDepth<5000) {
@@ -141,26 +175,26 @@ public class FlowDroidAnalyzer {
         }
     }
 
-    private void writerow (File ofile, String s) {
-        FileWriter fw = null;
-        try {
-            fw = new FileWriter(ofile,true);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        PrintWriter pw = new PrintWriter(fw);
-        pw.println(s);
-        pw.flush();
-        try {
-            fw.flush();
-            pw.close();
-            fw.close();
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
+    // private void writerow (File ofile, String s) {
+    //     FileWriter fw = null;
+    //     try {
+    //         fw = new FileWriter(ofile,true);
+    //     } catch (IOException e) {
+    //         // TODO Auto-generated catch block
+    //         e.printStackTrace();
+    //     }
+    //     PrintWriter pw = new PrintWriter(fw);
+    //     pw.println(s);
+    //     pw.flush();
+    //     try {
+    //         fw.flush();
+    //         pw.close();
+    //         fw.close();
+    //     } catch (Exception e) {
+    //         // TODO: handle exception
+    //     }
 
-    }
+    // }
 
     public void analyseOne(String apkpath,String sootOutputDir,String iccModelPath){
         getapi_gen(apkpath,sootOutputDir,sootOutputDir,sootOutputDir,iccModelPath);
