@@ -39,7 +39,7 @@ public class SetIntentExtraHandler extends UnitHandler {
 	public void handleSingleObject(ObjectSummaryModel singleObject) {
 		this.intentSummary = (IntentSummaryModel) singleObject;
 		this.intentSummary.getDataHandleList().add(unit);
-		setExtraAPIAnalyze(unit); // extra
+		//setExtraAPIAnalyze(unit); // extra
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class SetIntentExtraHandler extends UnitHandler {
 		this.context = context;
 		this.intentSummary = (IntentSummaryModel) singleObject;
 		this.intentSummary.getDataHandleList().add(unit);
-		setExtraAPIAnalyze(unit); // extra
+		//setExtraAPIAnalyze(unit); // extra
 	}
 
 	@Override
@@ -56,7 +56,7 @@ public class SetIntentExtraHandler extends UnitHandler {
 		this.intentSummary = (IntentSummaryModel) singleObject;
 		this.intentSummary.getDataHandleList().add(unit);
 		this.targetUnit = targetUnit;
-		setExtraAPIAnalyze(unit); // extra
+		//setExtraAPIAnalyze(unit); // extra
 	}
 
 	/**

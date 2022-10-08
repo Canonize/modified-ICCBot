@@ -2,12 +2,17 @@ package main.java.client.cg;
 
 import heros.solver.Pair;
 
+
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import main.java.Analyzer;
@@ -15,27 +20,36 @@ import main.java.Global;
 import main.java.MyConfig;
 import main.java.analyze.utils.ConstantUtils;
 import main.java.analyze.utils.SootUtils;
+import main.java.analyze.utils.ValueObtainer;
 import main.java.analyze.utils.output.FileUtils;
 import main.java.client.soot.SootAnalyzer;
+
 import soot.PackManager;
+import soot.RefType;
 import soot.Scene;
 import soot.SootClass;
+import soot.SootField;
 import soot.SootMethod;
 import soot.Type;
 import soot.Unit;
 import soot.Value;
+
 import soot.jimple.InvokeExpr;
+import soot.jimple.Stmt;
 import soot.jimple.infoflow.InfoflowConfiguration.CallgraphAlgorithm;
 import soot.jimple.infoflow.InfoflowConfiguration.CodeEliminationMode;
 import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.infoflow.android.callbacks.AndroidCallbackDefinition;
 import soot.jimple.infoflow.android.resources.ARSCFileParser;
 import soot.jimple.infoflow.android.resources.LayoutFileParser;
+
 import soot.options.Options;
+
 import soot.util.HashMultiMap;
 import soot.util.MultiMap;
-//+++
-import javax.xml.stream.XMLStreamException;
+
+
+
 import org.xml.sax.SAXException;
 import org.xmlpull.v1.XmlPullParserException;
 /**
@@ -48,6 +62,7 @@ public class CgConstructor extends Analyzer {
 	SetupApplication setupApplication;
 	MultiMap<SootClass, AndroidCallbackDefinition> callBacks;
 	MultiMap<SootClass, SootClass> fragments;
+	
 
 	public CgConstructor() {
 		super();
@@ -64,6 +79,7 @@ public class CgConstructor extends Analyzer {
 		} catch (Exception e) {
 			constructBySoot();
 		}
+		
 		collectDummyAsEntries();
 		collectLifeCycleAsEntries();
 		collectSelfCollectEntries();
@@ -109,6 +125,7 @@ public class CgConstructor extends Analyzer {
 		setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.AutomaticSelection);
 		//setupApplication.getConfig().setCallgraphAlgorithm(CallgraphAlgorithm.CHA);
 		setupApplication.getConfig().setMergeDexFiles(true);
+		//setupApplication.getConfig().set_process_multiple_dex(true);
 		//set target entrypoint
 		setupApplication.getConfig().setTargetClasses(MyConfig.getInstance().getTargetClasses());
 		setupApplication.getConfig().setCodeEliminationMode(CodeEliminationMode.NoCodeElimination);
@@ -117,6 +134,7 @@ public class CgConstructor extends Analyzer {
 		//setupApplication.runInfoflow();
 		setupApplication.constructCallgraph();
 
+		//Global.v().getAppModel().setExtendedPakgs(extendedLibs);
 		String summary_app_dir = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName()
 				+ File.separator;
 		callBacks = setupApplication.getCallbackMethods();
@@ -138,6 +156,7 @@ public class CgConstructor extends Analyzer {
 		}
 	}
 
+	
 	/**
 	 * if isDummyMainSwitch is true
 	 */
@@ -186,6 +205,7 @@ public class CgConstructor extends Analyzer {
 	 * appModel.getFragmentClasses()
 	 */
 	private void collectFragmentClasses() {
+		PackManager.v().getPack("wjtp").remove("wjtp.lfp");
 		ARSCFileParser resParser = new ARSCFileParser();
 		try {
 			resParser.parse(appModel.getAppPath());
@@ -231,34 +251,33 @@ public class CgConstructor extends Analyzer {
 	}
 
 	/**
-	 * collect dummy main and callbacks
-	 */
-	private void collectEntryPoints() {
-		addCallBackListeners();
-		for (Pair<SootClass, AndroidCallbackDefinition> cb : callBacks) {
-			SootMethod sm = cb.getO2().getTargetMethod();
-			if (!appModel.getEntryMethod2Component().containsKey(sm)) {
-				appModel.addEntryMethod2Component(sm, cb.getO1());
-				appModel.getEntryMethods().add(sm);
-			}
-		}
-		for (SootClass sClass : Scene.v().getApplicationClasses()) {
-			for (SootMethod sMethod : sClass.getMethods()) {
-				String tag = sMethod.getSignature();
-				// collect callbacks
-				if (!SootUtils.hasSootActiveBody(sMethod))
-					continue;
-				Iterator<Unit> it = SootUtils.getSootActiveBody(sMethod).getUnits().iterator();
-				while (it.hasNext()) {
-					Unit u = it.next();
-					InvokeExpr invoke = SootUtils.getInvokeExp(u);
-					if (invoke != null) {
-						collectUserCustumizedListeners(sMethod, u, invoke);
-					}
-				}
-			}
-		}
-	}
+     * collect dummy main and callbacks
+     */
+    private void collectEntryPoints() {
+        addCallBackListeners();
+        for (Pair<SootClass, AndroidCallbackDefinition> cb : callBacks) {
+            SootMethod sm = cb.getO2().getTargetMethod();
+            if (!appModel.getEntryMethod2Component().containsKey(sm)) {
+                appModel.addEntryMethod2Component(sm, cb.getO1());
+                appModel.getEntryMethods().add(sm);
+            }
+        }
+        for (SootClass sClass : Scene.v().getApplicationClasses()) {
+            for (int i = 0; i < sClass.getMethods().size(); i++) {
+                SootMethod sMethod = sClass.getMethods().get(i);
+                String tag = sMethod.getSignature();
+                // collect callbacks
+                if (!SootUtils.hasSootActiveBody(sMethod))
+                    continue;
+                for (Unit u : SootUtils.getSootActiveBody(sMethod).getUnits()) {
+                    InvokeExpr invoke = SootUtils.getInvokeExp(u);
+                    if (invoke != null) {
+                        collectUserCustumizedListeners(sMethod, u, invoke);
+                    }
+                }
+            }
+        }
+    }
 
 	/**
 	 * addCallBackListeners from "AndroidCallbacks.txt"

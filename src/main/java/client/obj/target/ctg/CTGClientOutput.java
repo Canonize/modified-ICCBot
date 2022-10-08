@@ -252,7 +252,7 @@ public class CTGClientOutput {
 							continue;
 						}
 						// do not include putExtra method into ICC
-						if(passNode.getUnit().toString().contains("putExtra(")){
+						if(passNode.getUnit().toString().contains("\"")){
 							continue;
 						}
 
@@ -636,6 +636,8 @@ public class CTGClientOutput {
 							case "receiver": 
 								writeWithColor(writer, en.getKey(), rColor);
 								break;
+							default :
+								writeWithColor(writer, en.getKey(), aColor);
 						}
 						writer.write(edgeStr);
 						histroy.add(edgeStr);

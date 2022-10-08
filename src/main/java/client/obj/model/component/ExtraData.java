@@ -2,17 +2,15 @@ package main.java.client.obj.model.component;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.HashSet;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
 import main.java.analyze.utils.IntUtil;
 import main.java.analyze.utils.SootUtils;
 import main.java.analyze.utils.output.PrintUtils;
-import main.java.client.obj.model.component.BundleType;
 import main.java.client.obj.model.component.ExtraData;
 
 public class ExtraData implements Serializable, Cloneable {
@@ -213,12 +211,14 @@ public class ExtraData implements Serializable, Cloneable {
 
 	private static void addNewData2OldSet(Set<ExtraData> oldSet, ExtraData newExtraData) {
 		boolean addEle = true;
+        Set<ExtraData> toBeRemove = new HashSet<>();
+        Set<ExtraData> toBeAdd = new HashSet<>();
 		for(ExtraData oldExtraData : oldSet){
 			if(oldExtraData.covers(newExtraData)){//do not add new one into oldSet, terminate add
 				return; 
 			}else if(newExtraData.covers(oldExtraData)){//replace the old one with the new, continue loop
-				oldSet.remove(oldExtraData);
-				oldSet.add(newExtraData);
+				toBeRemove.add(oldExtraData);
+				toBeAdd.add(newExtraData);
 				addEle = false; // do not add twice
 			}else if(oldExtraData.obtainExtraDataType() instanceof BundleType 
 						&& newExtraData.obtainExtraDataType() instanceof BundleType){
@@ -228,8 +228,8 @@ public class ExtraData implements Serializable, Cloneable {
 						BundleType mixBt = (BundleType)mixExtraData.obtainExtraDataType();
 						if(newBt!=null && mixBt!=null){
 							merge( mixBt.getExtraDatas(), newBt.getExtraDatas());
-							oldSet.remove(oldExtraData);
-							oldSet.add(mixExtraData);
+							toBeRemove.add(oldExtraData);
+							toBeAdd.add(mixExtraData);
 						}
 					} catch (CloneNotSupportedException e) {
 						e.printStackTrace();
@@ -237,6 +237,12 @@ public class ExtraData implements Serializable, Cloneable {
 					return;
 				}
 		}
+        for (ExtraData data : toBeRemove) {
+            oldSet.remove(data);
+        }
+        for (ExtraData data : toBeAdd) {
+            oldSet.add(data);
+        }
 		if(addEle) {
 			oldSet.add(newExtraData);
 		}

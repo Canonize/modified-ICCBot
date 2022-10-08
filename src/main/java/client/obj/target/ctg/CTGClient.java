@@ -28,6 +28,7 @@ import main.java.client.obj.model.atg.AtgNode;
 import main.java.client.obj.model.atg.AtgType;
 import main.java.client.obj.target.ctg.CTGClient;
 import main.java.client.obj.target.fragment.FragmentClient;
+import main.java.client.soot.DrawLayoutClient;
 import main.java.client.soot.IROutputClient;
 import main.java.client.statistic.model.StatisticResult;
 import main.java.client.toolEvaluate.ToolEvaluateClient;
@@ -70,6 +71,14 @@ public class CTGClient extends BaseClient {
 				MyConfig.getInstance().setStaitiucValueAnalyzeFinish(true);
 			}
 		}
+		
+		if (MyConfig.getInstance().getMySwithch().drawLayoutTextSwitch()) {
+			if (!MyConfig.getInstance().isLayoutAnalyzeFinish()) {
+				new DrawLayoutClient().start();
+				MyConfig.getInstance().setLayoutAnalyzeFinish(true);
+			}
+		}
+
 		if (MyConfig.getInstance().getMySwithch().isDynamicBCSwitch()) {
 			DynamicReceiverCGAnalyzer dynamicIntentFilterAnalyzer = new DynamicReceiverCGAnalyzer();
 			dynamicIntentFilterAnalyzer.analyze();

@@ -5,6 +5,8 @@ import datetime
 import subprocess
 import argparse
 
+import config
+
 def analyzeApk(apkFile, targetClasses, resPath, jarFile, sdk):
 
     logDir = resPath+"/logs"
@@ -23,7 +25,10 @@ def analyzeApk(apkFile, targetClasses, resPath, jarFile, sdk):
         print("==============={}=============".format(apk))
         # print(apkPath)
         # os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-        os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -noLibCode "+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 360 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        if len(targetClasses) == 0:
+            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 1440 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        else:
+            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 1440 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
@@ -67,13 +72,23 @@ def merge_node_edge(flowdroid_output_path,apk_name,merge_output):
                     for i in v:
                         f.write(k+" -> " +i+"\n")
 
+# decompse dex
+def decompose_apk(dex_path, smali_path):
+    print("====================dex 反编译====================")
+    try:
+        subprocess.run(["java","-jar",config.APKTOOL_PATH,"d",dex_path,"-o",smali_path],
+                                stdout=subprocess.PIPE,universal_newlines=True)
+        print("反编译结束")
+    except Exception as e:
+        print(e)
+        
 if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/SMSLogin.apk"
     # targetClasses = "com.example.smslogin.SMSLoginActivity"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/a_yyb_result"
     parser = argparse.ArgumentParser()
     parser.add_argument('--apk',type=str)
-    parser.add_argument('--target',type=str)
+    parser.add_argument('--target',type=str,default="")
     parser.add_argument('--resPath',type=str)
     parser.add_argument('--jarFile',type=str)
     args = parser.parse_args()
@@ -83,12 +98,14 @@ if __name__ == '__main__' :
     merge_icc_output = os.path.join(args.resPath,"output",apk_name,"SootIRInfo")
     node_file = os.path.join(merge_icc_output,apk_name+'_node.txt')
     edge_file = os.path.join(merge_icc_output,apk_name+'_edge.txt')
-    subprocess.run(args= 'rm -rf '+node_file,shell=True)
-    subprocess.run(args= 'rm -rf '+edge_file,shell=True)
+    dex_file = os.path.join(merge_icc_output,apk_name+'.apk')
+    smali_dir = os.path.join(merge_icc_output,apk_name)
+    subprocess.run(args= 'rm -rf '+merge_icc_output,shell=True)
     
     s_time = datetime.datetime.now()   
     analyzeApk(args.apk,args.target,args.resPath,args.jarFile, sdk)
     merge_node_edge(merge_icc_output,apk_name,merge_icc_output)
+    decompose_apk(dex_file,smali_dir)
     e_time = datetime.datetime.now()
     print(str((e_time-s_time).seconds)+" seconds")
 

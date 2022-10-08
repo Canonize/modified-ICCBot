@@ -21,6 +21,7 @@ public class Switch {
 
 	// target code
 	private boolean libCodeSwitch;
+	private boolean layoutTextSwitch;
 	private boolean fragmentSwitch;
 	private boolean wrapperAPISwitch;
 
@@ -51,6 +52,7 @@ public class Switch {
 		staticFieldSwitch = true;
 
 		libCodeSwitch = true;
+		layoutTextSwitch = false;
 		fragmentSwitch = true;
 		wrapperAPISwitch = true;
 
@@ -222,6 +224,21 @@ public class Switch {
 	 */
 	public void setLibCodeSwitch(boolean libCodeSwitch) {
 		this.libCodeSwitch = libCodeSwitch;
+	}
+
+	/**
+	 * @return the layoutTextSwitch
+	 */
+	public boolean drawLayoutTextSwitch() {
+		return layoutTextSwitch;
+	}
+
+	/**
+	 * @param layoutTextSwitch
+	 *            the layoutTextSwitch to set
+	 */
+	public void setLayoutTextSwitch(boolean layoutTextSwitch) {
+		this.layoutTextSwitch = layoutTextSwitch;
 	}
 
 	/**

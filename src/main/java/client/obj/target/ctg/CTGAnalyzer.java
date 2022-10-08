@@ -330,6 +330,8 @@ public class CTGAnalyzer extends ObjectAnalyzer {
 		//List<SootMethod> subTopo = new ArrayList<SootMethod>();
 		//Global.v().getAppModel().getTopoMethodQueueSet().add(subTopo);
 		//for (SootClass sc : Scene.v().getTargetClass()) {
+		if(des.contains("/"))
+			return;
 		SootClass sc = Scene.v().getSootClassUnsafe(des);
 		//System.out.println(des);
 		if (!MyConfig.getInstance().getMySwithch().allowLibCodeSwitch()) {

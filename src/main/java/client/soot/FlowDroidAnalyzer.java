@@ -48,10 +48,13 @@ public class FlowDroidAnalyzer {
                     ifffss.getIccConfig().setIccModel(iccModelPath);
                 }
 
-                Options.v().set_output_format(Options.output_format_class); // 14
+                Options.v().set_output_format(Options.output_format_dex); // 14
+                // set_android_api_version 22 to support multi dex output
+                Options.v().set_android_api_version(22);
 //                Options.v().set_output_format(Options.output_format_jimple);
 //                Options.v().set_output_dir("/home/flash/singledetect/sootOO");
-                Options.v().set_output_dir(outputDir+File.separator+basenameOfapp);
+                // Options.v().set_output_dir(outputDir+File.separator+basenameOfapp);
+                Options.v().set_output_dir(outputDir);
                 Options.v().set_no_writeout_body_releasing(true);
             }
         };
@@ -115,7 +118,7 @@ public class FlowDroidAnalyzer {
         }
         Scene.v().removeClass(Scene.v().getSootClass("dummyMainClass"));
         //app.removeSimulatedCodeElements();
-        System.out.println("Writing .class output...");
+        System.out.println("Writing dex output...");
         PackManager.v().writeOutput();
         
     }

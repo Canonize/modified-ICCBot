@@ -6,9 +6,10 @@ import subprocess
 #修改以下三个路径：iccbot工具的路径， apk所在目录， 输入目录
 ICCBot_PATH = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot"
 # APK_BASE_PATH = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA"
-RES_PATH = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
+# RES_PATH = "/home/cqt/Auth_Risk_Analysis_tool/2FA_result/ICCBot_result"
+RES_PATH = "/home/cqt/Auth_Risk_Analysis_tool/top150_result/ICCBot_result"
 
-APK_BASE_PATH = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2"
+APK_BASE_PATH = "/mnt/iscsi/lw/202206_xiaomi"
 # RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_xiaomi"
 
 

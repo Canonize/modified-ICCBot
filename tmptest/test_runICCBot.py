@@ -4,6 +4,8 @@ import shutil
 import datetime
 import subprocess
 
+import config
+
 def analyzeApk(apkFile, targetClasses, resPath, sdk):
 
     logDir = resPath+"/logs"
@@ -22,7 +24,10 @@ def analyzeApk(apkFile, targetClasses, resPath, sdk):
         print("==============={}=============".format(apk))
         # print(apkPath)
         # os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
-        os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -noLibCode "+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        if len(targetClasses) == 0:
+            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        else:
+            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
@@ -66,6 +71,16 @@ def merge_node_edge(flowdroid_output_path,apk_name,merge_output):
                     for i in v:
                         f.write(k+" -> " +i+"\n")
 
+# decompse dex
+def decompose_apk(dex_path, smali_path):
+    print("====================dex 反编译====================")
+    try:
+        subprocess.run(["java","-jar",config.APKTOOL_PATH,"d",dex_path,"-o",smali_path],
+                                stdout=subprocess.PIPE,universal_newlines=True)
+        print("反编译结束")
+    except Exception as e:
+        print(e)
+        
 if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.ctid.open.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/ctrip.android.view.apk"
@@ -75,8 +90,16 @@ if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.hanweb.android.zhejiang.activity.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.jd.jrapp_6.1.90_410.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/unpack/com.guangdong.gov.apk"
-    apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/test2/cn.xuexi.android.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/test2/cn.xuexi.android.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.huajiao.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.digitalgd.dgyss.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.MobileTicket.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.Qunar.apk"
+    # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/a2dp.Vol_133.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.wudaokou.hippo.apk"
+    apkFile = "/home/cqt/Auth_Risk_Analysis_tool/com.yilucaifu.android.fund.apk"
+    # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/appInfo/topApp/com.smile.gifmaker.apk"
+    # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/appInfo/topApp/com.achievo.vipshop.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/SMSLogin.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/me.ele.apk"
@@ -87,7 +110,7 @@ if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi/com.chaozh.iReaderFree15.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.duowan.kiwi.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.huajiao.apk"
-    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/Simple2FA_4.apk"
+    # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/Simple2FA_1.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/complex2FA_1.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.autonavi.minimap.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.huajiao.apk"
@@ -110,14 +133,27 @@ if __name__ == '__main__' :
     # targetClasses = "com.huajiao.user.RegisterActivity,com.huajiao.me.accountswitch.AccountSwitchActivity,com.huajiao.user.ModifyPwdActivity,com.huajiao.user.MobileCertActivity,com.huajiao.sharelink.ShareLinkTipsDialog,com.huajiao.user.SetPwdActivity,com.huajiao.user.SmsLoginActivity,com.huajiao.user.ForgetPwdActivity,com.huajiao.user.ReceiveSmsCodeActivity,com.huajiao.user.ValidateCodeActivity,com.huajiao.user.LoginAndRegisterActivity,com.huajiao.user.NewSmsLoginActivity,com.huajiao.user.LoginActivity"
     # targetClasses = "com.example.simple2fa_4.LoginActivity"
     # targetClasses = "cn.hsa.app.login.ui.LoginActivity"
-    targetClasses = "com.alibaba.android.user.login.SignUpWithPwdActivity"
+    # targetClasses = "com.alibaba.android.user.login.SignUpWithPwdActivity"
+    # targetClasses = "com.bjsidic.bjt.login.LoginActivity"
+    # targetClasses = "com.huajiao.user.LoginAndRegisterActivity"
+    # targetClasses = "com.digitalgd.auth.ui.DGAuthEntranceActivity"
+    # targetClasses = "com.tencent.connect.auth.DialogC8175a"
+    # targetClasses = "com.sina.weibo.sdk.web.WebActivity"
+    targetClasses = "com.yilucaifu.android.account.ui.FingerIdentifyActivity"
+    # targetClasses = "np0.d,c39.d,mc9.m,lib.h0,com.yxcorp.login.userlogin.fragment.b,com.yxcorp.login.userlogin.fragment.c,d78.j,hy8.e"
+    # targetClasses = "com.achievo.vipshop.usercenter.fragment.LoginFragment,com.achievo.vipshop.usercenter.fragment.LastLoginFragment"
+    # targetClasses = "com.mqunar.atom.vacation.localman.activity.LocalmanSubmitOrderActivity"
+    # targetClasses = "a2dp.Vol.main"
+    # targetClasses = "com.iccbot.withFrag.Frag1WithFrag"
     # targetClasses = "com.ali.user.mobile.login.ui.UserLoginActivity"
     # targetClasses = "bubei.tingshu.listen.account.ui.activity.BindAccountOneKeyLastLoginActivity,bubei.tingshu.listen.account.ui.activity.AccountSecurityAuthActivity,bubei.tingshu.listen.account.ui.activity.ThirdSubscribeAccountActivity,bubei.tingshu.listen.account.ui.activity.VerifyCodeLoginActivity,bubei.tingshu.listen.account.ui.activity.LoginActivity,bubei.tingshu.listen.account.ui.activity.FindPasswordActivity,bubei.tingshu.listen.account.ui.activity.NewVerifyCodeLoginActivity,bubei.tingshu.listen.account.ui.activity.FindPasswordInputActivity,bubei.tingshu.listen.setting.ui.activity.SettingActivity,bubei.tingshu.listen.youngmode.ui.YoungModePwdActivity,bubei.tingshu.listen.account.ui.activity.ThirdLoginBindPhoneActivity,bubei.tingshu.listen.account.ui.activity.OneKeyLoginActivity"
     # targetClasses = "com.doweidu.android.haoshiqi.newversion.activity.BindWeChatActivity,com.doweidu.android.haoshiqi.user.OneclickLoginActivity,com.doweidu.android.haoshiqi.about.SettingActivity,com.doweidu.android.haoshiqi.user.LoginBackActivity,com.doweidu.android.haoshiqi.user.LoginQuickActivity"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/otherNodeResult_4"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/icc_result_SaveIdNegative/"
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
-    resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
+    # resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
+    # resPath = "/home/cqt/Auth_Risk_Analysis_tool/select_result"
+    resPath = "/home/cqt/Auth_Risk_Analysis_tool/2FA_result/ICCBot_result"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/2FA_test"
 
 
@@ -129,8 +165,10 @@ if __name__ == '__main__' :
 
     node_file = os.path.join(merge_icc_output,apk_name+'_node.txt')
     edge_file = os.path.join(merge_icc_output,apk_name+'_edge.txt')
-    subprocess.run(args= 'rm -rf '+node_file,shell=True)
-    subprocess.run(args= 'rm -rf '+edge_file,shell=True)
+    dex_file = os.path.join(merge_icc_output,apk_name+'.apk')
+    smali_dir = os.path.join(merge_icc_output,apk_name)
+    
+    subprocess.run(args= 'rm -rf '+merge_icc_output,shell=True)
 
     s_time = datetime.datetime.now()
 
@@ -147,6 +185,8 @@ if __name__ == '__main__' :
 
     merge_node_edge(merge_icc_output,apk_name,merge_icc_output)
 
+    decompose_apk(dex_file,smali_dir)
+    
     e_time = datetime.datetime.now()
     print(str((e_time-s_time).seconds)+" seconds")
 

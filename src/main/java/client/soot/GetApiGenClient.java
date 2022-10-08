@@ -27,6 +27,7 @@ public class GetApiGenClient extends BaseClient {
 			MyConfig.getInstance().setCTGAnalyzeFinish(true);
 		}
 
+
 		String appname = MyConfig.getInstance().getAppPath() + MyConfig.getInstance().getAppName();
 
         String out = MyConfig.getInstance().getResultFolder() + Global.v().getAppModel().getAppName() + File.separator
