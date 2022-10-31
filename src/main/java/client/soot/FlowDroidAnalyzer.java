@@ -41,6 +41,9 @@ public class FlowDroidAnalyzer {
                 Options.v().set_allow_phantom_refs(true);
                 Options.v().set_whole_program(true);
                 config.setCallgraphAlgorithm(InfoflowConfiguration.CallgraphAlgorithm.CHA);
+                // config.setExcludeSootLibraryClasses(false);
+			    // config.setIgnoreFlowsInSystemPackages(false);
+                config.setTaintAnalysisEnabled(false);
 //                config.setCallgraphAlgorithm(InfoflowConfiguration.CallgraphAlgorithm.SPARK);
 
                 if(!iccModelPath.equals("0")) {
@@ -64,6 +67,7 @@ public class FlowDroidAnalyzer {
 
         //构造调用图，但是不进行数据流分析
         app.getConfig().setTargetClasses(MyConfig.getInstance().getTargetClasses());
+        System.out.println("TargetClasses : " + MyConfig.getInstance().getTargetClasses());
         app.getConfig().setCodeEliminationMode(InfoflowConfiguration.CodeEliminationMode.NoCodeElimination);
         app.constructCallgraph();
 

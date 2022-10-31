@@ -25,7 +25,7 @@ if __name__ == "__main__":
     apk_name_list = open("tmptest/InTime.csv").readlines()
     apk_name_list = [_.strip() for _ in apk_name_list]
     
-    p = Pool(3)
+    p = Pool(4)
     for case in apk_name_list:
         app = os.path.join(config.APK_BASE_PATH,case.split(',')[0]+".apk")
         entry_class = case.split(',',1)[1]

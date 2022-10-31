@@ -269,7 +269,8 @@ public class MainClass {
 		MyConfig.getInstance().setJimple(true);
 		MyConfig.getInstance().setAppName(mCmd.getOptionValue("name", ""));
 		//+++
-		MyConfig.getInstance().setTargetClasses(Arrays.asList(mCmd.getOptionValue("targetClasses", "").split(",")));
+		System.out.println(mCmd.getOptionValue("targetClasses", ""));
+		MyConfig.getInstance().setTargetClasses(Arrays.asList(mCmd.getOptionValue("targetClasses", "").replace(":", "$").split(",")));
 		MyConfig.getInstance().setAppPath(mCmd.getOptionValue("path", System.getProperty("user.dir")) + File.separator);
 		MyConfig.getInstance().setAndroidJar(mCmd.getOptionValue("androidJar", "lib") + File.separator);
 		MyConfig.getInstance().setAndroidVersion("android-" + mCmd.getOptionValue("version", "23"));

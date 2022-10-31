@@ -97,8 +97,8 @@ if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.Qunar.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/a2dp.Vol_133.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.wudaokou.hippo.apk"
-    apkFile = "/home/cqt/Auth_Risk_Analysis_tool/com.yilucaifu.android.fund.apk"
-    # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/appInfo/topApp/com.smile.gifmaker.apk"
+    # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/com.yilucaifu.android.fund.apk"
+    apkFile = "/mnt/iscsi/cqt/appInfo/topApp/com.smile.gifmaker.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/appInfo/topApp/com.achievo.vipshop.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA/SMSLogin.apk"
@@ -139,7 +139,7 @@ if __name__ == '__main__' :
     # targetClasses = "com.digitalgd.auth.ui.DGAuthEntranceActivity"
     # targetClasses = "com.tencent.connect.auth.DialogC8175a"
     # targetClasses = "com.sina.weibo.sdk.web.WebActivity"
-    targetClasses = "com.yilucaifu.android.account.ui.FingerIdentifyActivity"
+    targetClasses = "com.yxcorp.login.userlogin.fragment.c,np0.d:c"
     # targetClasses = "np0.d,c39.d,mc9.m,lib.h0,com.yxcorp.login.userlogin.fragment.b,com.yxcorp.login.userlogin.fragment.c,d78.j,hy8.e"
     # targetClasses = "com.achievo.vipshop.usercenter.fragment.LoginFragment,com.achievo.vipshop.usercenter.fragment.LastLoginFragment"
     # targetClasses = "com.mqunar.atom.vacation.localman.activity.LocalmanSubmitOrderActivity"
@@ -153,7 +153,7 @@ if __name__ == '__main__' :
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
     # resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
     # resPath = "/home/cqt/Auth_Risk_Analysis_tool/select_result"
-    resPath = "/home/cqt/Auth_Risk_Analysis_tool/2FA_result/ICCBot_result"
+    resPath = "/mnt/iscsi/cqt/2FA_result/ICCBot_result"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/2FA_test"
 
 
