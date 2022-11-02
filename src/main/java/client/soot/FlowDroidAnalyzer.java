@@ -21,8 +21,8 @@ import main.java.MyConfig;
 
 public class FlowDroidAnalyzer {
     //设置android的jar包目录
-    public final static String androidPlatformPath = "/home/flash/singledetect/platforms";
-    //public final static String androidPlatformPath = MyConfig.getInstance().getAndroidJar();
+    // public final static String androidPlatformPath = "/home/flash/singledetect/platforms";
+    public final static String androidPlatformPath = "lib/platforms";
 
     private static Map<String,Boolean> visited = new HashMap<String,Boolean>();
 

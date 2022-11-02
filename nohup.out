@@ -854,3 +854,103 @@ cg time: 3629 seconds
 =============/mnt/iscsi/lw/202206_xiaomi/com.zenmen.palmchat.apk finished =============
 cg time: 53 seconds
 done
+===============/mnt/iscsi/lw/202206_xiaomi/com.ganji.android.haoche_c.apk ：com.ganji.android.haoche_c.DataBinderMapperImpl,com.ganji.android.haoche_c.DataBinderMapperImpl$InnerLayoutIdLookup,com.guazi.im.dealersdk.R2$id,com.ganji.android.haoche_c.databinding.FragmentImMineCarListBindingImpl===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.ganji.android.haoche_c.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.fenbi.android.servant.apk ：com.fenbi.android.module.account.databinding.AccountLoginPasswordRetrieveActivityBinding,com.fenbi.android.module.account.databinding.AccountLoginPasswordActivityBinding,com.fenbi.android.module.account.login.PasswordLoginActivity,com.fenbi.android.module.account.login.PasswordRetrieveActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.fenbi.android.servant.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.yipiao.apk ：com.zt.flight.databinding.FlightViewLoginLayoutBinding,ctrip.android.view.fragment.CopyOfLoginBaseFragment,com.zt.flight.databinding.ViewLoginTipBinding,ctrip.android.pay.business.verify.password.MiniPayAbstractDialog,ctrip.android.pay.business.risk.verify.pwd.PasswordInputView,com.zt.flight.databinding.LayoutFlightLoginGuideDialogBinding,com.zt.base.databinding.ActivityCtripOldLoginBinding,com.zt.pay.ui.widget.m.e===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.yipiao.apk finished =============
+cg time: 8523 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.xiaobanlong.main.apk ：com.xiaobanlong.main.activity.Login===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.xiaobanlong.main.apk finished =============
+cg time: 5638 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.lechuan.mdwz.apk ：com.jifen.open.biz.login.ui.ⱚ$㫻,com.lechuan.midunovel.account.ui.TeenageSettingPasswordActivity,com.jifen.open.biz.login.ui.adapter.LoginPagerAdapter,com.jifen.open.biz.login.ui.activity.JFChangeBindPhonenumActivity,com.jifen.framework.ui.ᡫ$㫻,com.jifen.open.biz.login.ui.activity.JFFindPwdActivity,com.lechuan.midunovel.account.ui.activity.UserLoginActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.lechuan.mdwz.apk finished =============
+cg time: 1226 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.zenmen.palmchat.apk ：com.sdpopen.wallet.pay.activity.SPPassWordActivity,com.zenmen.palmchat.login.LogInWithLastUserInfoActivity,com.zenmen.palmchat.login.LoginByOtherMethodActivity,com.zenmen.palmchat.contacts.LinkMobileActivity,com.sdpopen.wallet.charge_transfer_withdraw.ui.SPCheckPassWordActivity,com.zenmen.palmchat.login.LogInActivity,com.zenmen.palmchat.QRCodeScan.WebLoginActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.zenmen.palmchat.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.max.xiaoheihe.apk ：com.max.xiaoheihe.module.mall.SellerProfileFragment,com.max.xiaoheihe.e.s10,com.max.xiaoheihe.module.mall.SellerSettingFragment,com.max.xiaoheihe.module.account.RegisterOrLoginActivityV2,com.max.xiaoheihe.e.o1===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.max.xiaoheihe.apk finished =============
+cg time: 5786 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.wuba.zhuanzhuan.apk ：g.z.a0.y.d,com.wuba.zhuanzhuan.adapter.MyselfAdapter,g.z.a0.d.g,com.zhuanzhuan.kickhome.KickHomeFragment$j,com.wuba.zhuanzhuan.adapter.MyselfAdapterV3,com.zhuanzhuan.lemonhome.LemonHomeFragment$i===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.wuba.zhuanzhuan.apk finished =============
+cg time: 5163 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.xiaomi.mimobile.apk ：com.xiaomi.passport.ui.internal.QuickLoginFragment,com.xiaomi.passport.ui.view.PhoneAccountCard,com.xiaomi.mimobile.h.j,com.xiaomi.mimobile.h.i,com.xiaomi.passport.ui.internal.PswSignInFragment===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.xiaomi.mimobile.apk finished =============
+cg time: 2488 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.yek.android.kfc.activitys.apk ：com.yum.android.superkfc.ui.LoginSecurityActivity,com.yum.android.superkfc.ui.LoginVerityPwdActivity,com.yum.android.superkfc.ui.LoginVerityCodeActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.yek.android.kfc.activitys.apk finished =============
+cg time: 5516 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/cn.etouch.ecalendar.apk ：cn.etouch.ecalendar.settings.MyBindingPhone,cn.etouch.ecalendar.sync.RegistAndLoginActivity,cn.etouch.ecalendar.sync.ReLoginActivity,cn.etouch.ecalendar.tools.read.y,cn.etouch.ecalendar.sync.ChangePwdActivity,cn.etouch.ecalendar.sync.GetBackPswWithPhoneActivity,cn.etouch.ecalendar.sync.E,cn.etouch.ecalendar.know.home.KnowMyBuyRecordActivity,cn.etouch.ecalendar.tools.share.x,cn.etouch.ecalendar.sync.ia,cn.etouch.ecalendar.tools.album.ui.NewHistoryUploadActivity,cn.etouch.ecalendar.sync.GetBackPswWithEmailActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/cn.etouch.ecalendar.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.tongcheng.android.apk ：com.tongcheng.android.module.account.MobileLoginPage,com.tongcheng.android.module.smart.oppo.OPPOLoginAuthActivity,com.tongcheng.android.module.smart.galileo.LoginAuthActivity,com.tongcheng.android.module.payment.PaymentPasswordActivity,com.tongcheng.android.module.pay.bankcard.dialog.PasswordVerifyDialog===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.tongcheng.android.apk finished =============
+cg time: 6921 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.sankuai.youxuan.apk ：com.meituan.passport.DynamicLoginFragment,com.meituan.android.pay.fragment.VerifyPasswordFragment,com.meituan.android.pay.fragment.HalfPageVerifyPasswordFragment,com.meituan.passport.login.fragment.NewSSOLoginFragment,com.meituan.passport.login.fragment.AccountLoginFragment,com.meituan.android.paybase.password.AbstractPasswordKeyboardDialogFragment,com.meituan.passport.login.fragment.ElderAccountLoginFragment,com.meituan.passport.login.fragment.ElderSSOLoginFragment===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.sankuai.youxuan.apk finished =============
+cg time: 819 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.luojilab.player.apk ：com.luojilab.account.ui.activity.PasswordLoginActivity,com.luojilab.component.account.search$b===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.luojilab.player.apk finished =============
+cg time: 4919 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.netease.cloudmusic.apk ：com.netease.cloudmusic.person.activity.ArtistActivityV3,com.netease.cloudmusic.person.j,com.netease.cloudmusic.DataBinderMapperImpl,com.netease.cloudmusic.music.biz.usertrack.nearby.NearbyTrackFragment,com.netease.cloudmusic.music.biz.usertrack.g,com.netease.cloudmusic.DataBinderMapperImpl$b,com.netease.cloudmusic.person.activity.ProfileActivityV3,com.netease.cloudmusic.module.login.fragment.PassLoginFragment,com.netease.cloudmusic.module.login.EmailVerifyActivity,com.netease.cloudmusic.module.login.fragment.CellphoneLoginFragment,com.netease.cloudmusic.music.biz.login.f,com.netease.cloudmusic.f0,com.netease.cloudmusic.f1.g1===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.netease.cloudmusic.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.cootek.crazyreader.apk ：com.cootek.literaturemodule.user.mine.settings.AuthorApproveActivity,com.cootek.literaturemodule.comments.ui.fragments.MineUnLoginFragment,com.cootek.dialer.base.account.PhoneLoginActivity,com.cootek.literaturemodule.user.mine.settings.BindAccountActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.cootek.crazyreader.apk finished =============
+cg time: 4126 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/tv.danmaku.bili.apk ：tv.danmaku.biliscreencast.y,b.c,com.bilibili.playerbizcommon.widget.function.quality.p$a,com.bilibili.app.comm.restrict.lessonsmode.ui.LessonsModeFindPwdFragment,com.bilibili.app.pegasus.h,com.bilibili.bililive.room.ui.roomv3.tab.recommend.LiveRoomHistoryFragmentV3,com.bilibili.music.podcast.g,com.bilibili.playerbizcommon.features.interactvideo.m,com.bilibili.playerbizcommon.widget.function.quality.b$a,com.bilibili.teenagersmode.d,com.bilibili.bplus.followinglist.l,com.bilibili.pegasus.channelv2.base.BaseButtonSwipeRefreshFragment,com.bilibili.bangumi.o,tv.danmaku.biliscreencast.o$a,com.bilibili.bangumi.ui.page.detail.playerV2.widget.quality.p0$a,com.bilibili.bplus.followinglist.module.item.login.c,com.bilibili.playerbizcommon.widget.function.quality.v$a,com.bilibili.playerbizcommon.n,com.bilibili.cheese.g,com.bilibili.lib.projection.internal.panel.fullscreen.ProjectionQualityFullScreenPanel$b,com.bilibili.teenagersmode.ui.TeenagerModeFindPwdFragment,com.bilibili.lib.projection.internal.panel.halfscreen.f$a,com.bilibili.bililive.room.ui.liveplayer.playerv2.bridge.imp.QualityAdapter,com.bilibili.cheese.ui.page.detail.playerV2.widget.quality.k$a,com.bilibili.bililive.room.ui.common.tab.top.BaseRoomLiveRankFragmentV3,com.bilibili.bililive.room.i,com.bilibili.music.podcast.utils.n===============
+=============/mnt/iscsi/lw/202206_xiaomi/tv.danmaku.bili.apk finished =============
+cg time: 14403 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.tencent.karaoke.apk ：com.tencent.karaoke.module.relaygame.main.ui.RelayGameMainListFragment,h.y.e.w.c.e,com.tencent.karaoke.common.tourist.ui.TouristLoginHeader===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.tencent.karaoke.apk finished =============
+cg time: 8788 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.jingdong.pdj.apk ：com.pdj.lib.login.view.fragment.LoginByUserInfoFragment,com.jdjr.generalKeyboard.databinding.SecurityFunctionalVerifyCodeBindingImpl,com.jdjr.generalKeyboard.DataBinderMapperImpl$InnerLayoutIdLookup,core.cart.ElderCartFragment,com.jdjr.generalKeyboard.databinding.SecurityFunctionalSixSquareBindingImpl,com.jdjr.generalKeyboard.databinding.SecurityLayoutFunctionalActionBinding,com.wangyin.payment.jdpaysdk.counter.ui.frontverifypassword.FrontVerifyPasswordFragment,com.jdjr.generalKeyboard.DataBinderMapperImpl,com.jdjr.generalKeyboard.databinding.SecurityLayoutFunctionalUnderlineActionBinding,com.jdjr.generalKeyboard.databinding.SecurityFunctionalPaymentBindingImpl,com.jdjr.generalKeyboard.databinding.SecurityFunctionalSixUnderlineBindingImpl,com.jdjr.generalKeyboard.databinding.SecurityFunctionalCommonPwdBindingImpl,com.wangyin.payment.jdpaysdk.counter.ui.paycheckpassword.PayCheckPasswordFragment,com.wangyin.payment.jdpaysdk.payset.smallfreecheck.SmallFreeCheckPasswordFragment,com.jdpay.commonverify.verify.ui.IdentifyTradePwdFragment,cart.CartDialog,com.wangyin.payment.jdpaysdk.counter.ui.checklongpasswordbeforesetshort.CheckLongPasswordBeforeSetShortFragment,core.cart.CartFragment===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.jingdong.pdj.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.sohu.newsclient.apk ：com.sohu.ui.sns.itemview.SnsProfileLoginTipItemView,com.sohu.ui.DataBinderMapperImpl,com.sohu.ui.DataBinderMapperImpl$InnerLayoutIdLookup,com.sohu.newsclient.channel.intimenews.view.listitemview.u,com.sohu.newsclient.favorite.activity.FavoriteTabActivity,com.sohu.newsclient.DataBinderMapperImpl$b,com.sohu.newsclient.DataBinderMapperImpl,com.sohu.ui.databinding.SnsprofileLoginTipItemLayoutBinding,com.sohu.newsclient.login.activity.LoginActivity,com.sohu.newsclient.channel.intimenews.view.listitemview.k2,com.sohu.newsclient.eventtab.EventTabFragment,com.sohu.newsclient.favorite.activity.CollectionListActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.sohu.newsclient.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.loovee.wawaji.apk ：com.loovee.module.main.LoginActivity,com.loovee.module.main.PhoneLoginActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.loovee.wawaji.apk finished =============
+cg time: 1504 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.xhey.xcamera.apk ：com.xhey.xcamera.c$b,com.xhey.xcamera.c,com.xhey.xcamera.ui.bottomsheet.workgroup.f,com.xhey.xcamera.ui.workgroup.WorkGroupGuideActivity,com.xhey.xcamera.ui.bottomsheet.workgroup.j,com.xhey.xcamera.ui.workgroup.changephone.b===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.xhey.xcamera.apk finished =============
+cg time: 1841 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.wudaokou.hippo.apk ：com.ali.user.mobile.login.ui.AliUserMobileLoginFragment,com.ali.user.mobile.login.ui.AliUserSNSToSMSLoginFragment,com.wudaokou.hippo.location.bussiness.choose.view.AddressChooseView,com.ali.user.mobile.login.ui.AliUserLoginFragment,com.wudaokou.hippo.location.bussiness.choose.ChooseAddressActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.wudaokou.hippo.apk finished =============
+cg time: 5030 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/co.runner.app.apk ：co.runner.app.account.ui.AccountLoginFragment===============
+=============/mnt/iscsi/lw/202206_xiaomi/co.runner.app.apk finished =============
+cg time: 14410 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.videogo.apk ：com.videogo.user.mine.PersonalMgtActivity,com.videogo.devicefile.R2$integer,com.videogo.personalinfo.personinfo.RePhoneNumTwoStepActivity,com.videogo.user.login.UserLoginFragment,com.videogo.user.login.AccountBindActivity,com.videogo.user.login.LoginAgainActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.videogo.apk finished =============
+cg time: 14403 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.lechuan.midunovel.apk ：com.lechuan.midunovel.account.ui.TeenageSettingPasswordActivity,com.jifen.framework.ui.e$i===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.lechuan.midunovel.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.wali.live.apk ：com.wali.live.activity.LoginByPhoneActivity,com.wali.live.activity.YouthModeSettingActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.wali.live.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.qidian.QDReader.apk ：com.qidian.QDReader.ui.dialog.k6,com.qidian.QDReader.v.d,com.qidian.QDReader.ui.activity.RewardUserActivity,com.yuewen.ywlogin.ui.dialog.MultiLoginErrorDialog,com.qidian.QDReader.w.g,com.yuewen.ywimagesticker.k,com.qidian.QDReader.ui.activity.QDRecomBookListFlowersActivity,com.qidian.richtext.l,com.qidian.QDReader.u.d,com.yuewen.readercore.k,com.qidian.morphing.f,com.qidian.QDReader.n.e,com.qidian.QDReader.audiobook.h,com.qidian.QDReader.m.h===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.qidian.QDReader.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.huami.watch.hmwatchmanager.apk ：com.huami.account.ui.login.LoginActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.huami.watch.hmwatchmanager.apk finished =============
+cg time: 10766 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.mymoney.apk ：com.mymoney.biz.security.SecurityLoginActivity,com.mymoney.biz.main.templateguide.NewGuideCreateTemplateActivity,com.mymoney.account.biz.personalcenter.activity.EditEmailBindingActivity,com.mymoney.account.biz.personalcenter.activity.EditPhoneBindingActivity,com.mymoney.account.biz.login.activity.EmailLoginActivity,com.mymoney.account.biz.login.fragment.LoginFragment,com.mymoney.loan.biz.activity.EmailLoginActivity,com.mymoney.account.biz.login.activity.OAuthActivity,com.sui.billimport.ui.ImportLoginFragment,com.mymoney.account.biz.login.activity.CardNiuLoginActivity===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.mymoney.apk finished =============
+cg time: 14402 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/im.xingzhe.apk ：im.xingzhe.m.g0,im.xingzhe.mvp.view.activity.AccountNumLoginActivity,im.xingzhe.mvp.view.activity.VerificationLoginActivity,im.xingzhe.DataBinderMapperImpl,im.xingzhe.m.a,im.xingzhe.DataBinderMapperImpl$b===============
+=============/mnt/iscsi/lw/202206_xiaomi/im.xingzhe.apk finished =============
+cg time: 1088 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.alicloud.databox.apk ：com.ali.user.mobile.login.ui.AliUserMobileLoginFragment,com.ali.user.mobile.login.ui.RecommendLoginFragment,com.ali.user.mobile.login.ui.AliUserSNSToSMSLoginFragment,com.alicloud.databox.databinding.ActivitySdkCustomUserPwdLoginBinding,com.taobao.login4android.ui.TaobaoRecommendLoginFragment,com.taobao.login4android.ui.TaobaoMobileLoginFragment,com.alicloud.databox.databinding.FragmentSafeBoxLoginBinding,com.alicloud.databox.biz.login.havana.CustomPasswordLoginFragment,com.alicloud.databox.biz.safebox.VaultUnlockDialogFragment,com.alicloud.databox.databinding.FragmentValutUnlockBinding,com.ali.user.mobile.login.ui.AliUserLoginFragment,com.taobao.login4android.ui.TaobaoUserLoginFragment===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.alicloud.databox.apk finished =============
+cg time: 14420 seconds
+===============/mnt/iscsi/lw/202206_xiaomi/com.quvideo.xiaoying.apk ：com.quvideo.xiaoying.community.video.follow.FollowVideoListHeader===============
+=============/mnt/iscsi/lw/202206_xiaomi/com.quvideo.xiaoying.apk finished =============
+cg time: 14402 seconds
+done
