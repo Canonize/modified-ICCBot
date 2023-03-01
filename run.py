@@ -4,10 +4,17 @@ import sys
 import shutil
 import datetime
 import subprocess
+<<<<<<< HEAD
  
  
 def analyzeApk(apkFile, targetClasses, resPath, sdk):
  
+=======
+
+
+def analyzeApk(apkFile, targetClasses, resPath, sdk):
+
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
     logDir = resPath+"/logs"
     outputDir = resPath+"/output"
     fdLogDir = resPath+"/fdlogs"
@@ -26,12 +33,21 @@ def analyzeApk(apkFile, targetClasses, resPath, sdk):
         if len(targetClasses) == 0:
             os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 60 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         else:
+<<<<<<< HEAD
             os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 60 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
  
  
+=======
+            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 60 -maxPathNumber 100 -client GetApiGenClient -cgAnalyzeGroup -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+        print("==============={}=============".format(apk))
+    except:
+        print("{} run error".format(apk))
+
+
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
         
 if __name__ == '__main__' :
     
@@ -43,12 +59,21 @@ if __name__ == '__main__' :
     sdk = "lib/"
     
     targetClasses = ""
+<<<<<<< HEAD
  
     jarFile = "M_ICCBot_Merge.jar"
     apk_name = os.path.basename(apkFile)[:-4]
  
     s_time = datetime.datetime.now()
  
+=======
+
+    jarFile = "M_ICCBot_Merge.jar"
+    apk_name = os.path.basename(apkFile)[:-4]
+
+    s_time = datetime.datetime.now()
+
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
     os.system("mvn -f pom.xml package -q")
     if os.path.exists("target/ICCBot.jar"):
         print("Successfully build! generate jar-with-dependencies in folder target/")
@@ -61,6 +86,12 @@ if __name__ == '__main__' :
     
     e_time = datetime.datetime.now()
     print(str((e_time-s_time).seconds)+" seconds")
+<<<<<<< HEAD
  
     print("============="+apk_name+" finished =============")
     
+=======
+
+    print("============="+apk_name+" finished =============")
+    
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a

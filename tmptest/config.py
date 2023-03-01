@@ -8,14 +8,20 @@ ICCBot_PATH = "/mnt/ssd_2T/cqt/modefied-ICCBot"
 # APK_BASE_PATH = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA"
 # RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_0807"
 
+<<<<<<< HEAD
 # APK_BASE_PATH = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2"
 # APK_BASE_PATH = "/mnt/iscsi/cqt/appInfo/2FA"
 APK_BASE_PATH = "/mnt/ssd_2T/cqt/xiaomi/top_1364-1513"
 # APK_BASE_PATH = "/mnt/iscsi/cqt/appInfo/top150-300"
+=======
+APK_BASE_PATH = "/mnt/iscsi/cqt/appInfo/top_500"
+# RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_xiaomi"
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
 
 # RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_xiaomi2"
 # RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_0811"
 
+<<<<<<< HEAD
 # APK_BASE_PATH = "/mnt/iscsi/lw/202206_xiaomi"
 # RES_PATH = "/mnt/iscsi/cqt/2FA_result"
 RES_PATH = "/mnt/ssd_2T/cqt/xiaomi/ICCBot_result_1364-1513"
@@ -27,6 +33,11 @@ APKTOOL_PATH = "/mnt/ssd_2T/cqt/mobile_authentication_analysis_tool/lib/apktool_
 BAKSMALI_JAR = "/mnt/ssd_2T/cqt/mobile_authentication_analysis_tool/lib/baksmali-2.5.2.jar"
 ICCBot_JAR = "/mnt/ssd_2T/cqt/modefied-ICCBot/target/ICCBot.jar"
 # ICCBot_JAR = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/target/ICCBot.jar"
+=======
+APKTOOL_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/lib/apktool_2.6.0.jar"
+BAKSMALI_JAR = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/lib/baksmali-2.5.2.jar"
+ICCBot_JAR = "/mnt/iscsi/cqt/modefied-ICCBot/target/ICCBot.jar"
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
 
 
 OUTPUT = ""

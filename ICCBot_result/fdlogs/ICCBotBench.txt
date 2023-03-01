@@ -1,0 +1,123 @@
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010567771 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Classes containing entry points:
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source1WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Des1WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source2WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFragCtx.Des2WithFragCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Des2WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Source1WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFragCtx.Des1WithFragCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Source2WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Des1WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Des2WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source5WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source3WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFragCtx.SourceWithFragCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source4WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - End of Entrypoints
+[main] INFO soot.jimple.infoflow.android.SetupApplication - targetClasses:1,2
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Classes containing entry points:
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	
+[main] INFO soot.jimple.infoflow.android.SetupApplication - End of Entrypoints
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 22,118.4 MiB
+[main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 1 components...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 1 components...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 0 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Callback analysis terminated normally
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Entry point calculation done.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 1 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /mnt/iscsi/cqt/modified-ICCBot/apk/ICCBotBench.apk with 0 sources and 0 sinks...
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: false
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 22,118.4 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 1 edges
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 0 seconds. Maximum memory consumption: 629 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 0 leaks
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.008503326 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Classes containing entry points:
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Des1WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Des2WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFragCtx.Des2WithFragCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Source2WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source5WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source4WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFragCtx.Des1WithFragCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source1WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source3WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withCtx.Source2WithCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Source1WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Des2WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFragCtx.SourceWithFragCtx
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	com.iccbot.withFrag.Des1WithFrag
+[main] INFO soot.jimple.infoflow.android.SetupApplication - End of Entrypoints
+[main] INFO soot.jimple.infoflow.android.SetupApplication - targetClasses:1,2
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Classes containing entry points:
+[main] INFO soot.jimple.infoflow.android.SetupApplication - 	
+[main] INFO soot.jimple.infoflow.android.SetupApplication - End of Entrypoints
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 22,118.4 MiB
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 1 components...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] Launching IccTA Transformer...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] Loading the ICC Model...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] ...End Loading the ICC Model
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] Lauching ICC Redirection Creation...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - Launching Messenger Transformer...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] ...End ICC Redirection Creation
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 1 components...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] Launching IccTA Transformer...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] Loading the ICC Model...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] ...End Loading the ICC Model
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] Lauching ICC Redirection Creation...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - Launching Messenger Transformer...
+[main] INFO soot.jimple.infoflow.android.iccta.IccInstrumenter - [IccTA] ...End ICC Redirection Creation
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 0 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Callback analysis terminated normally
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Entry point calculation done.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 1 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /mnt/iscsi/cqt/modified-ICCBot/apk/ICCBotBench.apk with 0 sources and 0 sinks...
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: false
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 22,118.4 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 1 edges
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 0 seconds. Maximum memory consumption: 491 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 0 leaks
+[Thread-63] ERROR heros.solver.CountingThreadPoolExecutor - Worker thread execution failed: Empty class name detected
+java.lang.RuntimeException: Empty class name detected
+	at soot.toDex.SootToDexUtils.getDexClassName(SootToDexUtils.java:95)
+	at soot.toDex.SootToDexUtils.getDexTypeDescriptor(SootToDexUtils.java:80)
+	at soot.toDex.DexPrinter.addAsClassDefItem(DexPrinter.java:614)
+	at soot.toDex.DexPrinter.add(DexPrinter.java:1686)
+	at soot.PackManager.writeClass(PackManager.java:1072)
+	at soot.PackManager.lambda$writeOutput$1(PackManager.java:705)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)

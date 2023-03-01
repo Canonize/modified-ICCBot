@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onConfigurationChanged(android.content.res.Configuration)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onConfigurationChanged(android.content.res.Configuration)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.CustomIntentMaker: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.CustomIntentMaker: void setContentView(int)&gt;(2130968579)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.PackagesChooser: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.PackagesChooser: void setContentView(int)&gt;(2130968576)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void setContentView(int)&gt;(2130968581)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.EditDevice: void setContentView(int)&gt;(2130968580)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ManageData: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ManageData: void setContentView(int)&gt;(2130968582)"/>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onCreate(android.os.Bundle)&gt;">
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)"/>
+  </methodSummary>
+</root>

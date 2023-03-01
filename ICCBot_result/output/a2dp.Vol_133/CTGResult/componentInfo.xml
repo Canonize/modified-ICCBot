@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="a2dp.Vol.AppChooser" type="Activity"/>
+  <component name="a2dp.Vol.NotificationCatcher" type="Service" permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+    <manifest>
+      <intent_filter action="android.service.notification.NotificationListenerService"/>
+    </manifest>
+    <sender destination="interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT" action="a2dp.vol.service.MESSAGE" category="android.intent.category.DEFAULT"/>
+  </component>
+  <component name="a2dp.Vol.Widget" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="a2dp.Vol.ALauncher"/>
+  </component>
+  <component name="a2dp.Vol.Starter" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED, android.intent.action.MY_PACKAGE_REPLACED" category="android.intent.category.HOME"/>
+    </manifest>
+    <sender destination="a2dp.Vol.service"/>
+  </component>
+  <component name="a2dp.Vol.EditDevice" type="Activity">
+    <sender destination="a2dp.Vol.AppChooser, interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT, interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT, a2dp.Vol.CustomIntentMaker, a2dp.Vol.ProviderList" action="a2dp.Vol.main.RELOAD_LIST, android.intent.action.CREATE_SHORTCUT, android.intent.action.PICK_ACTIVITY" category="android.intent.category.DEFAULT"/>
+  </component>
+  <component name="a2dp.Vol.ManageData" type="Activity">
+    <sender destination="interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT" action="a2dp.vol.Main.RELOAD_LIST" category="android.intent.category.DEFAULT"/>
+  </component>
+  <component name="a2dp.Vol.service" type="Service">
+    <sender destination="interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT, interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT, interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT, interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT, interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT, interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT, interICC_class Landroid/bluetooth/IBluetoothA2dp;, android.intent.category.DEFAULT, interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT, interICC_new java.lang.String, android.intent.category.DEFAULT, interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT, a2dp.Vol.StoreLoc, a2dp.Vol.main" action="android.intent.action.MAIN, com.android.music.musicservicecommand, android.intent.action.HEADSET_PLUG, a2dp.vol.service.RUNNING, a2dp.vol.service.CLEAR, a2dp.Vol.main.RELOAD_LIST, new java.lang.String, a2dp.Vol.Clear, class Landroid/bluetooth/IBluetoothA2dp;, a2dp.vol.service.STOPPED_RUNNING" category="android.intent.category.DEFAULT, android.intent.category.HOME" data="new java.lang.String" type="new java.lang.String" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="a2dp.Vol.ALauncher" type="Service">
+    <sender flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="a2dp.Vol.PackagesChooser" type="Activity">
+    <sender destination="interICC_a2dp.vol.Reload, android.intent.category.DEFAULT" action="a2dp.vol.Reload" category="android.intent.category.DEFAULT"/>
+  </component>
+  <component name="a2dp.Vol.CustomIntentMaker" type="Activity"/>
+  <component name="a2dp.Vol.StoreLoc" type="Service"/>
+  <component name="a2dp.Vol.main" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="a2dp.Vol.NotificationCatcher, interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT, a2dp.Vol.EditDevice, a2dp.Vol.service, a2dp.Vol.ManageData, interICC_android.intent.action.VIEW, android.intent.category.DEFAULT, a2dp.Vol.PackagesChooser, interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT, com.google.android.apps.chrome.Main, com.android.browser.BrowserActivity, interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT, interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT, a2dp.Vol.Preferences" action="android.speech.tts.engine.INSTALL_TTS_DATA, android.speech.tts.engine.CHECK_TTS_DATA, android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.action.VIEW, android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS" category="android.intent.category.DEFAULT" data=", newarray (byte)[250]" type="text/html"/>
+  </component>
+  <component name="a2dp.Vol.Preferences" type="Activity">
+    <sender destination="interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT, a2dp.Vol.service" action="a2dp.vol.preferences.UPDATED"/>
+  </component>
+  <component name="a2dp.Vol.ProviderList" type="Activity">
+    <sender action="android.intent.action.VIEW" data="null"/>
+  </component>
+</root>

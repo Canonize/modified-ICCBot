@@ -1,0 +1,30 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+AppChooser[color = red];
+EditDevice[color = red];
+CustomIntentMaker[color = red];
+ManageData[color = red];
+PackagesChooser[color = red];
+main[style=filled, fillcolor=orange, color = red];
+Preferences[color = red];
+ProviderList[color = red];
+NotificationCatcher[style=filled, fillcolor=pink, color = royalblue];
+service[color = royalblue];
+ALauncher[color = royalblue];
+StoreLoc[color = royalblue];
+service_dynamicReceiver[color = peru];
+NotificationCatcher_dynamicReceiver[color = peru];
+Widget[style=filled, fillcolor=pink, color = peru];
+Starter[style=filled, fillcolor=pink, color = peru];
+main_dynamicReceiver[color = peru];
+}

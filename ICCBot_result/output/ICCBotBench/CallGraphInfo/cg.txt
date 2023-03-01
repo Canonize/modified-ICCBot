@@ -1,0 +1,25 @@
+<dummyMainClass: void dummyMainMethod(java.lang.String[])> -> <dummyMainClass:  dummyMainMethod_(android.content.Intent)>
+<com.iccbot.withCtx.Source3WithCtx: void onCreate(android.os.Bundle)> -> <com.iccbot.withCtx.Source3WithCtx$1: void <init>(com.iccbot.withCtx.Source3WithCtx)>
+<com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)>
+<com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>
+<com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)> -> <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>
+<com.iccbot.withCtx.Source2WithCtx: void onCreate(android.os.Bundle)> -> <com.iccbot.withCtx.Source2WithCtx$1: void <init>(com.iccbot.withCtx.Source2WithCtx)>
+<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> -> <com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)>
+<com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)> -> <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>
+<com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)> -> <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>
+<com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)> -> <com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)>
+<com.iccbot.withCtx.Source5WithCtx: void onCreate(android.os.Bundle)> -> <com.iccbot.withCtx.Source5WithCtx$1: void <init>(com.iccbot.withCtx.Source5WithCtx)>
+<com.iccbot.withFragCtx.SourceWithFragCtx: void onCreate(android.os.Bundle)> -> <com.iccbot.withFragCtx.SourceWithFragCtx$1: void <init>(com.iccbot.withFragCtx.SourceWithFragCtx)>
+<com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)>
+<com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)>
+<com.iccbot.withCtx.Source4WithCtx: void onCreate(android.os.Bundle)> -> <com.iccbot.withCtx.Source4WithCtx$1: void <init>(com.iccbot.withCtx.Source4WithCtx)>
+<com.iccbot.withCtx.Source3WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>
+<com.iccbot.withFrag.Source1WithFrag: void onCreate(android.os.Bundle)> -> <com.iccbot.withFrag.Source1WithFrag$1: void <init>(com.iccbot.withFrag.Source1WithFrag)>
+<com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)>
+<com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)>
+<com.iccbot.withFragCtx.SourceWithFragCtx$1: void onClick(android.view.View)> -> <com.iccbot.withFragCtx.FragWithFragCtx: void <init>()>
+<com.iccbot.withFrag.Source1WithFrag$1: void onClick(android.view.View)> -> <com.iccbot.withFrag.Frag1WithFrag: void <init>()>
+<com.iccbot.withCtx.Source4WithCtx$1: void onClick(android.view.View)> -> <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>
+<com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)> -> <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>
+<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> -> <com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)>
+<com.iccbot.withCtx.Source1WithCtx: void onCreate(android.os.Bundle)> -> <com.iccbot.withCtx.Source1WithCtx$1: void <init>(com.iccbot.withCtx.Source1WithCtx)>

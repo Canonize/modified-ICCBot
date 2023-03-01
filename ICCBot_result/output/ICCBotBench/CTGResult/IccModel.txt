@@ -1,0 +1,489 @@
+components {
+	name: "com.iccbot.withFragCtx.Des2WithFragCtx"
+}
+components {
+	name: "com.iccbot.withCtx.Source3WithCtx"
+}
+components {
+	name: "com.iccbot.withCtx.Source1WithCtx"
+}
+components {
+	name: "com.iccbot.withCtx.Source2WithCtx"
+}
+components {
+	name: "com.iccbot.withCtx.Source4WithCtx"
+}
+components {
+	name: "com.iccbot.withFrag.Des1WithFrag"
+}
+components {
+	name: "com.iccbot.withCtx.Des2WithCtx"
+}
+components {
+	name: "com.iccbot.withCtx.Source5WithCtx"
+}
+components {
+	name: "com.iccbot.withCtx.Des1WithCtx"
+}
+components {
+	name: "com.iccbot.withFrag.Source1WithFrag"
+}
+components {
+	name: "com.iccbot.withFragCtx.Des1WithFragCtx"
+}
+components {
+	name: "com.iccbot.withFrag.Source2WithFrag"
+}
+components {
+	name: "com.iccbot.withFrag.Des2WithFrag"
+}
+components {
+	name: "com.iccbot.withFragCtx.SourceWithFragCtx"
+}
+components {
+	name: "com.iccbot.withFrag.Frag1WithFrag"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>#7"
+			method: "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>"
+			id: 7
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withFrag/Des1WithFrag"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withFrag.Source1WithFrag"
+}
+components {
+	name: "com.iccbot.withCtx.Source3WithCtx"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)"
+			class_name: "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>#2"
+			method: "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>"
+			id: 2
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withFrag.Source2WithFrag"
+}
+components {
+	name: "com.iccbot.withCtx.Source2WithCtx"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)>#7"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)>#10"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withFragCtx.FragWithFragCtx"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)>#6"
+			method: "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>"
+			id: 6
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withFragCtx/Des1WithFragCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>#6"
+			method: "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>"
+			id: 6
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withFragCtx/Des1WithFragCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)>#8"
+			method: "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>"
+			id: 6
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withFragCtx/Des2WithFragCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>#6"
+			method: "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>"
+			id: 6
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withFragCtx/Des2WithFragCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withCtx.Source1WithCtx"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)>#10"
+			method: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>#5"
+			method: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)>#7"
+			method: "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>"
+			id: 5
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withCtx.Source4WithCtx"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)"
+			class_name: "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>#2"
+			method: "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>"
+			id: 2
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des2WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withCtx.Source5WithCtx"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)"
+			class_name: "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>#2"
+			method: "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>"
+			id: 2
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withCtx/Des1WithCtx"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withFrag.Frag2WithFrag"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)>#8"
+			method: "<com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)>"
+			id: 8
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/iccbot/withFrag/Des2WithFrag"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "com.iccbot"
+			}
+		}
+	}
+}
+components {
+	name: "com.iccbot.withFragCtx.SourceWithFragCtx"
+}

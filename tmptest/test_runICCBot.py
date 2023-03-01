@@ -25,9 +25,9 @@ def analyzeApk(apkFile, targetClasses, resPath, sdk):
         # print(apkPath)
         # os.system("java -Xms12g -Xmx24g -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         if len(targetClasses) == 0:
-            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 60 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         else:
-            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 720 -maxPathNumber 100 -client GetApiGenClient -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
+            os.system("java -Xms12g -Xmx24g -Xss3m -Dorg.slf4j.simpleLogger.logFile="+fdLogDir+"/"+apk[:-4]+".txt"+" -jar "+jarFile+"  -path "+ apkPath +" -name "+apk+" -targetClasses "+targetClasses+" -androidJar "+ sdk +"/platforms "+ extraArgs +" -time 60 -maxPathNumber 100 -client GetApiGenClient -cgAnalyzeGroup -outputDir "+outputDir+" >> "+logDir+"/"+apk[:-4]+".txt")
         print("==============={}=============".format(apk))
     except:
         print("{} run error".format(apk))
@@ -97,7 +97,12 @@ if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.Qunar.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/a2dp.Vol_133.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.wudaokou.hippo.apk"
+<<<<<<< HEAD
     apkFile = "/mnt/ssd_2T/cqt/top_105/com.instagram.android.apk"
+=======
+    # apkFile = "/mnt/iscsi/lw/202206_xiaomi/air.tv.douyu.android.apk"
+    apkFile = "/mnt/iscsi/cqt/modified-ICCBot/apk/ICCBotBench.apk"
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
     # apkFile = "/mnt/iscsi/cqt/appInfo/topApp/com.smile.gifmaker.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/appInfo/topApp/com.achievo.vipshop.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
@@ -138,8 +143,13 @@ if __name__ == '__main__' :
     # targetClasses = "com.huajiao.user.LoginAndRegisterActivity"
     # targetClasses = "com.digitalgd.auth.ui.DGAuthEntranceActivity"
     # targetClasses = "com.tencent.connect.auth.DialogC8175a"
+<<<<<<< HEAD
     # targetClasses = "com.sina.weibo.sdk.web.WebActivity"
     targetClasses = "com.facebook.login.LoginClient:Result,com.google.android.gms.auth.api.identity.BeginSignInResult,com.google.android.gms.auth.api.signin.GoogleSignInOptions,com.facebook.common.classmarkers.LiteLoginMessageSent,com.google.android.gms.auth.api.signin.SignInAccount,com.google.android.gms.auth.api.identity.BeginSignInRequest:GoogleIdTokenRequestOptions,com.google.android.gms.auth.api.identity.BeginSignInRequest:PasswordRequestOptions,com.google.android.gms.auth.api.identity.BeginSignInRequest,com.google.android.gms.auth.api.identity.SignInCredential,com.facebook.login.LoginClient:Request"
+=======
+    targetClasses = ""
+    # targetClasses = "com.netease.cloudmusic.DataBinderMapperImpl,com.netease.cloudmusic.module.login.EmailVerifyActivity,com.netease.cloudmusic.person.j,com.netease.cloudmusic.person.activity.ArtistActivityV3,com.netease.cloudmusic.module.login.fragment.CellphoneLoginFragment,com.netease.cloudmusic.module.login.LoginActivity,com.netease.cloudmusic.person.activity.ProfileActivityV3,com.netease.cloudmusic.music.biz.usertrack.g,com.netease.cloudmusic.music.biz.login.f,com.netease.cloudmusic.f1.g1,com.netease.cloudmusic.module.login.fragment.PassLoginFragment$a,com.netease.cloudmusic.activity.LoginPermissionActivity,com.netease.cloudmusic.DataBinderMapperImpl$b,com.netease.cloudmusic.music.biz.usertrack.nearby.NearbyTrackFragment,com.netease.cloudmusic.f0"
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
     # targetClasses = "np0.d,c39.d,mc9.m,lib.h0,com.yxcorp.login.userlogin.fragment.b,com.yxcorp.login.userlogin.fragment.c,d78.j,hy8.e"
     # targetClasses = "com.achievo.vipshop.usercenter.fragment.LoginFragment,com.achievo.vipshop.usercenter.fragment.LastLoginFragment"
     # targetClasses = "com.mqunar.atom.vacation.localman.activity.LocalmanSubmitOrderActivity"
@@ -153,7 +163,12 @@ if __name__ == '__main__' :
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
     # resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
     # resPath = "/home/cqt/Auth_Risk_Analysis_tool/select_result"
+<<<<<<< HEAD
     resPath = "/mnt/ssd_2T/cqt/result_105/ICCBot_result"
+=======
+    # resPath = "/mnt/iscsi/cqt/top500_result/ICCBot_result"
+    resPath = "/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result"
+>>>>>>> 139a6e56b93432e2085b977fb170d4a9d21c580a
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/2FA_test"
 
 
