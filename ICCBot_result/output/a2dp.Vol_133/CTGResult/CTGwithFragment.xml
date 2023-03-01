@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="a2dp.Vol.AppChooser"/>
+  <source name="a2dp.Vol.NotificationCatcher">
+    <destination name="interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])&gt;" InstructionId="-1" action="a2dp.vol.service.MESSAGE" category="android.intent.category.DEFAULT" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.Widget">
+    <destination name="a2dp.Vol.ALauncher" type="NonAct2NonAct" method="&lt;a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;" InstructionId="14" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.Starter">
+    <destination name="a2dp.Vol.service" type="NonAct2NonAct" method="&lt;a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="10" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.EditDevice">
+    <destination name="interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.EditDevice: void Save()&gt;" InstructionId="-1" action="a2dp.Vol.main.RELOAD_LIST" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="-1" action="android.intent.action.PICK_ACTIVITY" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.ProviderList" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="29" extras="" flags=""/>
+    <destination name="a2dp.Vol.ProviderList" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="39" extras="" flags=""/>
+    <destination name="a2dp.Vol.AppChooser" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="10" extras="" flags=""/>
+    <destination name="a2dp.Vol.CustomIntentMaker" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="58" extras="" flags=""/>
+    <destination name="a2dp.Vol.AppChooser" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="8" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.ManageData">
+    <destination name="interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)&gt;" InstructionId="-1" action="a2dp.vol.Main.RELOAD_LIST" category="android.intent.category.DEFAULT" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.service">
+    <destination name="interICC_new java.lang.String, android.intent.category.DEFAULT" type="new java.lang.String" method="&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="new java.lang.String" category="android.intent.category.DEFAULT" data="new java.lang.String" extras="" flags=""/>
+    <destination name="a2dp.Vol.main" type="NonAct2Act" method="&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;" InstructionId="22" extras="" flags=""/>
+    <destination name="interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="a2dp.Vol.main.RELOAD_LIST" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_new java.lang.String, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="new java.lang.String" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="a2dp.Vol.main.RELOAD_LIST" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.main" type="NonAct2Act" method="&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;" InstructionId="75" extras="" flags=""/>
+    <destination name="interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service$3: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="-1" action="a2dp.Vol.main.RELOAD_LIST" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.StoreLoc" type="NonAct2NonAct" method="&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;" InstructionId="44" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="android.intent.action.MAIN" category="android.intent.category.HOME, android.intent.category.DEFAULT" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="com.android.music.musicservicecommand" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="android.intent.action.HEADSET_PLUG" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_new java.lang.String, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="new java.lang.String" category="android.intent.category.DEFAULT" data="new java.lang.String" extras="" flags=""/>
+    <destination name="interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service$9: void onFinish()&gt;" InstructionId="-1" action="com.android.music.musicservicecommand" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_new java.lang.String, android.intent.category.DEFAULT" type="new java.lang.String" method="&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="new java.lang.String" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void onCreate()&gt;" InstructionId="-1" action="a2dp.vol.service.RUNNING" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)&gt;" InstructionId="-1" action="a2dp.Vol.Clear" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service$16$1: void onFinish()&gt;" InstructionId="-1" action="com.android.music.musicservicecommand" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service$15: void onDone(java.lang.String)&gt;" InstructionId="-1" action="a2dp.vol.service.CLEAR" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service$9: void onTick(long)&gt;" InstructionId="-1" action="com.android.music.musicservicecommand" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service$9: void onFinish()&gt;" InstructionId="-1" action="android.intent.action.HEADSET_PLUG" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void TextReader(java.lang.String)&gt;" InstructionId="-1" action="com.android.music.musicservicecommand" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_class Landroid/bluetooth/IBluetoothA2dp;, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)&gt;" InstructionId="-1" action="class Landroid/bluetooth/IBluetoothA2dp;" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT" type="NonAct2Class" method="&lt;a2dp.Vol.service: void onDestroy()&gt;" InstructionId="-1" action="a2dp.vol.service.STOPPED_RUNNING" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.main" type="NonAct2Act" method="&lt;a2dp.Vol.service: void onCreate()&gt;" InstructionId="101" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.ALauncher"/>
+  <source name="a2dp.Vol.PackagesChooser">
+    <destination name="interICC_a2dp.vol.Reload, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.PackagesChooser: void cleanup()&gt;" InstructionId="-1" action="a2dp.vol.Reload" category="android.intent.category.DEFAULT" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.CustomIntentMaker"/>
+  <source name="a2dp.Vol.StoreLoc"/>
+  <source name="a2dp.Vol.main">
+    <destination name="interICC_android.intent.action.VIEW, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.main: void Locationbtn()&gt;" InstructionId="-1" action="android.intent.action.VIEW" category="android.intent.category.DEFAULT" data="newarray (byte)[250]" extras="" flags=""/>
+    <destination name="interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.main: int getBtDevices(int)&gt;" InstructionId="-1" action="android.bluetooth.adapter.action.REQUEST_ENABLE" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="com.android.browser.BrowserActivity" type="text/html" method="&lt;a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="-1" action="android.intent.action.VIEW" data="" extras="" flags=""/>
+    <destination name="interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" action="android.speech.tts.engine.CHECK_TTS_DATA" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.EditDevice" type="Act2Act" method="&lt;a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="a2dp.Vol.NotificationCatcher" type="Act2NonAct" method="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;" InstructionId="126" extras="" flags=""/>
+    <destination name="com.google.android.apps.chrome.Main" type="text/html" method="&lt;a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="-1" action="android.intent.action.VIEW" data="" extras="" flags=""/>
+    <destination name="interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="-1" action="android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.service" type="Act2NonAct" method="&lt;a2dp.Vol.main$8: void onClick(android.view.View)&gt;" InstructionId="15" extras="" flags=""/>
+    <destination name="interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.main: void onActivityResult(int,int,android.content.Intent)&gt;" InstructionId="-1" action="android.speech.tts.engine.CHECK_TTS_DATA" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.main$10: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="-1" action="android.speech.tts.engine.INSTALL_TTS_DATA" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.PackagesChooser" type="Act2Act" method="&lt;a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="20" extras="" flags=""/>
+    <destination name="a2dp.Vol.service" type="Act2NonAct" method="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;" InstructionId="116" extras="" flags=""/>
+    <destination name="a2dp.Vol.ManageData" type="Act2Act" method="&lt;a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="11" extras="" flags=""/>
+    <destination name="interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="-1" action="android.speech.tts.engine.CHECK_TTS_DATA" category="android.intent.category.DEFAULT" extras="" flags=""/>
+    <destination name="a2dp.Vol.Preferences" type="Act2Act" method="&lt;a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="24" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.Preferences">
+    <destination name="a2dp.Vol.service" type="Act2NonAct" method="&lt;a2dp.Vol.Preferences: void onDestroy()&gt;" InstructionId="6" extras="" flags=""/>
+    <destination name="interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT" type="Act2Class" method="&lt;a2dp.Vol.Preferences: void onDestroy()&gt;" InstructionId="-1" action="a2dp.vol.preferences.UPDATED" category="android.intent.category.DEFAULT" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.ProviderList"/>
+</root>

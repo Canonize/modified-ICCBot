@@ -97,7 +97,7 @@ if __name__ == '__main__' :
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.Qunar.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/a2dp.Vol_133.apk"
     # apkFile = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2/com.wudaokou.hippo.apk"
-    apkFile = "/home/cqt/Auth_Risk_Analysis_tool/com.yilucaifu.android.fund.apk"
+    apkFile = "/mnt/ssd_2T/cqt/top_105/com.instagram.android.apk"
     # apkFile = "/mnt/iscsi/cqt/appInfo/topApp/com.smile.gifmaker.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/appInfo/topApp/com.achievo.vipshop.apk"
     # apkFile = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/apk/ICCBotBench.apk"
@@ -139,7 +139,7 @@ if __name__ == '__main__' :
     # targetClasses = "com.digitalgd.auth.ui.DGAuthEntranceActivity"
     # targetClasses = "com.tencent.connect.auth.DialogC8175a"
     # targetClasses = "com.sina.weibo.sdk.web.WebActivity"
-    targetClasses = "com.yxcorp.login.userlogin.fragment.c,np0.d:c"
+    targetClasses = "com.facebook.login.LoginClient:Result,com.google.android.gms.auth.api.identity.BeginSignInResult,com.google.android.gms.auth.api.signin.GoogleSignInOptions,com.facebook.common.classmarkers.LiteLoginMessageSent,com.google.android.gms.auth.api.signin.SignInAccount,com.google.android.gms.auth.api.identity.BeginSignInRequest:GoogleIdTokenRequestOptions,com.google.android.gms.auth.api.identity.BeginSignInRequest:PasswordRequestOptions,com.google.android.gms.auth.api.identity.BeginSignInRequest,com.google.android.gms.auth.api.identity.SignInCredential,com.facebook.login.LoginClient:Request"
     # targetClasses = "np0.d,c39.d,mc9.m,lib.h0,com.yxcorp.login.userlogin.fragment.b,com.yxcorp.login.userlogin.fragment.c,d78.j,hy8.e"
     # targetClasses = "com.achievo.vipshop.usercenter.fragment.LoginFragment,com.achievo.vipshop.usercenter.fragment.LastLoginFragment"
     # targetClasses = "com.mqunar.atom.vacation.localman.activity.LocalmanSubmitOrderActivity"
@@ -153,7 +153,7 @@ if __name__ == '__main__' :
     # resPath = "/home/flash/singledetect/ICCBotOotputResult/guangdongsootIR"
     # resPath = "/home/cqt/Auth_Risk_Analysis_tool/ICCBot_result"
     # resPath = "/home/cqt/Auth_Risk_Analysis_tool/select_result"
-    resPath = "/mnt/iscsi/cqt/2FA_result/ICCBot_result"
+    resPath = "/mnt/ssd_2T/cqt/result_105/ICCBot_result"
     # resPath = "/home/lw/Auth_Risk_Analysis_tool/Iccbot/2FA_test"
 
 
@@ -185,7 +185,7 @@ if __name__ == '__main__' :
 
     merge_node_edge(merge_icc_output,apk_name,merge_icc_output)
 
-    decompose_apk(dex_file,smali_dir)
+    # decompose_apk(dex_file,smali_dir)
     
     e_time = datetime.datetime.now()
     print(str((e_time-s_time).seconds)+" seconds")

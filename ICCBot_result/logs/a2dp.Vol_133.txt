@@ -1,0 +1,1972 @@
+
+Analyzing a2dp.Vol_133.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+seperateCG2multiple17
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+Call Graph has 2938 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+This is the method #200/560
+This is the method #400/560
+Successfully analyze new: 37
+IterateTime: 1
+analyze new method size: 597
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: a2dp.Vol.NotificationCatcher
+name: a2dp.Vol.Widget
+name: a2dp.Vol.Starter
+name: a2dp.Vol.EditDevice
+name: a2dp.Vol.service
+name: a2dp.Vol.ManageData
+name: a2dp.Vol.PackagesChooser
+name: a2dp.Vol.main
+name: a2dp.Vol.Preferences
+writeIC3Output-----------------------
+TargetClasses : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+1
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+Writing cg.txt...1
+Writing to./ICCBot_result/output/a2dp.Vol_133/SootIRInfo
+Writing dex output...
+
+Analyzing a2dp.Vol_133.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+seperateCG2multiple17
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+Call Graph has 2938 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+This is the method #200/560
+This is the method #400/560
+Successfully analyze new: 37
+IterateTime: 1
+analyze new method size: 597
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: a2dp.Vol.NotificationCatcher
+name: a2dp.Vol.Widget
+name: a2dp.Vol.Starter
+name: a2dp.Vol.EditDevice
+name: a2dp.Vol.service
+name: a2dp.Vol.ManageData
+name: a2dp.Vol.PackagesChooser
+name: a2dp.Vol.main
+name: a2dp.Vol.Preferences
+writeIC3Output-----------------------
+TargetClasses : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+1
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+Writing cg.txt...1
+Writing to./ICCBot_result/output/a2dp.Vol_133/SootIRInfo
+Writing dex output...
+
+Analyzing a2dp.Vol_133.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+seperateCG2multiple17
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+Call Graph has 2938 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+This is the method #200/560
+This is the method #400/560
+Successfully analyze new: 37
+IterateTime: 1
+analyze new method size: 597
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: a2dp.Vol.NotificationCatcher
+name: a2dp.Vol.Widget
+name: a2dp.Vol.Starter
+name: a2dp.Vol.EditDevice
+name: a2dp.Vol.service
+name: a2dp.Vol.ManageData
+name: a2dp.Vol.PackagesChooser
+name: a2dp.Vol.main
+name: a2dp.Vol.Preferences
+writeIC3Output-----------------------
+TargetClasses : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+1
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+Writing cg.txt...1
+Writing to./ICCBot_result/output/a2dp.Vol_133/SootIRInfo
+Writing dex output...
+
+Analyzing a2dp.Vol_133.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+seperateCG2multiple17
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+Call Graph has 2938 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+This is the method #200/560
+This is the method #400/560
+Successfully analyze new: 37
+IterateTime: 1
+analyze new method size: 597
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: a2dp.Vol.NotificationCatcher
+name: a2dp.Vol.Widget
+name: a2dp.Vol.Starter
+name: a2dp.Vol.EditDevice
+name: a2dp.Vol.service
+name: a2dp.Vol.ManageData
+name: a2dp.Vol.PackagesChooser
+name: a2dp.Vol.main
+name: a2dp.Vol.Preferences
+writeIC3Output-----------------------
+TargetClasses : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+1
+1Create CG for : []
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.STOPPED_RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : com.android.browser.BrowserActivity
+
+can not found targetCompName : interICC_android.intent.action.MAIN, android.intent.category.HOME, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.PICK_ACTIVITY, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.bluetooth.adapter.action.REQUEST_ENABLE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.preferences.UPDATED, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.RUNNING, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_new java.lang.String, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.Clear, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.MESSAGE, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.CHECK_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : com.google.android.apps.chrome.Main
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.service.CLEAR, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_class Landroid.bluetooth.IBluetoothA2dp;, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.vol.Reload, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.speech.tts.engine.INSTALL_TTS_DATA, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.VIEW, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_a2dp.Vol.main.RELOAD_LIST, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_com.android.music.musicservicecommand, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS, android.intent.category.DEFAULT
+
+can not found targetCompName : interICC_android.intent.action.HEADSET_PLUG, android.intent.category.DEFAULT
+
+iccbot-intent count : 52
+1 : <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)> [virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)] a2dp.Vol.service
+
+
+2 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+DectinationC: a2dp.Vol.NotificationCatcher
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.NotificationCatcher
+
+
+3 : <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main$8: void onClick(android.view.View)> [virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)] a2dp.Vol.service
+
+
+4 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+DectinationC: a2dp.Vol.ManageData
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)] a2dp.Vol.ManageData
+
+
+5 : <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.Preferences: void onDestroy()> [virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)] a2dp.Vol.service
+
+
+6 : <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+DectinationC: a2dp.Vol.service
+wrong target compoent
+no redirectSM <a2dp.Vol.main: void onCreate(android.os.Bundle)> [virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)] a2dp.Vol.service
+
+
+7 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+DectinationC: a2dp.Vol.PackagesChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.PackagesChooser
+
+
+8 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+9 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)] a2dp.Vol.AppChooser
+
+
+10 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+DectinationC: a2dp.Vol.CustomIntentMaker
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)] a2dp.Vol.CustomIntentMaker
+
+
+11 : <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+DectinationC: a2dp.Vol.AppChooser
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)] a2dp.Vol.AppChooser
+
+
+12 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+13 : <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+DectinationC: a2dp.Vol.Preferences
+wrong target compoent
+no redirectSM <a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)> [virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)] a2dp.Vol.Preferences
+
+
+14 : <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+DectinationC: a2dp.Vol.ProviderList
+wrong target compoent
+no redirectSM <a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)] a2dp.Vol.ProviderList
+
+
+15 : <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void updateNot(boolean,java.lang.String)> [$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)] a2dp.Vol.main
+
+
+16 : <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+DectinationC: a2dp.Vol.StoreLoc
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)> [virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)] a2dp.Vol.StoreLoc
+
+
+17 : <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+DectinationC: a2dp.Vol.main
+wrong target compoent
+no redirectSM <a2dp.Vol.service: void onCreate()> [$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)] a2dp.Vol.main
+
+
+18 : <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+DectinationC: a2dp.Vol.ALauncher
+wrong target compoent
+no redirectSM <a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])> [virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)] a2dp.Vol.ALauncher
+
+
+19 : <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+DectinationC: a2dp.Vol.EditDevice
+wrong target compoent
+no redirectSM <a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)> [virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)] a2dp.Vol.EditDevice
+
+
+0
+Writing cg.txt...1
+Writing to./ICCBot_result/output/a2dp.Vol_133/SootIRInfo
+Writing dex output...

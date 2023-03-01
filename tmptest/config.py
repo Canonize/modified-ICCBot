@@ -3,19 +3,30 @@ import os
 import shutil
 import subprocess
 
-#修改以下三个路径：iccbot工具的路径， apk所在目录， 输入目录
-ICCBot_PATH = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot"
+#修改以下三个路径：iccbot工具的路径， apk所在目录， 输出目录
+ICCBot_PATH = "/mnt/ssd_2T/cqt/modefied-ICCBot"
 # APK_BASE_PATH = "/home/lw/Auth_Risk_Analysis_tool/apk/2FA"
-# RES_PATH = "/home/cqt/Auth_Risk_Analysis_tool/2FA_result/ICCBot_result"
-RES_PATH = "/mnt/iscsi/cqt/top150-300_result/ICCBot_result"
+# RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_0807"
 
-APK_BASE_PATH = "/mnt/iscsi/lw/202206_xiaomi"
-# RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_xiaomi"
+# APK_BASE_PATH = "/home/lw/Auth_Risk_Analysis_tool/apk/xiaomi2"
+# APK_BASE_PATH = "/mnt/iscsi/cqt/appInfo/2FA"
+APK_BASE_PATH = "/mnt/ssd_2T/cqt/xiaomi/top_1364-1513"
+# APK_BASE_PATH = "/mnt/iscsi/cqt/appInfo/top150-300"
+
+# RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_xiaomi2"
+# RES_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/test_0811"
+
+# APK_BASE_PATH = "/mnt/iscsi/lw/202206_xiaomi"
+# RES_PATH = "/mnt/iscsi/cqt/2FA_result"
+RES_PATH = "/mnt/ssd_2T/cqt/xiaomi/ICCBot_result_1364-1513"
+# RES_PATH = "/mnt/iscsi/cqt/top150-300_result"
 
 
-APKTOOL_PATH = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/lib/apktool_2.6.0.jar"
-BAKSMALI_JAR = "/home/lw/Auth_Risk_Analysis_tool/mobile_authentication_analysis_tool/lib/baksmali-2.5.2.jar"
-ICCBot_JAR = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/target/ICCBot.jar"
+
+APKTOOL_PATH = "/mnt/ssd_2T/cqt/mobile_authentication_analysis_tool/lib/apktool_2.6.0.jar"
+BAKSMALI_JAR = "/mnt/ssd_2T/cqt/mobile_authentication_analysis_tool/lib/baksmali-2.5.2.jar"
+ICCBot_JAR = "/mnt/ssd_2T/cqt/modefied-ICCBot/target/ICCBot.jar"
+# ICCBot_JAR = "/home/cqt/Auth_Risk_Analysis_tool/modefied-ICCBot/target/ICCBot.jar"
 
 
 OUTPUT = ""

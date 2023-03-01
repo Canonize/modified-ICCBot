@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="a2dp.Vol.AppChooser"/>
+  <source name="a2dp.Vol.NotificationCatcher"/>
+  <source name="a2dp.Vol.Widget">
+    <destination name="a2dp.Vol.ALauncher" type="NonAct2NonAct" method="&lt;a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;" InstructionId="14" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.Starter">
+    <destination name="a2dp.Vol.service" type="NonAct2NonAct" method="&lt;a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="10" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.EditDevice">
+    <destination name="a2dp.Vol.ProviderList" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="29" extras="" flags=""/>
+    <destination name="a2dp.Vol.ProviderList" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="39" extras="" flags=""/>
+    <destination name="a2dp.Vol.AppChooser" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="10" extras="" flags=""/>
+    <destination name="a2dp.Vol.CustomIntentMaker" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="58" extras="" flags=""/>
+    <destination name="a2dp.Vol.AppChooser" type="Act2Act" method="&lt;a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="8" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.ManageData"/>
+  <source name="a2dp.Vol.service">
+    <destination name="a2dp.Vol.main" type="NonAct2Act" method="&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;" InstructionId="22" extras="" flags=""/>
+    <destination name="a2dp.Vol.main" type="NonAct2Act" method="&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;" InstructionId="75" extras="" flags=""/>
+    <destination name="a2dp.Vol.StoreLoc" type="NonAct2NonAct" method="&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;" InstructionId="44" extras="" flags=""/>
+    <destination name="a2dp.Vol.main" type="NonAct2Act" method="&lt;a2dp.Vol.service: void onCreate()&gt;" InstructionId="101" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.ALauncher"/>
+  <source name="a2dp.Vol.PackagesChooser"/>
+  <source name="a2dp.Vol.CustomIntentMaker"/>
+  <source name="a2dp.Vol.StoreLoc"/>
+  <source name="a2dp.Vol.main">
+    <destination name="a2dp.Vol.PackagesChooser" type="Act2Act" method="&lt;a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="20" extras="" flags=""/>
+    <destination name="a2dp.Vol.service" type="Act2NonAct" method="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;" InstructionId="116" extras="" flags=""/>
+    <destination name="a2dp.Vol.EditDevice" type="Act2Act" method="&lt;a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="a2dp.Vol.NotificationCatcher" type="Act2NonAct" method="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;" InstructionId="126" extras="" flags=""/>
+    <destination name="a2dp.Vol.ManageData" type="Act2Act" method="&lt;a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="11" extras="" flags=""/>
+    <destination name="a2dp.Vol.service" type="Act2NonAct" method="&lt;a2dp.Vol.main$8: void onClick(android.view.View)&gt;" InstructionId="15" extras="" flags=""/>
+    <destination name="a2dp.Vol.Preferences" type="Act2Act" method="&lt;a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="24" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.Preferences">
+    <destination name="a2dp.Vol.service" type="Act2NonAct" method="&lt;a2dp.Vol.Preferences: void onDestroy()&gt;" InstructionId="6" extras="" flags=""/>
+  </source>
+  <source name="a2dp.Vol.ProviderList"/>
+</root>

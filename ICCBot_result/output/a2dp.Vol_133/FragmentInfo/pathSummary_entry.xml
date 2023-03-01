@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="AppChooser onCreate" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)">
+        <nodeInfo nodeId="347724865" predsStr="1218383512" succsStr="" context=""/>
+        <baseNodePointTo value="347724865" context=""/>
+        <nodeSetPointToMe value="347724865," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onConfigurationChanged(android.content.res.Configuration)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onConfigurationChanged(android.content.res.Configuration)"/>
+      <node type="setContentView" method="ProviderList onConfigurationChanged" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)">
+        <nodeInfo nodeId="678789553" predsStr="255892055" succsStr="33491103, 1400968054" context=""/>
+        <baseNodePointTo value="678789553" context=""/>
+        <nodeSetPointToMe value="678789553," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onConfigurationChanged(android.content.res.Configuration)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onConfigurationChanged(android.content.res.Configuration)"/>
+      <node type="setContentView" method="AppChooser onConfigurationChanged" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)">
+        <nodeInfo nodeId="1593088538" predsStr="302927475" succsStr="" context=""/>
+        <baseNodePointTo value="1593088538" context=""/>
+        <nodeSetPointToMe value="1593088538," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.CustomIntentMaker: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="CustomIntentMaker onCreate" unit="virtualinvoke r0.&lt;a2dp.Vol.CustomIntentMaker: void setContentView(int)&gt;(2130968579)">
+        <nodeInfo nodeId="806824790" predsStr="1845414302" succsStr="" context=""/>
+        <baseNodePointTo value="806824790" context=""/>
+        <nodeSetPointToMe value="806824790," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="EditDevice onCreate" unit="virtualinvoke r0.&lt;a2dp.Vol.EditDevice: void setContentView(int)&gt;(2130968580)">
+        <nodeInfo nodeId="2001325463" predsStr="1829017659" succsStr="2093251918" context=""/>
+        <baseNodePointTo value="2001325463" context=""/>
+        <nodeSetPointToMe value="2001325463," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="ProviderList onCreate" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)">
+        <nodeInfo nodeId="378784110" predsStr="352034554" succsStr="" context=""/>
+        <baseNodePointTo value="378784110" context=""/>
+        <nodeSetPointToMe value="378784110," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.PackagesChooser: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="PackagesChooser onCreate" unit="virtualinvoke r0.&lt;a2dp.Vol.PackagesChooser: void setContentView(int)&gt;(2130968576)">
+        <nodeInfo nodeId="838062542" predsStr="901023146" succsStr="" context=""/>
+        <baseNodePointTo value="838062542" context=""/>
+        <nodeSetPointToMe value="838062542," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="main onCreate" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void setContentView(int)&gt;(2130968581)">
+        <nodeInfo nodeId="42396288" predsStr="1390149084" succsStr="2087129393" context=""/>
+        <baseNodePointTo value="42396288" context=""/>
+        <nodeSetPointToMe value="42396288," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ManageData: void onCreate(android.os.Bundle)&gt;">
+    <pathSummary>
+      <method/>
+      <methodtrace value="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="ManageData onCreate" unit="virtualinvoke r0.&lt;a2dp.Vol.ManageData: void setContentView(int)&gt;(2130968582)">
+        <nodeInfo nodeId="1771692109" predsStr="884189129" succsStr="" context=""/>
+        <baseNodePointTo value="1771692109" context=""/>
+        <nodeSetPointToMe value="1771692109," context=""/>
+      </node>
+    </pathSummary>
+  </methodSummary>
+</root>

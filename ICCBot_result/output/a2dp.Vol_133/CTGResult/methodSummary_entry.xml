@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <methodSummary source="&lt;a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;La2dp/Vol/EditDevice;&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;btd&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)&gt;(r2, 4)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;"> 
+    <node type="CreateMethod" unit="r4 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;La2dp/Vol/ALauncher;&quot;)"/>  
+    <node type="PassOutIntent" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,int,android.content.Intent,int)&gt;($r1, 0, r4, 0)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r5.&lt;android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)&gt;(2131361870, $r6)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ManageData: void onDestroy()&gt;"> 
+    <node type="CreateMethod" unit="$r1 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.ManageData: void setResult(int,android.content.Intent)&gt;($i0, $r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$8: void onClick(android.view.View)&gt;"> 
+    <node type="CreateMethod" unit="$r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r3)"/>  
+    <node type="CreateMethod" unit="$r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.main: boolean stopService(android.content.Intent)&gt;($r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: int onStartCommand(android.content.Intent,int,int)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.Preferences: void onContentChanged()&gt;"> 
+    <node type="CreateMethod" unit="$r1 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.Preferences: boolean stopService(android.content.Intent)&gt;($r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$7: boolean onLongClick(android.view.View)&gt;"> 
+    <node type="CreateMethod" unit="$r13 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r13.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.VIEW&quot;, $r8)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;($r7)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r3, class &quot;La2dp/Vol/AppChooser;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)&gt;(r2, 17)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.CustomIntentMaker$1: void onClick(android.view.View)&gt;"> 
+    <node type="CreateMethod" unit="$r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.CustomIntentMaker: void setResult(int,android.content.Intent)&gt;($i0, $r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)&gt;"> 
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(r2)"/>  
+    <node type="PassOutIntent" unit="$r6 = virtualinvoke $r5.&lt;android.content.pm.PackageManager: android.content.pm.ResolveInfo resolveService(android.content.Intent,int)&gt;(r3, 64)"/>  
+    <node type="PassOutIntent" unit="$z0 = virtualinvoke $r1.&lt;android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;(r3, $r8, 1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: android.content.Intent getSelectedIntent(java.lang.String)&gt;"> 
+    <node type="CreateMethod" unit="$r12 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r12.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>  
+    <node type="CreateMethod" unit="$r12 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r12.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main: void Locationbtn()&gt;"> 
+    <node type="CreateMethod" unit="$r11 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r5)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$9: void onTick(long)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;com.android.music.musicservicecommand&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;command&quot;, &quot;pause&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r5.&lt;a2dp.Vol.service: void sendBroadcast(android.content.Intent)&gt;(r2)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.MEDIA_BUTTON&quot;, null)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.KEY_EVENT&quot;, r1)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r5.&lt;a2dp.Vol.service: void sendOrderedBroadcast(android.content.Intent,java.lang.String)&gt;(r2, null)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$16$1: void onFinish()&gt;"> 
+    <node type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;com.android.music.musicservicecommand&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;command&quot;, &quot;play&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.service: void sendBroadcast(android.content.Intent)&gt;(r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ManageData: void finish()&gt;"> 
+    <node type="CreateMethod" unit="$r1 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.ManageData: void setResult(int,android.content.Intent)&gt;($i0, $r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$10: void onClick(android.content.DialogInterface,int)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.speech.tts.engine.INSTALL_TTS_DATA&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)&gt;(r2, 3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$6: void onClick(android.view.View)&gt;"> 
+    <node unit="virtualinvoke $r2.&lt;a2dp.Vol.main: void Locationbtn()&gt;()"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;"> 
+    <node type="CreateMethod" unit="$r18 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r18.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;($r4)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r12)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;($r6)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void startActivity(android.content.Intent)&gt;($r10)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;($r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void startActivity(android.content.Intent)&gt;($r10)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r10.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void startActivity(android.content.Intent)&gt;($r10)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void startActivity(android.content.Intent)&gt;($r10)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void startActivity(android.content.Intent)&gt;($r10)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void TextReader(java.lang.String)&gt;"> 
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;com.android.music.musicservicecommand&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;command&quot;, &quot;pause&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void sendBroadcast(android.content.Intent)&gt;(r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.PackagesChooser: void cleanup()&gt;"> 
+    <node type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.Reload&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r10.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.NotificationCatcher$2: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onConfigurationChanged(android.content.res.Configuration)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onListItemClick(android.widget.ListView,android.view.View,int,long)&gt;"> 
+    <node type="CreateMethod" unit="$r13 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r13.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.intent.extra.shortcut.NAME&quot;, $r11)"/>  
+    <node type="ReceiveIntentFromRetValue" unit="$r13 = specialinvoke r0.&lt;a2dp.Vol.ProviderList: android.content.Intent getSelectedIntent(java.lang.String)&gt;($r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.shortcut.INTENT&quot;, $r13)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setResult(int,android.content.Intent)&gt;($i0, r3)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r11, $r12)"/>  
+    <node type="ReceiveIntentFromRetValue" unit="$r13 = specialinvoke r0.&lt;a2dp.Vol.ProviderList: android.content.Intent getSelectedIntent(java.lang.String)&gt;($r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.shortcut.INTENT&quot;, $r13)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setResult(int,android.content.Intent)&gt;($i0, r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$16$1: void onTick(long)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.MEDIA_BUTTON&quot;, null)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.KEY_EVENT&quot;, r1)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void sendOrderedBroadcast(android.content.Intent,java.lang.String)&gt;(r2, null)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.NotificationCatcher$1: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: java.lang.String getIntentUri(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r0 := @parameter0: android.content.Intent"/>  
+    <node type="PassOutIntent" unit="$r9 = virtualinvoke $r5.&lt;java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])&gt;($r0, $r6)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ALauncher: void onCreate()&gt;"> 
+    <node type="CreateMethod" unit="$r10 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r10.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.VIEW&quot;, $r5)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.ALauncher: void startActivity(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void onCreate()&gt;"> 
+    <node type="CreateMethod" unit="$r26 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r26.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.service.RUNNING&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r2)"/>  
+    <node type="CreateMethod" unit="$r26 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r26.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/main;&quot;)"/>  
+    <node type="PassOutIntent" unit="$r17 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r26, 0)"/>  
+    <node type="PassOutIntent" unit="$r18 = virtualinvoke $r18.&lt;android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)&gt;($r17)"/>  
+    <node type="CreateMethod" unit="$r26 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r26.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.service.RUNNING&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$9: void onFinish()&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;com.android.music.musicservicecommand&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;command&quot;, &quot;pause&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void sendBroadcast(android.content.Intent)&gt;(r2)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.HEADSET_PLUG&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;state&quot;, 0)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void sendBroadcast(android.content.Intent)&gt;(r2)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.MEDIA_BUTTON&quot;, null)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.KEY_EVENT&quot;, r1)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void sendOrderedBroadcast(android.content.Intent,java.lang.String)&gt;(r2, null)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.MEDIA_BUTTON&quot;, null)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.KEY_EVENT&quot;, r1)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void sendOrderedBroadcast(android.content.Intent,java.lang.String)&gt;(r2, null)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$15: void onDone(java.lang.String)&gt;"> 
+    <node type="CreateMethod" unit="r5 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r5.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.service.CLEAR&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r6.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r5)"/>  
+    <node type="CreateMethod" unit="r5 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r5.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.service.CLEAR&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r6.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r5)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onConfigurationChanged(android.content.res.Configuration)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.Preferences: void onDestroy()&gt;"> 
+    <node type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>  
+    <node type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.preferences.UPDATED&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r5.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$12: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node unit="virtualinvoke $r7.&lt;a2dp.Vol.service: void TextReader(java.lang.String)&gt;($r6)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.CustomIntentMaker: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.CustomIntentMaker: void setContentView(int)&gt;(2130968579)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.Main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;device&quot;, &quot;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r8.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$2: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.EditDevice: void setContentView(int)&gt;(2130968580)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.AppChooser$5: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"> 
+    <node type="CreateMethod" unit="$r9 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r9.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;package_name&quot;, $r8)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r4.&lt;a2dp.Vol.AppChooser: void setResult(int,android.content.Intent)&gt;($i0, r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)&gt;"> 
+    <node type="CreateMethod" unit="$r17 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r17.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r10, &quot;text/html&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setClassName(java.lang.String,java.lang.String)&gt;(&quot;com.android.chrome&quot;, &quot;com.google.android.apps.chrome.Main&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setClassName(java.lang.String,java.lang.String)&gt;(&quot;com.android.browser&quot;, &quot;com.android.browser.BrowserActivity&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r7.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;(r5)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setClassName(java.lang.String,java.lang.String)&gt;(&quot;com.android.browser&quot;, &quot;com.android.browser.BrowserActivity&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r7.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;(r5)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void onDestroy()&gt;"> 
+    <node type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;La2dp/Vol/StoreLoc;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: boolean stopService(android.content.Intent)&gt;(r1)"/>  
+    <node type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.service.STOPPED_RUNNING&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;"> 
+    <node type="CreateMethod" unit="$r15 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r15.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/main;&quot;)"/>  
+    <node type="PassOutIntent" unit="$r5 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r15, 0)"/>  
+    <node type="PassOutIntent" unit="$r6 = virtualinvoke $r6.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)&gt;($r5)"/>  
+    <node type="CreateMethod" unit="$r15 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r15.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/main;&quot;)"/>  
+    <node type="PassOutIntent" unit="$r5 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r15, 0)"/>  
+    <node type="PassOutIntent" unit="$r13 = virtualinvoke $r13.&lt;android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)&gt;($r5)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Object)&gt;"> 
+    <node unit="virtualinvoke r0.&lt;a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)&gt;($r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$1: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node unit="virtualinvoke $r3.&lt;a2dp.Vol.service: void TextReader(java.lang.String)&gt;($r4)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.CustomIntentMaker$3: void onClick(android.view.View)&gt;"> 
+    <node type="CreateMethod" unit="$r17 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r17.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;($r5)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r14)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.CustomIntentMaker: void startActivity(android.content.Intent)&gt;($r8)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.CustomIntentMaker: void startActivity(android.content.Intent)&gt;($r8)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r14)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;($r7)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.CustomIntentMaker: void startActivity(android.content.Intent)&gt;($r8)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.CustomIntentMaker: void startActivity(android.content.Intent)&gt;($r8)"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;($r7)"/>  
+    <node type="CreateMethod" unit="$r17 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r17.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r8.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;($r7)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.CustomIntentMaker: void startActivity(android.content.Intent)&gt;($r8)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r2.&lt;a2dp.Vol.CustomIntentMaker: void startActivity(android.content.Intent)&gt;($r8)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$16: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void processShortcut(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>  
+    <node type="PassOutIntent" unit="$r5 = staticinvoke &lt;a2dp.Vol.EditDevice: java.lang.String getIntentUri(android.content.Intent)&gt;(r4)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.PackagesChooser: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"> 
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.PackagesChooser: void cleanup()&gt;()"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.PackagesChooser: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.PackagesChooser: void setContentView(int)&gt;(2130968576)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])&gt;"> 
+    <node type="CreateMethod" unit="$r34 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r34.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.vol.service.MESSAGE&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;message&quot;, r28)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r30.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r5)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.PackagesChooser: void onBackPressed()&gt;"> 
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.PackagesChooser: void cleanup()&gt;()"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"> 
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.VIEW&quot;, $r11)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/PackagesChooser;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r6, class &quot;La2dp/Vol/ManageData;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)&gt;(r3, 2)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: boolean stopService(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/Preferences;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;(r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.StoreLoc: int onStartCommand(android.content.Intent,int,int)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>  
+    <node type="PassOutIntent" unit="$i0 = specialinvoke r0.&lt;android.app.Service: int onStartCommand(android.content.Intent,int,int)&gt;($r1, $i0, $i1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;La2dp/Vol/ProviderList;&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r6, $i0)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)&gt;(r2, 11)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;La2dp/Vol/CustomIntentMaker;&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;alarm_custom_action&quot;, $r6)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;alarm_custom_data&quot;, $r6)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;alarm_custom_type&quot;, $r6)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;alarm_package_name&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)&gt;(r2, 6)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;La2dp/Vol/AppChooser;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)&gt;(r2, 2)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.PICK_ACTIVITY&quot;)"/>  
+    <node type="CreateMethod" unit="$r5 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.CREATE_SHORTCUT&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.INTENT&quot;, $r5)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.intent.extra.TITLE&quot;, &quot;Create a Shortcut&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)&gt;(r2, 14)"/>  
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;La2dp/Vol/ProviderList;&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r6, $i0)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)&gt;(r2, 11)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$4: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)&gt;"> 
+    <node unit="virtualinvoke r3.&lt;android.app.AlertDialog$Builder: android.app.AlertDialog$Builder setNeutralButton(int,android.content.DialogInterface$OnClickListener)&gt;(2131165201, $r18)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void onActivityResult(int,int,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter2: android.content.Intent"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)&gt;($r1, 15)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;android.app.Activity: void onActivityResult(int,int,android.content.Intent)&gt;($i0, $i1, $r1)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;android.app.Activity: void onActivityResult(int,int,android.content.Intent)&gt;($i0, $i1, $r1)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;a2dp.Vol.EditDevice: void processShortcut(android.content.Intent)&gt;($r1)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;android.app.Activity: void onActivityResult(int,int,android.content.Intent)&gt;($i0, $i1, $r1)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;a2dp.Vol.EditDevice: void processShortcut(android.content.Intent)&gt;($r1)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;android.app.Activity: void onActivityResult(int,int,android.content.Intent)&gt;($i0, $i1, $r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.NotificationCatcher$Readit: java.lang.Object doInBackground(java.lang.Object[])&gt;"> 
+    <node unit="$r1 = virtualinvoke r0.&lt;a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])&gt;($r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;"> 
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.MAIN&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;android.intent.category.HOME&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void startActivity(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/StoreLoc;&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;device&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r13.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;com.android.music.musicservicecommand&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;command&quot;, &quot;pause&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.HEADSET_PLUG&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;state&quot;, 0)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.MEDIA_BUTTON&quot;, null)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.KEY_EVENT&quot;, r4)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void sendOrderedBroadcast(android.content.Intent,java.lang.String)&gt;(r3, null)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/StoreLoc;&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;device&quot;, $r6)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String,android.net.Uri)&gt;(&quot;android.intent.action.MEDIA_BUTTON&quot;, null)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.KEY_EVENT&quot;, r4)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void sendOrderedBroadcast(android.content.Intent,java.lang.String)&gt;(r3, null)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.MAIN&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;android.intent.category.HOME&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.service: void startActivity(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r13.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/StoreLoc;&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;device&quot;, $r6)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(0, null)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r13.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r13.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r13.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(0, null)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(0, null)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(0, null)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, $r6)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r13.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(0, null)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)&gt;"> 
+    <node unit="virtualinvoke r0.&lt;a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)&gt;($r12)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;connect&quot;, $r7)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;a2dp.Vol.Clear&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;($r1)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;connect&quot;, $r7)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;a2dp.Vol.Clear&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(1, $r7)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;($r1)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(1, $r7)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;($r1)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;connect&quot;, $r7)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;a2dp.Vol.Clear&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;connect&quot;, $r7)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;a2dp.Vol.Clear&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;($r1)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;connect&quot;, $r7)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;a2dp.Vol.Clear&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r12.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r3)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;($r1)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)&gt;($r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void access$300(a2dp.Vol.service,boolean,java.lang.String)&gt;"> 
+    <node unit="specialinvoke $r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;($z0, $r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: void onStart()&gt;"> 
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.service: void updateNot(boolean,java.lang.String)&gt;(0, null)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main: int getBtDevices(int)&gt;"> 
+    <node type="CreateMethod" unit="$r19 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r19.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.bluetooth.adapter.action.REQUEST_ENABLE&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)&gt;(r2, 1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$4: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;($r6)"/>  
+    <node unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)&gt;($r6)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main: void onActivityResult(int,int,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter2: android.content.Intent"/>  
+    <node unit="$i2 = specialinvoke r0.&lt;a2dp.Vol.main: int getBtDevices(int)&gt;(1)"/>  
+    <node type="CreateMethod" unit="$r13 = new android.content.Intent"/>  
+    <node type="CreateMethod" unit="$r13 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r13.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.speech.tts.engine.CHECK_TTS_DATA&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)&gt;($r1, 3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void setContentView(int)&gt;(2130968581)"/>  
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.main: int getBtDevices(int)&gt;(1)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r37)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.speech.tts.engine.CHECK_TTS_DATA&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)&gt;(r2, 3)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/NotificationCatcher;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r37)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/service;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r37)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/NotificationCatcher;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r37)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/NotificationCatcher;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r37)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/NotificationCatcher;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r37)"/>  
+    <node type="CreateMethod" unit="$r37 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r37.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;La2dp/Vol/NotificationCatcher;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)&gt;($r37)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ManageData: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ManageData: void setContentView(int)&gt;(2130968582)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void Save()&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;device&quot;, &quot;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r15.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$8: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)&gt;($r10)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.NotificationCatcher: void onNotificationPosted(android.service.notification.StatusBarNotification)&gt;"> 
+    <node unit="virtualinvoke $r2.&lt;a2dp.Vol.NotificationCatcher$Readit: android.os.AsyncTask execute(java.lang.Object[])&gt;($r3)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void onBackPressed()&gt;"> 
+    <node unit="specialinvoke r0.&lt;a2dp.Vol.EditDevice: void Save()&gt;()"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$3: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node unit="staticinvoke &lt;a2dp.Vol.service: void access$300(a2dp.Vol.service,boolean,java.lang.String)&gt;($r9, 0, null)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, r5)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r11.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;($r2)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;a2dp.Vol.main.RELOAD_LIST&quot;)"/>  
+    <node type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;disconnect&quot;, r5)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r11.&lt;a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)&gt;($r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main: int access$300(a2dp.Vol.main,int)&gt;"> 
+    <node unit="$i0 = specialinvoke $r0.&lt;a2dp.Vol.main: int getBtDevices(int)&gt;($i0)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node unit="staticinvoke &lt;a2dp.Vol.main: int access$300(a2dp.Vol.main,int)&gt;($r6, 0)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.speech.tts.engine.CHECK_TTS_DATA&quot;)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r6.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;($r2)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r6.&lt;a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)&gt;($r2, 3)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r6.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;($r2)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r6.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;($r2)"/>  
+    <node type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r6.&lt;a2dp.Vol.main: void startActivity(android.content.Intent)&gt;($r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service$5: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+    <node unit="virtualinvoke $r4.&lt;a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)&gt;($r10)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void access$300(a2dp.Vol.EditDevice)&gt;"> 
+    <node unit="specialinvoke $r0.&lt;a2dp.Vol.EditDevice: void Save()&gt;()"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ManageData$3: void onClick(android.view.View)&gt;"> 
+    <node unit="virtualinvoke $r3.&lt;a2dp.Vol.ManageData$ImportDatabaseFileTask: android.os.AsyncTask execute(java.lang.Object[])&gt;($r4)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$5: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"> 
+    <node unit="virtualinvoke r3.&lt;android.app.AlertDialog$Builder: android.app.AlertDialog$Builder setNeutralButton(int,android.content.DialogInterface$OnClickListener)&gt;(2131165189, $r13)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$13: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$3: void onClick(android.view.View)&gt;"> 
+    <node unit="staticinvoke &lt;a2dp.Vol.main: int access$300(a2dp.Vol.main,int)&gt;($r2, 1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.EditDevice$4: void onClick(android.view.View)&gt;"> 
+    <node unit="staticinvoke &lt;a2dp.Vol.EditDevice: void access$300(a2dp.Vol.EditDevice)&gt;($r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.main$11: void onReceive(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.ALauncher: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.StoreLoc: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.StoreLoc: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.service: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.StoreLoc: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onConfigurationChanged(android.content.res.Configuration)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.AppChooser: void onConfigurationChanged(android.content.res.Configuration)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.AppChooser: void setContentView(int)&gt;(2130968577)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.CustomIntentMaker: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.CustomIntentMaker: void setContentView(int)&gt;(2130968579)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.EditDevice: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.EditDevice: void setContentView(int)&gt;(2130968580)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ProviderList: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ProviderList: void setContentView(int)&gt;(2130968585)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.PackagesChooser: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.PackagesChooser: void setContentView(int)&gt;(2130968576)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.main: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.main: void setContentView(int)&gt;(2130968581)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;a2dp.Vol.ManageData: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;a2dp.Vol.ManageData: void setContentView(int)&gt;(2130968582)"/> 
+  </methodSummary>
+</root>
