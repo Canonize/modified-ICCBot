@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <methodSummary source="&lt;com.iccbot.withFrag.Source2WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source2WithFrag onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source2WithFrag: void setContentView(int)&gt;(2130903065)"> 
+        <nodeInfo nodeId="216687255" predsStr="277117675" succsStr="" context=""/>  
+        <baseNodePointTo value="216687255" context=""/>  
+        <nodeSetPointToMe value="216687255," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void doWithAction(java.lang.String)"/>  
+      <node type="CreateMethod" method="Source2WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1261956576" predsStr="1668656938" succsStr="1743814561" context=""/>  
+        <baseNodePointTo value="1261956576" context=""/>  
+        <nodeSetPointToMe value="1261956576,1743814561,1682629887,705170339," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="1743814561" predsStr="1261956576" succsStr="1682629887" context=""/>  
+        <baseNodePointTo value="1261956576" context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1682629887" predsStr="1743814561" succsStr="705170339" context=""/>  
+        <baseNodePointTo value="1261956576" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Source2WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="705170339" predsStr="1682629887" succsStr="" context=""/>  
+        <baseNodePointTo value="1261956576" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source4WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source4WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source4WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="1003404175" predsStr="1750665229" succsStr="" context=""/>  
+        <baseNodePointTo value="1003404175" context=""/>  
+        <nodeSetPointToMe value="1003404175," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void addCategory(android.content.Intent)"/>  
+      <node type="ReceiveIntentFromParatMethod" method="FragWithFragCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="275787918" predsStr="442364016" succsStr="1857617273" context=""/>  
+        <baseNodePointTo value="275787918" context=""/>  
+        <nodeSetPointToMe value="275787918,1857617273," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="FragWithFragCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"> 
+        <nodeInfo nodeId="1857617273" predsStr="275787918" succsStr="" context=""/>  
+        <baseNodePointTo value="275787918" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void addCategory(android.content.Intent)"/>  
+      <node type="ReceiveIntentFromParatMethod" method="Source5WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1921483039" predsStr="1185346843" succsStr="31756525" context=""/>  
+        <baseNodePointTo value="1921483039" context=""/>  
+        <nodeSetPointToMe value="1921483039,31756525," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source5WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="31756525" predsStr="1921483039" succsStr="" context=""/>  
+        <baseNodePointTo value="1921483039" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Source1WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source1WithFrag onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source1WithFrag: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="38570886" predsStr="1299427931" succsStr="" context=""/>  
+        <baseNodePointTo value="38570886" context=""/>  
+        <nodeSetPointToMe value="38570886," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onAttach(android.app.Activity)"/>  
+      <node type="CreateMethod" method="Frag2WithFrag onAttach" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1476236281" predsStr="1044642624" succsStr="1586413785" context=""/>  
+        <baseNodePointTo value="1476236281" context=""/>  
+        <nodeSetPointToMe value="1476236281,1586413785,444556920," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Frag2WithFrag onAttach" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/iccbot/withFrag/Des2WithFrag;&quot;)"> 
+        <nodeInfo nodeId="1586413785" predsStr="1476236281" succsStr="444556920" context=""/>  
+        <baseNodePointTo value="1476236281" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Frag2WithFrag onAttach" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="444556920" predsStr="1586413785" succsStr="" context=""/>  
+        <baseNodePointTo value="1476236281" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void startIntent(android.content.Context,android.content.Intent)"/>  
+      <node type="ReceiveIntentFromParatMethod" method="Utils startIntent" unit="$r1 := @parameter1: android.content.Intent"> 
+        <nodeInfo nodeId="1791572871" predsStr="561019416" succsStr="119206855" context=""/>  
+        <baseNodePointTo value="1791572871" context=""/>  
+        <nodeSetPointToMe value="1791572871,119206855," context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Utils startIntent" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"> 
+        <nodeInfo nodeId="119206855" predsStr="1791572871" succsStr="" context=""/>  
+        <baseNodePointTo value="1791572871" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void addCategory(android.content.Intent)"/>  
+      <node type="ReceiveIntentFromParatMethod" method="Source1WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1800211426" predsStr="1313694066" succsStr="1010765614" context=""/>  
+        <baseNodePointTo value="1800211426" context=""/>  
+        <nodeSetPointToMe value="1800211426,1010765614," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1010765614" predsStr="1800211426" succsStr="" context=""/>  
+        <baseNodePointTo value="1800211426" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source3WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View), &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"/>  
+      <node type="CreateMethod" method="Source3WithCtx$1 onClick" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1369313547" predsStr="2064813266" succsStr="1149103230" context=""/>  
+        <baseNodePointTo value="1369313547" context=""/>  
+        <nodeSetPointToMe value="1369313547,1149103230,517656952,1908521581,1358359319,1791572871,119206855," context=""/> 
+      </node>  
+      <node type="InitIntent" method="Source3WithCtx$1 onClick" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"> 
+        <nodeInfo nodeId="1149103230" predsStr="1369313547" succsStr="517656952" context=""/>  
+        <baseNodePointTo value="1369313547" context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source3WithCtx$1 onClick" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.first.ctx&quot;)"> 
+        <nodeInfo nodeId="517656952" predsStr="1149103230" succsStr="1908521581" context=""/>  
+        <baseNodePointTo value="1369313547" context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source3WithCtx$1 onClick" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1908521581" predsStr="517656952" succsStr="1358359319" context=""/>  
+        <baseNodePointTo value="1369313547" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Source3WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)"> 
+        <nodeInfo nodeId="1358359319" predsStr="1908521581" succsStr="" context=""/>  
+        <baseNodePointTo value="1369313547" context=""/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Utils startIntent" unit="$r1 := @parameter1: android.content.Intent"> 
+        <nodeInfo nodeId="1791572871" predsStr="561019416" succsStr="119206855" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1358359319"/>  
+        <baseNodePointTo value="1791572871" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1358359319"/> 
+      </node>  
+      <node type="PassOutIntent" method="Utils startIntent" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"> 
+        <nodeInfo nodeId="119206855" predsStr="1791572871" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1358359319"/>  
+        <baseNodePointTo value="1791572871" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1358359319"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source1WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="1175673530" predsStr="715043917" succsStr="" context=""/>  
+        <baseNodePointTo value="1175673530" context=""/>  
+        <nodeSetPointToMe value="1175673530," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source4WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View), &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"/>  
+      <node type="CreateMethod" method="Source4WithCtx$1 onClick" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1728428427" predsStr="1115366592" succsStr="120737155" context=""/>  
+        <baseNodePointTo value="1728428427" context=""/>  
+        <nodeSetPointToMe value="1728428427,120737155,923523409,743286356,1716423607,1791572871,119206855," context=""/> 
+      </node>  
+      <node type="InitIntent" method="Source4WithCtx$1 onClick" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"> 
+        <nodeInfo nodeId="120737155" predsStr="1728428427" succsStr="923523409" context=""/>  
+        <baseNodePointTo value="1728428427" context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source4WithCtx$1 onClick" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.second.ctx&quot;)"> 
+        <nodeInfo nodeId="923523409" predsStr="120737155" succsStr="743286356" context=""/>  
+        <baseNodePointTo value="1728428427" context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source4WithCtx$1 onClick" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="743286356" predsStr="923523409" succsStr="1716423607" context=""/>  
+        <baseNodePointTo value="1728428427" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Source4WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)"> 
+        <nodeInfo nodeId="1716423607" predsStr="743286356" succsStr="" context=""/>  
+        <baseNodePointTo value="1728428427" context=""/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Utils startIntent" unit="$r1 := @parameter1: android.content.Intent"> 
+        <nodeInfo nodeId="1791572871" predsStr="561019416" succsStr="119206855" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1716423607"/>  
+        <baseNodePointTo value="1791572871" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1716423607"/> 
+      </node>  
+      <node type="PassOutIntent" method="Utils startIntent" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"> 
+        <nodeInfo nodeId="119206855" predsStr="1791572871" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1716423607"/>  
+        <baseNodePointTo value="1791572871" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)1716423607"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="SourceWithFragCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="619828467" predsStr="1692671392" succsStr="" context=""/>  
+        <baseNodePointTo value="619828467" context=""/>  
+        <nodeSetPointToMe value="619828467," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent), &lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"/>  
+      <node type="ReceiveIntentFromParatMethod" method="Source5WithCtx access$0" unit="$r1 := @parameter1: android.content.Intent"> 
+        <nodeInfo nodeId="308416152" predsStr="2106576360" succsStr="1183935848" context=""/>  
+        <baseNodePointTo value="308416152" context=""/>  
+        <nodeSetPointToMe value="308416152,1183935848,1921483039,31756525," context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Source5WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)"> 
+        <nodeInfo nodeId="1183935848" predsStr="308416152" succsStr="" context=""/>  
+        <baseNodePointTo value="308416152" context=""/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Source5WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1921483039" predsStr="1185346843" succsStr="31756525" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)1183935848"/>  
+        <baseNodePointTo value="1921483039" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)1183935848"/> 
+      </node>  
+      <node type="SetAttribute" method="Source5WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="31756525" predsStr="1921483039" succsStr="" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)1183935848"/>  
+        <baseNodePointTo value="1921483039" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)1183935848"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source2WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="311559359" predsStr="1942173673" succsStr="" context=""/>  
+        <baseNodePointTo value="311559359" context=""/>  
+        <nodeSetPointToMe value="311559359," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onAttach(android.app.Activity)"/>  
+      <node type="CreateMethod" method="Frag1WithFrag onAttach" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1373435163" predsStr="1483728622" succsStr="1857392605" context=""/>  
+        <baseNodePointTo value="1373435163" context=""/>  
+        <nodeSetPointToMe value="1373435163,1857392605,2047220136," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Frag1WithFrag onAttach" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/iccbot/withFrag/Des1WithFrag;&quot;)"> 
+        <nodeInfo nodeId="1857392605" predsStr="1373435163" succsStr="2047220136" context=""/>  
+        <baseNodePointTo value="1373435163" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Frag1WithFrag onAttach" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="2047220136" predsStr="1857392605" succsStr="" context=""/>  
+        <baseNodePointTo value="1373435163" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void doWithAction(java.lang.String), &lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"/>  
+      <node type="CreateMethod" method="FragWithFragCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="190939851" predsStr="927805736" succsStr="384455758" context=""/>  
+        <baseNodePointTo value="190939851" context=""/>  
+        <nodeSetPointToMe value="190939851,384455758,1069775090,275787918,1857617273,1641667155," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="FragWithFragCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="384455758" predsStr="190939851" succsStr="1069775090" context=""/>  
+        <baseNodePointTo value="190939851" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="FragWithFragCtx doWithAction" unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1069775090" predsStr="384455758" succsStr="1641667155" context=""/>  
+        <baseNodePointTo value="190939851" context=""/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="FragWithFragCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="275787918" predsStr="442364016" succsStr="1857617273" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/>  
+        <baseNodePointTo value="275787918" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/> 
+      </node>  
+      <node type="SetAttribute" method="FragWithFragCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"> 
+        <nodeInfo nodeId="1857617273" predsStr="275787918" succsStr="" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/>  
+        <baseNodePointTo value="275787918" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/> 
+      </node>  
+      <node type="PassOutIntent" method="FragWithFragCtx doWithAction" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1641667155" predsStr="1069775090" succsStr="" context=""/>  
+        <baseNodePointTo value="190939851" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onAttach(android.app.Activity), &lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>  
+      <node method="FragWithFragCtx onAttach" unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)"> 
+        <nodeInfo nodeId="1481851679" predsStr="119454766" succsStr="" context=""/>  
+        <baseNodePointTo value="1481851679" context=""/>  
+        <nodeSetPointToMe value="1481851679,190939851,384455758,1069775090,1641667155,275787918,1857617273," context=""/> 
+      </node>  
+      <node type="CreateMethod" method="FragWithFragCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="190939851" predsStr="927805736" succsStr="384455758" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/> 
+      </node>  
+      <node type="SetAttribute" method="FragWithFragCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="384455758" predsStr="190939851" succsStr="1069775090" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/> 
+      </node>  
+      <node type="PassOutIntent" method="FragWithFragCtx doWithAction" unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1069775090" predsStr="384455758" succsStr="1641667155" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="FragWithFragCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="275787918" predsStr="442364016" succsStr="1857617273" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679, specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/> 
+      </node>  
+      <node type="SetAttribute" method="FragWithFragCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"> 
+        <nodeInfo nodeId="1857617273" predsStr="275787918" succsStr="" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679, specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/> 
+      </node>  
+      <node type="PassOutIntent" method="FragWithFragCtx doWithAction" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1641667155" predsStr="1069775090" succsStr="" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)1481851679"/> 
+      </node> 
+    </pathSummary>  
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onAttach(android.app.Activity), &lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"/>  
+      <node method="FragWithFragCtx onAttach" unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)"> 
+        <nodeInfo nodeId="1305670363" predsStr="119454766" succsStr="" context=""/>  
+        <baseNodePointTo value="1305670363" context=""/>  
+        <nodeSetPointToMe value="1305670363,190939851,384455758,1069775090,1641667155,275787918,1857617273," context=""/> 
+      </node>  
+      <node type="CreateMethod" method="FragWithFragCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="190939851" predsStr="927805736" succsStr="384455758" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/> 
+      </node>  
+      <node type="SetAttribute" method="FragWithFragCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="384455758" predsStr="190939851" succsStr="1069775090" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/> 
+      </node>  
+      <node type="PassOutIntent" method="FragWithFragCtx doWithAction" unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1069775090" predsStr="384455758" succsStr="1641667155" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="FragWithFragCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="275787918" predsStr="442364016" succsStr="1857617273" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363, specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/> 
+      </node>  
+      <node type="SetAttribute" method="FragWithFragCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"> 
+        <nodeInfo nodeId="1857617273" predsStr="275787918" succsStr="" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363, specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)1069775090"/> 
+      </node>  
+      <node type="PassOutIntent" method="FragWithFragCtx doWithAction" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1641667155" predsStr="1069775090" succsStr="" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/>  
+        <baseNodePointTo value="190939851" context="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)1305670363"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void doWithAction(java.lang.String), &lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"/>  
+      <node type="CreateMethod" method="Source1WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1177659049" predsStr="1164645059" succsStr="721215918" context=""/>  
+        <baseNodePointTo value="1177659049" context=""/>  
+        <nodeSetPointToMe value="1177659049,721215918,1717726358,1800211426,1010765614,2072151955," context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="721215918" predsStr="1177659049" succsStr="1717726358" context=""/>  
+        <baseNodePointTo value="1177659049" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1717726358" predsStr="721215918" succsStr="2072151955" context=""/>  
+        <baseNodePointTo value="1177659049" context=""/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Source1WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1800211426" predsStr="1313694066" succsStr="1010765614" context="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/>  
+        <baseNodePointTo value="1800211426" context="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1010765614" predsStr="1800211426" succsStr="" context="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/>  
+        <baseNodePointTo value="1800211426" context="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="2072151955" predsStr="1717726358" succsStr="" context=""/>  
+        <baseNodePointTo value="1177659049" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View), &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;, &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"/>  
+      <node type="CreateMethod" method="Source5WithCtx$1 onClick" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="599968109" predsStr="833138875" succsStr="262958410" context=""/>  
+        <baseNodePointTo value="599968109" context=""/>  
+        <nodeSetPointToMe value="599968109,262958410,1474387757,599265282,308416152,1183935848,369376441,1791572871,119206855,1921483039,31756525," context=""/> 
+      </node>  
+      <node type="InitIntent" method="Source5WithCtx$1 onClick" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"> 
+        <nodeInfo nodeId="262958410" predsStr="599968109" succsStr="1474387757" context=""/>  
+        <baseNodePointTo value="599968109" context=""/> 
+      </node>  
+      <node type="SetAttribute" method="Source5WithCtx$1 onClick" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.first.ctx&quot;)"> 
+        <nodeInfo nodeId="1474387757" predsStr="262958410" succsStr="599265282" context=""/>  
+        <baseNodePointTo value="599968109" context=""/> 
+      </node>  
+      <node type="PassOutIntent" method="Source5WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)"> 
+        <nodeInfo nodeId="599265282" predsStr="1474387757" succsStr="369376441" context=""/>  
+        <baseNodePointTo value="599968109" context=""/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Source5WithCtx access$0" unit="$r1 := @parameter1: android.content.Intent"> 
+        <nodeInfo nodeId="308416152" predsStr="2106576360" succsStr="1183935848" context="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)599265282"/>  
+        <baseNodePointTo value="308416152" context="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)599265282"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source5WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)"> 
+        <nodeInfo nodeId="1183935848" predsStr="308416152" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)599265282"/>  
+        <baseNodePointTo value="308416152" context="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)599265282"/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Source5WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1921483039" predsStr="1185346843" succsStr="31756525" context="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)599265282, specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)1183935848"/> 
+      </node>  
+      <node type="SetAttribute" method="Source5WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="31756525" predsStr="1921483039" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)599265282, specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)1183935848"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source5WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)"> 
+        <nodeInfo nodeId="369376441" predsStr="599265282" succsStr="" context=""/>  
+        <baseNodePointTo value="599968109" context=""/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Utils startIntent" unit="$r1 := @parameter1: android.content.Intent"> 
+        <nodeInfo nodeId="1791572871" predsStr="561019416" succsStr="119206855" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)369376441"/>  
+        <baseNodePointTo value="1791572871" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)369376441"/> 
+      </node>  
+      <node type="PassOutIntent" method="Utils startIntent" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"> 
+        <nodeInfo nodeId="119206855" predsStr="1791572871" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)369376441"/>  
+        <baseNodePointTo value="1791572871" context="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)369376441"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String), &lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;"/>  
+      <node method="Source2WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="1164578462" predsStr="131451635" succsStr="" context=""/>  
+        <baseNodePointTo value="1164578462" context=""/>  
+        <nodeSetPointToMe value="1164578462,1261956576,1743814561,1682629887,705170339," context=""/> 
+      </node>  
+      <node type="CreateMethod" method="Source2WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1261956576" predsStr="1668656938" succsStr="1743814561" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/>  
+        <baseNodePointTo value="1261956576" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="1743814561" predsStr="1261956576" succsStr="1682629887" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/>  
+        <baseNodePointTo value="1261956576" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1682629887" predsStr="1743814561" succsStr="705170339" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/>  
+        <baseNodePointTo value="1261956576" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source2WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="705170339" predsStr="1682629887" succsStr="" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/>  
+        <baseNodePointTo value="1261956576" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String), &lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"/>  
+      <node method="Source1WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="942270154" predsStr="49288974" succsStr="" context=""/>  
+        <baseNodePointTo value="942270154" context=""/>  
+        <nodeSetPointToMe value="942270154,1177659049,721215918,1717726358,2072151955," context=""/> 
+      </node>  
+      <node type="CreateMethod" method="Source1WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1177659049" predsStr="1164645059" succsStr="721215918" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/>  
+        <baseNodePointTo value="1177659049" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="721215918" predsStr="1177659049" succsStr="1717726358" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/>  
+        <baseNodePointTo value="1177659049" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1717726358" predsStr="721215918" succsStr="2072151955" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/>  
+        <baseNodePointTo value="1177659049" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Source1WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1800211426" predsStr="1313694066" succsStr="1010765614" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154, specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1010765614" predsStr="1800211426" succsStr="" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154, specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="2072151955" predsStr="1717726358" succsStr="" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/>  
+        <baseNodePointTo value="1177659049" context="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source3WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source3WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source3WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="629747683" predsStr="1156892185" succsStr="" context=""/>  
+        <baseNodePointTo value="629747683" context=""/>  
+        <nodeSetPointToMe value="629747683," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source5WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source5WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="2025444884" predsStr="219684003" succsStr="" context=""/>  
+        <baseNodePointTo value="2025444884" context=""/>  
+        <nodeSetPointToMe value="2025444884," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View), &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"/>  
+      <node method="Source2WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)"> 
+        <nodeInfo nodeId="364954228" predsStr="810733110" succsStr="" context=""/>  
+        <baseNodePointTo value="364954228" context=""/>  
+        <nodeSetPointToMe value="364954228,1164578462,1261956576,1743814561,1682629887,705170339," context=""/> 
+      </node>  
+      <node method="Source2WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="1164578462" predsStr="131451635" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)364954228"/>  
+        <baseNodePointTo value="1164578462" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)364954228"/> 
+      </node>  
+      <node type="CreateMethod" method="Source2WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1261956576" predsStr="1668656938" succsStr="1743814561" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)364954228, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="1743814561" predsStr="1261956576" succsStr="1682629887" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)364954228, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1682629887" predsStr="1743814561" succsStr="705170339" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)364954228, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source2WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="705170339" predsStr="1682629887" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)364954228, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node> 
+    </pathSummary>  
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View), &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"/>  
+      <node method="Source2WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)"> 
+        <nodeInfo nodeId="1861206309" predsStr="810733110" succsStr="" context=""/>  
+        <baseNodePointTo value="1861206309" context=""/>  
+        <nodeSetPointToMe value="1861206309,1164578462,1261956576,1743814561,1682629887,705170339," context=""/> 
+      </node>  
+      <node method="Source2WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="1164578462" predsStr="131451635" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1861206309"/>  
+        <baseNodePointTo value="1164578462" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1861206309"/> 
+      </node>  
+      <node type="CreateMethod" method="Source2WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1261956576" predsStr="1668656938" succsStr="1743814561" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1861206309, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="1743814561" predsStr="1261956576" succsStr="1682629887" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1861206309, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="SetAttribute" method="Source2WithCtx doWithAction" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1682629887" predsStr="1743814561" succsStr="705170339" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1861206309, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source2WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="705170339" predsStr="1682629887" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1861206309, specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)1164578462"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View), &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"/>  
+      <node method="Source1WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)"> 
+        <nodeInfo nodeId="1548855275" predsStr="567357927" succsStr="" context=""/>  
+        <baseNodePointTo value="1548855275" context=""/>  
+        <nodeSetPointToMe value="1548855275,942270154,1177659049,721215918,1717726358,2072151955,1800211426,1010765614," context=""/> 
+      </node>  
+      <node method="Source1WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="942270154" predsStr="49288974" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275"/>  
+        <baseNodePointTo value="942270154" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275"/> 
+      </node>  
+      <node type="CreateMethod" method="Source1WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1177659049" predsStr="1164645059" succsStr="721215918" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="721215918" predsStr="1177659049" succsStr="1717726358" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1717726358" predsStr="721215918" succsStr="2072151955" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Source1WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1800211426" predsStr="1313694066" succsStr="1010765614" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154, specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1010765614" predsStr="1800211426" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154, specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="2072151955" predsStr="1717726358" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)1548855275, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node> 
+    </pathSummary>  
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View), &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"/>  
+      <node method="Source1WithCtx$1 onClick" unit="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)"> 
+        <nodeInfo nodeId="701838542" predsStr="567357927" succsStr="" context=""/>  
+        <baseNodePointTo value="701838542" context=""/>  
+        <nodeSetPointToMe value="701838542,942270154,1177659049,721215918,1717726358,2072151955,1800211426,1010765614," context=""/> 
+      </node>  
+      <node method="Source1WithCtx access$0" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="942270154" predsStr="49288974" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542"/>  
+        <baseNodePointTo value="942270154" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542"/> 
+      </node>  
+      <node type="CreateMethod" method="Source1WithCtx doWithAction" unit="r2 = new android.content.Intent"> 
+        <nodeInfo nodeId="1177659049" predsStr="1164645059" succsStr="721215918" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx doWithAction" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"> 
+        <nodeInfo nodeId="721215918" predsStr="1177659049" succsStr="1717726358" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="1717726358" predsStr="721215918" succsStr="2072151955" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node>  
+      <node type="ReceiveIntentFromParatMethod" method="Source1WithCtx addCategory" unit="$r1 := @parameter0: android.content.Intent"> 
+        <nodeInfo nodeId="1800211426" predsStr="1313694066" succsStr="1010765614" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154, specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="SetAttribute" method="Source1WithCtx addCategory" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"> 
+        <nodeInfo nodeId="1010765614" predsStr="1800211426" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154, specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)1717726358"/> 
+      </node>  
+      <node type="PassOutIntent" method="Source1WithCtx doWithAction" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"> 
+        <nodeInfo nodeId="2072151955" predsStr="1717726358" succsStr="" context="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)701838542, specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)942270154"/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Source2WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source2WithFrag onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source2WithFrag: void setContentView(int)&gt;(2130903065)"> 
+        <nodeInfo nodeId="1268121074" predsStr="1097920015" succsStr="" context=""/>  
+        <baseNodePointTo value="1268121074" context=""/>  
+        <nodeSetPointToMe value="1268121074," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source4WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source4WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source4WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="947704870" predsStr="966673360" succsStr="" context=""/>  
+        <baseNodePointTo value="947704870" context=""/>  
+        <nodeSetPointToMe value="947704870," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFrag.Source1WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source1WithFrag onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source1WithFrag: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="1896206961" predsStr="323799811" succsStr="" context=""/>  
+        <baseNodePointTo value="1896206961" context=""/>  
+        <nodeSetPointToMe value="1896206961," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source1WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="311419819" predsStr="1865223461" succsStr="" context=""/>  
+        <baseNodePointTo value="311419819" context=""/>  
+        <nodeSetPointToMe value="311419819," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="SourceWithFragCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="1631762909" predsStr="1626217001" succsStr="" context=""/>  
+        <baseNodePointTo value="1631762909" context=""/>  
+        <nodeSetPointToMe value="1631762909," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source2WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="399176546" predsStr="1963216371" succsStr="" context=""/>  
+        <baseNodePointTo value="399176546" context=""/>  
+        <nodeSetPointToMe value="399176546," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFragCtx.SourceWithFragCtx$1: void onClick(android.view.View)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View)"/>  
+      <node type="getFragment" method="SourceWithFragCtx$1 onClick" unit="$r4 = virtualinvoke $r3.&lt;com.iccbot.withFragCtx.SourceWithFragCtx: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"> 
+        <nodeInfo nodeId="306946119" predsStr="1433583194" succsStr="1879808596" context=""/>  
+        <baseNodePointTo value="306946119" context=""/>  
+        <nodeSetPointToMe value="306946119,1879808596,1550156131,480605403," context=""/> 
+      </node>  
+      <node type="beginTransaction" method="SourceWithFragCtx$1 onClick" unit="$r5 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"> 
+        <nodeInfo nodeId="1879808596" predsStr="306946119" succsStr="1550156131" context=""/>  
+        <baseNodePointTo value="306946119" context=""/> 
+      </node>  
+      <node type="addFunction" method="SourceWithFragCtx$1 onClick" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)&gt;(2131296321, $r2)"> 
+        <nodeInfo nodeId="1550156131" predsStr="1879808596" succsStr="480605403" context=""/>  
+        <baseNodePointTo value="306946119" context=""/> 
+      </node>  
+      <node type="commit" method="SourceWithFragCtx$1 onClick" unit="virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"> 
+        <nodeInfo nodeId="480605403" predsStr="1550156131" succsStr="" context=""/>  
+        <baseNodePointTo value="306946119" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFrag.Source1WithFrag$1: void onClick(android.view.View)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onClick(android.view.View)"/>  
+      <node type="getFragment" method="Source1WithFrag$1 onClick" unit="$r4 = virtualinvoke $r3.&lt;com.iccbot.withFrag.Source1WithFrag: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"> 
+        <nodeInfo nodeId="1637214165" predsStr="1211312739" succsStr="253829333" context=""/>  
+        <baseNodePointTo value="1637214165" context=""/>  
+        <nodeSetPointToMe value="1637214165,253829333,452895106,1271918732," context=""/> 
+      </node>  
+      <node type="beginTransaction" method="Source1WithFrag$1 onClick" unit="$r5 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"> 
+        <nodeInfo nodeId="253829333" predsStr="1637214165" succsStr="452895106" context=""/>  
+        <baseNodePointTo value="1637214165" context=""/> 
+      </node>  
+      <node type="addFunction" method="Source1WithFrag$1 onClick" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)&gt;(2131296321, $r2)"> 
+        <nodeInfo nodeId="452895106" predsStr="253829333" succsStr="1271918732" context=""/>  
+        <baseNodePointTo value="1637214165" context=""/> 
+      </node>  
+      <node type="commit" method="Source1WithFrag$1 onClick" unit="virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"> 
+        <nodeInfo nodeId="1271918732" predsStr="452895106" succsStr="" context=""/>  
+        <baseNodePointTo value="1637214165" context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source3WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source3WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source3WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="1326121635" predsStr="2028191421" succsStr="" context=""/>  
+        <baseNodePointTo value="1326121635" context=""/>  
+        <nodeSetPointToMe value="1326121635," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <pathSummary> 
+      <method/>  
+      <methodtrace value="void onCreate(android.os.Bundle)"/>  
+      <node type="setContentView" method="Source5WithCtx onCreate" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source5WithCtx: void setContentView(int)&gt;(2130903063)"> 
+        <nodeInfo nodeId="185596009" predsStr="1863230942" succsStr="" context=""/>  
+        <baseNodePointTo value="185596009" context=""/>  
+        <nodeSetPointToMe value="185596009," context=""/> 
+      </node> 
+    </pathSummary> 
+  </methodSummary>
+</root>

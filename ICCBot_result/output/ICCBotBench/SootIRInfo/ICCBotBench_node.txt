@@ -1,0 +1,2 @@
+<dummyMainClass:  dummyMainMethod_(android.content.Intent)>	2
+<dummyMainClass: void dummyMainMethod(java.lang.String[])>	1

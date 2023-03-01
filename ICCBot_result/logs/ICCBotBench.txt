@@ -1,0 +1,2036 @@
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+seperateCG2multiple9
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+Successfully analyze new: 8
+IterateTime: 1
+analyze new method size: 84
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+seperateCG2multiple9
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+sortCG
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+Successfully analyze new: 8
+IterateTime: 1
+analyze new method size: 84
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+com.iccbot.withCtx.Source3WithCtx
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+Call Graph Construction finish.
+seperateCG2multiple1
+sortCG
+Call Graph has 27 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+Successfully analyze new: 2
+IterateTime: 1
+analyze new method size: 14
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withCtx.Source3WithCtx
+writeIC3Output-----------------------
+TargetClasses : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+Writing cg.txt...30
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+Successfully analyze with GetApiGenClient.
+---------------------------------------
+Analyzing ICCBotBench.apk Finish...
+
+GetApiGenClient time = 9 seconds
+ICC Resolution Finish...
+
+com.iccbot.withCtx.Source3WithCtx
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+Call Graph Construction finish.
+Call Graph has 2 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 10
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...30
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+Successfully analyze with GetApiGenClient.
+---------------------------------------
+Analyzing ICCBotBench.apk Finish...
+
+GetApiGenClient time = 9 seconds
+ICC Resolution Finish...
+
+com.iccbot.withCtx.Source3WithCtx
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+Call Graph Construction finish.
+seperateCG2multiple1
+sortCG
+Call Graph has 27 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+Successfully analyze new: 2
+IterateTime: 1
+analyze new method size: 14
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withCtx.Source3WithCtx
+writeIC3Output-----------------------
+TargetClasses : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+Writing cg.txt...30
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+Successfully analyze with GetApiGenClient.
+---------------------------------------
+Analyzing ICCBotBench.apk Finish...
+
+GetApiGenClient time = 8 seconds
+ICC Resolution Finish...
+
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+1
+1Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+com.iccbot.withCtx.Source3WithCtx
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+0
+Call Graph Construction finish.
+seperateCG2multiple1
+sortCG
+Call Graph has 27 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+Successfully analyze new: 2
+IterateTime: 1
+analyze new method size: 14
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withCtx.Source3WithCtx
+writeIC3Output-----------------------
+TargetClasses : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+1
+2
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+1
+1Create CG for : [com.iccbot.withCtx.Source3WithCtx]
+iccbot-intent count : 1
+1 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+0
+Writing cg.txt...30
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+Successfully analyze with GetApiGenClient.
+---------------------------------------
+Analyzing ICCBotBench.apk Finish...
+
+GetApiGenClient time = 8 seconds
+ICC Resolution Finish...
+
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 147 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+9 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...0
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+1Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 147 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+1Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+9 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...0
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+2Create CG for : []
+0
+1
+2Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+2Create CG for : []
+0
+1
+2Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+2Create CG for : []
+0
+1
+2Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...
+
+Analyzing ICCBotBench.apk
+using client GetApiGenClient
+Soot Analysis finish.
+1:
+2:
+3:
+Successfully analyze with ManifestClient.
+2Create CG for : []
+0
+1
+2Create CG for : []
+0
+Call Graph Construction finish.
+Call Graph has 148 edges.
+Call Graph Enhancing finish.
+Successfully analyze with CallGraphClient.
+StaticValueAnalyzer finish.
+Successfully analyze with FragmentClient.
+++++++++here !!!++++
+Successfully analyze with CTGClient.
+writeIC3Output-----------------------
+name: com.iccbot.withFrag.Frag1WithFrag
+name: com.iccbot.withFrag.Source1WithFrag
+name: com.iccbot.withCtx.Source3WithCtx
+name: com.iccbot.withFrag.Source2WithFrag
+name: com.iccbot.withCtx.Source2WithCtx
+name: com.iccbot.withFragCtx.FragWithFragCtx
+name: com.iccbot.withCtx.Source1WithCtx
+name: com.iccbot.withCtx.Source4WithCtx
+name: com.iccbot.withCtx.Source5WithCtx
+name: com.iccbot.withFrag.Frag2WithFrag
+name: com.iccbot.withFragCtx.SourceWithFragCtx
+writeIC3Output-----------------------
+TargetClasses : []
+iccbot-intent count : 10
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+5 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+1
+2Create CG for : []
+iccbot-intent count : 10
+1 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+2 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des1WithCtx
+
+
+3 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des1WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des1WithFragCtx
+
+
+4 : <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+5 : <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+DectinationC: com.iccbot.withFragCtx.Des2WithFragCtx
+wrong target compoent
+no redirectSM <com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFragCtx.Des2WithFragCtx
+
+
+6 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des2WithCtx
+
+
+7 : <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+DectinationC: com.iccbot.withCtx.Des2WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)> [virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)] com.iccbot.withCtx.Des2WithCtx
+
+
+8 : <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+DectinationC: com.iccbot.withCtx.Des1WithCtx
+wrong target compoent
+no redirectSM <com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)> [virtualinvoke r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>(r2)] com.iccbot.withCtx.Des1WithCtx
+
+
+9 : <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+DectinationC: com.iccbot.withFrag.Des2WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des2WithFrag
+
+
+10 : <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+DectinationC: com.iccbot.withFrag.Des1WithFrag
+wrong target compoent
+no redirectSM <com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)> [virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)] com.iccbot.withFrag.Des1WithFrag
+
+
+0
+Writing cg.txt...1
+Writing to/mnt/iscsi/cqt/modified-ICCBot/ICCBot_result/output/ICCBotBench/SootIRInfo
+Writing dex output...

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <methodSummary source="&lt;com.iccbot.withFrag.Source2WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source2WithFrag: void setContentView(int)&gt;(2130903065)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source4WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source4WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.fragctx&quot;)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Source1WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source1WithFrag: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Des2WithCtx: android.os.IBinder onBind(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Frag2WithFrag: void onAttach(android.app.Activity)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/iccbot/withFrag/Des2WithFrag;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>  
+    <node type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source3WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.first.ctx&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>  
+    <node type="PassOutIntent" unit="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source4WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.second.ctx&quot;)"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;category.ctx&quot;)"/>  
+    <node type="PassOutIntent" unit="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;"> 
+    <node type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter1: android.content.Intent"/>  
+    <node type="PassOutIntent" unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source5WithCtx: void addCategory(android.content.Intent)&gt;($r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/iccbot/withFrag/Des1WithFrag;&quot;)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void addCategory(android.content.Intent)&gt;(r2)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFragCtx.FragWithFragCtx: void onAttach(android.app.Activity)&gt;"> 
+    <node unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.second.fragctx&quot;)"/>  
+    <node unit="specialinvoke r0.&lt;com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)&gt;(&quot;action.first.fragctx&quot;)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r1)"/>  
+    <node type="PassOutIntent" unit="specialinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void addCategory(android.content.Intent)&gt;(r2)"/>  
+    <node type="PassOutIntent" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)&gt;(r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <node type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+    <node type="InitIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()"/>  
+    <node type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;action.first.ctx&quot;)"/>  
+    <node type="PassOutIntent" unit="staticinvoke &lt;com.iccbot.withCtx.Source5WithCtx: void access$0(com.iccbot.withCtx.Source5WithCtx,android.content.Intent)&gt;($r4, r2)"/>  
+    <node type="PassOutIntent" unit="staticinvoke &lt;com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)&gt;($r3, r2)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;"> 
+    <node unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)&gt;($r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;"> 
+    <node unit="specialinvoke $r0.&lt;com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)&gt;($r1)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source3WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source3WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source5WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <node unit="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)"/>  
+    <node unit="staticinvoke &lt;com.iccbot.withCtx.Source2WithCtx: void access$0(com.iccbot.withCtx.Source2WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx$1: void onClick(android.view.View)&gt;"> 
+    <node unit="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.second.ctx&quot;)"/>  
+    <node unit="staticinvoke &lt;com.iccbot.withCtx.Source1WithCtx: void access$0(com.iccbot.withCtx.Source1WithCtx,java.lang.String)&gt;($r2, &quot;action.first.ctx&quot;)"/> 
+  </methodSummary>  
+  <methodSummary source="&lt;com.iccbot.withFrag.Source2WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source2WithFrag: void setContentView(int)&gt;(2130903065)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source4WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source4WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFrag.Source1WithFrag: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withFrag.Source1WithFrag: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source1WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source1WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withFragCtx.SourceWithFragCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source2WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source2WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFragCtx.SourceWithFragCtx$1: void onClick(android.view.View)&gt;"> 
+    <node type="getFragment" unit="$r4 = virtualinvoke $r3.&lt;com.iccbot.withFragCtx.SourceWithFragCtx: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+    <node type="beginTransaction" unit="$r5 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+    <node type="addFunction" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)&gt;(2131296321, $r2)"/>  
+    <node type="commit" unit="virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withFrag.Source1WithFrag$1: void onClick(android.view.View)&gt;"> 
+    <node type="getFragment" unit="$r4 = virtualinvoke $r3.&lt;com.iccbot.withFrag.Source1WithFrag: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+    <node type="beginTransaction" unit="$r5 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+    <node type="addFunction" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)&gt;(2131296321, $r2)"/>  
+    <node type="commit" unit="virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source3WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source3WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>
+  <methodSummary source="&lt;com.iccbot.withCtx.Source5WithCtx: void onCreate(android.os.Bundle)&gt;"> 
+    <node type="setContentView" unit="virtualinvoke r0.&lt;com.iccbot.withCtx.Source5WithCtx: void setContentView(int)&gt;(2130903063)"/> 
+  </methodSummary>
+</root>

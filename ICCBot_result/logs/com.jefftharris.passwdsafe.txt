@@ -1,0 +1,8 @@
+
+Analyzing com.jefftharris.passwdsafe.apk
+using client GetApiGenClient
+loadNecessaryClasses error!
+
+Analyzing com.jefftharris.passwdsafe.apk
+using client GetApiGenClient
+loadNecessaryClasses error!

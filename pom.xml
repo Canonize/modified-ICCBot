@@ -53,13 +53,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/apktool_2.6.0.jar</systemPath>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
 			<groupId>gator</groupId>
 			<artifactId>gator</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/sootandroid-1.0-SNAPSHOT-all.jar</systemPath>
-		</dependency> -->
+		</dependency>
 	  	<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

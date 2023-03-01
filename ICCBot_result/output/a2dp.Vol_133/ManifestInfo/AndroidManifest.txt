@@ -1,0 +1,133 @@
+manifest
+- installLocation: 1
+- package: a2dp.Vol
+- platformBuildVersionName: 7.0
+- versionName: 2.12.7
+- platformBuildVersionCode: 24
+- versionCode: 133
+	uses-sdk
+	- minSdkVersion: 15
+	- targetSdkVersion: 24
+	uses-permission
+	- name: android.permission.RECEIVE_BOOT_COMPLETED
+	uses-permission
+	- name: android.permission.CHANGE_WIFI_STATE
+	- required: false
+	uses-permission
+	- name: android.permission.ACCESS_WIFI_STATE
+	- required: false
+	uses-permission
+	- name: android.permission.KILL_BACKGROUND_PROCESSES
+	uses-permission
+	- name: android.permission.BLUETOOTH
+	uses-permission
+	- name: android.permission.BLUETOOTH_ADMIN
+	uses-permission
+	- name: com.android.launcher.permission.READ_SETTINGS
+	uses-feature
+	- name: android.hardware.telephony
+	- required: false
+	uses-permission
+	- name: android.permission.RECEIVE_SMS
+	- required: false
+	uses-permission
+	- name: android.permission.MODIFY_AUDIO_SETTINGS
+	uses-permission
+	- name: android.permission.READ_CONTACTS
+	uses-permission
+	- name: android.permission.ACCESS_COARSE_LOCATION
+	uses-permission
+	- name: android.permission.ACCESS_FINE_LOCATION
+	uses-permission
+	- name: android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+	uses-permission
+	- name: android.permission.WRITE_EXTERNAL_STORAGE
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.BROADCAST_STICKY
+	uses-permission
+	- name: android.permission.GET_ACCOUNTS
+	application
+	- allowBackup: true
+	- icon: 2130837506
+	- name: a2dp.Vol.MyApplication
+	- description: 2131165272
+	- label: 2131165277
+	- persistent: true
+		activity
+		- icon: 2130837507
+		- name: a2dp.Vol.main
+		- launchMode: 1
+		- multiprocess: false
+		- description: 2131165272
+		- label: 2131165277
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		service
+		- name: a2dp.Vol.service
+		- label: 2131165277
+		- enabled: true
+		activity
+		- icon: 2130837507
+		- name: a2dp.Vol.ManageData
+		- finishOnTaskLaunch: false
+		- launchMode: 1
+		- multiprocess: false
+		- label: 2131165277
+		- enabled: true
+		activity
+		- icon: 2130837507
+		- name: a2dp.Vol.Preferences
+		- launchMode: 3
+		- label: 2131034113
+		- enabled: true
+		receiver
+		- name: a2dp.Vol.Starter
+			intent-filter
+				category
+				- name: android.intent.category.HOME
+				action
+				- name: android.intent.action.BOOT_COMPLETED
+				action
+				- name: android.intent.action.MY_PACKAGE_REPLACED
+		receiver
+		- icon: 2130837504
+		- name: a2dp.Vol.Widget
+		- label: 2131165277
+			meta-data
+			- name: android.appwidget.provider
+			- resource: 2131034114
+			intent-filter
+				action
+				- name: android.appwidget.action.APPWIDGET_UPDATE
+		service
+		- name: a2dp.Vol.ALauncher
+		- label: 2131165277
+		- enabled: true
+		activity
+		- name: a2dp.Vol.EditDevice
+		activity
+		- name: a2dp.Vol.AppChooser
+		activity
+		- name: a2dp.Vol.CustomIntentMaker
+		activity
+		- name: a2dp.Vol.ProviderList
+		service
+		- name: a2dp.Vol.StoreLoc
+		activity
+		- name: a2dp.Vol.PackagesChooser
+		- label: 2131165302
+		- parentActivityName: a2dp.Vol.main
+			meta-data
+			- name: android.support.PARENT_ACTIVITY
+			- value: a2dp.Vol.main
+		service
+		- name: a2dp.Vol.NotificationCatcher
+		- permission: android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+			intent-filter
+				action
+				- name: android.service.notification.NotificationListenerService

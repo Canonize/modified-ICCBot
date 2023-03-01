@@ -1,0 +1,3057 @@
+components {
+	name: "a2dp.Vol.AppChooser"
+}
+components {
+	name: "a2dp.Vol.NotificationCatcher"
+}
+components {
+	name: "a2dp.Vol.Widget"
+}
+components {
+	name: "a2dp.Vol.Starter"
+}
+components {
+	name: "a2dp.Vol.EditDevice"
+}
+components {
+	name: "a2dp.Vol.ManageData"
+}
+components {
+	name: "a2dp.Vol.service"
+}
+components {
+	name: "a2dp.Vol.ALauncher"
+}
+components {
+	name: "a2dp.Vol.PackagesChooser"
+}
+components {
+	name: "a2dp.Vol.CustomIntentMaker"
+}
+components {
+	name: "a2dp.Vol.StoreLoc"
+}
+components {
+	name: "a2dp.Vol.main"
+}
+components {
+	name: "a2dp.Vol.Preferences"
+}
+components {
+	name: "a2dp.Vol.ProviderList"
+}
+components {
+	name: "a2dp.Vol.NotificationCatcher"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r30.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])>#111"
+			method: "<a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])>"
+			id: 111
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/MESSAGE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r30.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])>#111"
+			method: "<a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])>"
+			id: 111
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/MESSAGE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r30.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])>#111"
+			method: "<a2dp.Vol.NotificationCatcher$Readit: java.lang.Long doInBackground(android.service.notification.StatusBarNotification[])>"
+			id: 111
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/MESSAGE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.Widget"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r5.<android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)>(2131361870, $r6)"
+			class_name: "<a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>#14"
+			method: "<a2dp.Vol.Widget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>"
+			id: 14
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/ALauncher"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.Starter"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)"
+			class_name: "<a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)>#10"
+			method: "<a2dp.Vol.Starter: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 10
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/service"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.EditDevice"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r15.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.EditDevice: void Save()>#120"
+			method: "<a2dp.Vol.EditDevice: void Save()>"
+			id: 120
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)"
+			class_name: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>#29"
+			method: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>"
+			id: 29
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/ProviderList"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 6)"
+			class_name: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>#58"
+			method: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>"
+			id: 58
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/CustomIntentMaker"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 11)"
+			class_name: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/ProviderList"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 2)"
+			class_name: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>#10"
+			method: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>"
+			id: 10
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/AppChooser"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r15.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.EditDevice: void Save()>#120"
+			method: "<a2dp.Vol.EditDevice: void Save()>"
+			id: 120
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r4.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 17)"
+			class_name: "<a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)>#8"
+			method: "<a2dp.Vol.EditDevice$12: void onClick(android.content.DialogInterface,int)>"
+			id: 8
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/AppChooser"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r15.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.EditDevice: void Save()>#120"
+			method: "<a2dp.Vol.EditDevice: void Save()>"
+			id: 120
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<a2dp.Vol.EditDevice: void startActivityForResult(android.content.Intent,int)>(r2, 14)"
+			class_name: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>#19"
+			method: "<a2dp.Vol.EditDevice$11: void onClick(android.content.DialogInterface,int)>"
+			id: 19
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/PICK_ACTIVITY, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r15.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.EditDevice: void Save()>#120"
+			method: "<a2dp.Vol.EditDevice: void Save()>"
+			id: 120
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.service"
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void TextReader(java.lang.String)>#57"
+			method: "<a2dp.Vol.service: void TextReader(java.lang.String)>"
+			id: 57
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#44"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 44
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/StoreLoc"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void TextReader(java.lang.String)>#57"
+			method: "<a2dp.Vol.service: void TextReader(java.lang.String)>"
+			id: 57
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#16"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 16
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/HEADSET_PLUG, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#16"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 16
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/HEADSET_PLUG, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r4.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.service$9: void onFinish()>#13"
+			method: "<a2dp.Vol.service$9: void onFinish()>"
+			id: 13
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/HEADSET_PLUG, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r6.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.service$15: void onDone(java.lang.String)>#47"
+			method: "<a2dp.Vol.service$15: void onDone(java.lang.String)>"
+			id: 47
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/CLEAR, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#12"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#16"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 16
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/HEADSET_PLUG, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$z0 = virtualinvoke $r1.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>(r3, $r8, 1)"
+			class_name: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>#12"
+			method: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_class Landroid/bluetooth/IBluetoothA2dp;, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#12"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#44"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 44
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/StoreLoc"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r5.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.service$9: void onTick(long)>#9"
+			method: "<a2dp.Vol.service$9: void onTick(long)>"
+			id: 9
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#32"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 32
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/MAIN, android/intent/category/HOME, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$z0 = virtualinvoke $r1.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>(r3, $r8, 1)"
+			class_name: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>#12"
+			method: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_class Landroid/bluetooth/IBluetoothA2dp;, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r11.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>($r2)"
+			class_name: "<a2dp.Vol.service$3: void onReceive(android.content.Context,android.content.Intent)>#71"
+			method: "<a2dp.Vol.service$3: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 71
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r6.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.service$15: void onDone(java.lang.String)>#31"
+			method: "<a2dp.Vol.service$15: void onDone(java.lang.String)>"
+			id: 31
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/CLEAR, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#32"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 32
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/MAIN, android/intent/category/HOME, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#12"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: android.content.ComponentName startService(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#44"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 44
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/StoreLoc"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#32"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 32
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/MAIN, android/intent/category/HOME, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r4.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.service: void onCreate()>#125"
+			method: "<a2dp.Vol.service: void onCreate()>"
+			id: 125
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/RUNNING, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$z0 = virtualinvoke $r1.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>(r3, $r8, 1)"
+			class_name: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>#12"
+			method: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_class Landroid/bluetooth/IBluetoothA2dp;, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void TextReader(java.lang.String)>#57"
+			method: "<a2dp.Vol.service: void TextReader(java.lang.String)>"
+			id: 57
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#32"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 32
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/MAIN, android/intent/category/HOME, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r2.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r1)"
+			class_name: "<a2dp.Vol.service: void onDestroy()>#39"
+			method: "<a2dp.Vol.service: void onDestroy()>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/STOPPED_RUNNING, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#32"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 32
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/MAIN, android/intent/category/HOME, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r18 = virtualinvoke $r18.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r17)"
+			class_name: "<a2dp.Vol.service: void onCreate()>#101"
+			method: "<a2dp.Vol.service: void onCreate()>"
+			id: 101
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#133"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 133
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/Clear, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r1)"
+			class_name: "<a2dp.Vol.service$16$1: void onFinish()>#6"
+			method: "<a2dp.Vol.service$16$1: void onFinish()>"
+			id: 6
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r4.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.service: void onCreate()>#125"
+			method: "<a2dp.Vol.service: void onCreate()>"
+			id: 125
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/service/RUNNING, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r4.<a2dp.Vol.service: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.service$9: void onFinish()>#8"
+			method: "<a2dp.Vol.service$9: void onFinish()>"
+			id: 8
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_com/android/music/musicservicecommand, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r11.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>($r2)"
+			class_name: "<a2dp.Vol.service$3: void onReceive(android.content.Context,android.content.Intent)>#71"
+			method: "<a2dp.Vol.service$3: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 71
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r13 = virtualinvoke $r13.<android.app.Notification$Builder: android.app.Notification$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#75"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 75
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$z0 = virtualinvoke $r1.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>(r3, $r8, 1)"
+			class_name: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>#12"
+			method: "<a2dp.Vol.service: void getIBluetoothA2dp(android.content.Context)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_class Landroid/bluetooth/IBluetoothA2dp;, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "$r6 = virtualinvoke $r6.<android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)>($r5)"
+			class_name: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>#22"
+			method: "<a2dp.Vol.service: void updateNot(boolean,java.lang.String)>"
+			id: 22
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r12.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>#128"
+			method: "<a2dp.Vol.service: void DoConnected(a2dp.Vol.btDevice)>"
+			id: 128
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>($r10)"
+			class_name: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>#25"
+			method: "<a2dp.Vol.service: boolean runApp(a2dp.Vol.btDevice)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_new java/lang/String, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r13.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#162"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 162
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/Vol/main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.service: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>#32"
+			method: "<a2dp.Vol.service: void DoDisconnected(a2dp.Vol.btDevice)>"
+			id: 32
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/MAIN, android/intent/category/HOME, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.ManageData"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r8.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)>#25"
+			method: "<a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/Main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r8.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)>#25"
+			method: "<a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/Main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r8.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)>#25"
+			method: "<a2dp.Vol.ManageData$ImportDatabaseFileTask: void onPostExecute(java.lang.Boolean)>"
+			id: 25
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/Main/RELOAD_LIST, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.PackagesChooser"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r10.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r1)"
+			class_name: "<a2dp.Vol.PackagesChooser: void cleanup()>#44"
+			method: "<a2dp.Vol.PackagesChooser: void cleanup()>"
+			id: 44
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/Reload, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r10.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r1)"
+			class_name: "<a2dp.Vol.PackagesChooser: void cleanup()>#44"
+			method: "<a2dp.Vol.PackagesChooser: void cleanup()>"
+			id: 44
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/Reload, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r10.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r1)"
+			class_name: "<a2dp.Vol.PackagesChooser: void cleanup()>#44"
+			method: "<a2dp.Vol.PackagesChooser: void cleanup()>"
+			id: 44
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/Reload, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.main"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)"
+			class_name: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>#126"
+			method: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>"
+			id: 126
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/NotificationCatcher"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/android/browser/BrowserActivity"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)"
+			class_name: "<a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)>#12"
+			method: "<a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/EditDevice"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)"
+			class_name: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>#126"
+			method: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>"
+			id: 126
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/NotificationCatcher"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/google/android/apps/chrome/Main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)"
+			class_name: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>#116"
+			method: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/service"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 1)"
+			class_name: "<a2dp.Vol.main: int getBtDevices(int)>#116"
+			method: "<a2dp.Vol.main: int getBtDevices(int)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/bluetooth/adapter/action/REQUEST_ENABLE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r6.<a2dp.Vol.main: void startActivity(android.content.Intent)>($r2)"
+			class_name: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>#122"
+			method: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 122
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/settings/ACTION_NOTIFICATION_LISTENER_SETTINGS, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/android/browser/BrowserActivity"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r4.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 4)"
+			class_name: "<a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)>#12"
+			method: "<a2dp.Vol.main$5$2: void onClick(android.content.DialogInterface,int)>"
+			id: 12
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/EditDevice"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r6.<a2dp.Vol.main: void startActivity(android.content.Intent)>($r2)"
+			class_name: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>#122"
+			method: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 122
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/settings/ACTION_NOTIFICATION_LISTENER_SETTINGS, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r6.<a2dp.Vol.main: void startActivity(android.content.Intent)>($r2)"
+			class_name: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>#122"
+			method: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 122
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/settings/ACTION_NOTIFICATION_LISTENER_SETTINGS, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)"
+			class_name: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>#126"
+			method: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>"
+			id: 126
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/NotificationCatcher"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r2.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r3)"
+			class_name: "<a2dp.Vol.main$8: void onClick(android.view.View)>#15"
+			method: "<a2dp.Vol.main$8: void onClick(android.view.View)>"
+			id: 15
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/service"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>($r1, 3)"
+			class_name: "<a2dp.Vol.main: void onActivityResult(int,int,android.content.Intent)>#17"
+			method: "<a2dp.Vol.main: void onActivityResult(int,int,android.content.Intent)>"
+			id: 17
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/speech/tts/engine/CHECK_TTS_DATA, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/google/android/apps/chrome/Main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)"
+			class_name: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>#126"
+			method: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>"
+			id: 126
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/NotificationCatcher"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)>#20"
+			method: "<a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)>"
+			id: 20
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/PackagesChooser"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r3.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 3)"
+			class_name: "<a2dp.Vol.main$10: void onClick(android.content.DialogInterface,int)>#7"
+			method: "<a2dp.Vol.main$10: void onClick(android.content.DialogInterface,int)>"
+			id: 7
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/speech/tts/engine/INSTALL_TTS_DATA, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/android/browser/BrowserActivity"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r3, 2)"
+			class_name: "<a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)>#11"
+			method: "<a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)>"
+			id: 11
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/ManageData"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 1)"
+			class_name: "<a2dp.Vol.main: int getBtDevices(int)>#116"
+			method: "<a2dp.Vol.main: int getBtDevices(int)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/bluetooth/adapter/action/REQUEST_ENABLE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r3)"
+			class_name: "<a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)>#24"
+			method: "<a2dp.Vol.main: boolean onOptionsItemSelected(android.view.MenuItem)>"
+			id: 24
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/Preferences"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 3)"
+			class_name: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>#123"
+			method: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>"
+			id: 123
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/speech/tts/engine/CHECK_TTS_DATA, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/android/browser/BrowserActivity"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 1)"
+			class_name: "<a2dp.Vol.main: int getBtDevices(int)>#116"
+			method: "<a2dp.Vol.main: int getBtDevices(int)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/bluetooth/adapter/action/REQUEST_ENABLE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 1)"
+			class_name: "<a2dp.Vol.main: int getBtDevices(int)>#116"
+			method: "<a2dp.Vol.main: int getBtDevices(int)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/bluetooth/adapter/action/REQUEST_ENABLE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/google/android/apps/chrome/Main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r6.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>($r2, 3)"
+			class_name: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>#77"
+			method: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 77
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/speech/tts/engine/CHECK_TTS_DATA, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 1)"
+			class_name: "<a2dp.Vol.main: int getBtDevices(int)>#116"
+			method: "<a2dp.Vol.main: int getBtDevices(int)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/bluetooth/adapter/action/REQUEST_ENABLE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r7.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r5)"
+			class_name: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>#39"
+			method: "<a2dp.Vol.main$4$1: void onClick(android.content.DialogInterface,int)>"
+			id: 39
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "com/google/android/apps/chrome/Main"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.main: void Locationbtn()>#14"
+			method: "<a2dp.Vol.main: void Locationbtn()>"
+			id: 14
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/VIEW, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: android.content.ComponentName startService(android.content.Intent)>($r37)"
+			class_name: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>#116"
+			method: "<a2dp.Vol.main: void onCreate(android.os.Bundle)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/service"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivity(android.content.Intent)>(r2)"
+			class_name: "<a2dp.Vol.main: void Locationbtn()>#14"
+			method: "<a2dp.Vol.main: void Locationbtn()>"
+			id: 14
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/intent/action/VIEW, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.main: void startActivityForResult(android.content.Intent,int)>(r2, 1)"
+			class_name: "<a2dp.Vol.main: int getBtDevices(int)>#116"
+			method: "<a2dp.Vol.main: int getBtDevices(int)>"
+			id: 116
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/bluetooth/adapter/action/REQUEST_ENABLE, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r6.<a2dp.Vol.main: void startActivity(android.content.Intent)>($r2)"
+			class_name: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>#122"
+			method: "<a2dp.Vol.main$12: void onReceive(android.content.Context,android.content.Intent)>"
+			id: 122
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_android/settings/ACTION_NOTIFICATION_LISTENER_SETTINGS, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
+components {
+	name: "a2dp.Vol.Preferences"
+	exit_points {
+		instruction {
+			statement: "virtualinvoke r0.<a2dp.Vol.Preferences: android.content.ComponentName startService(android.content.Intent)>(r1)"
+			class_name: "<a2dp.Vol.Preferences: void onDestroy()>#6"
+			method: "<a2dp.Vol.Preferences: void onDestroy()>"
+			id: 6
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "a2dp/Vol/service"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+	exit_points {
+		instruction {
+			statement: "virtualinvoke $r5.<a2dp.Vol.MyApplication: void sendBroadcast(android.content.Intent)>(r1)"
+			class_name: "<a2dp.Vol.Preferences: void onDestroy()>#14"
+			method: "<a2dp.Vol.Preferences: void onDestroy()>"
+			id: 14
+		}
+		intents {
+			attributes {
+				kind: CLASS
+				value: "interICC_a2dp/vol/preferences/UPDATED, android/intent/category/DEFAULT"
+			}
+			attributes {
+				kind: PACKAGE
+				value: "a2dp.Vol"
+			}
+		}
+	}
+}
