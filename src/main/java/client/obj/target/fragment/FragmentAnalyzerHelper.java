@@ -22,6 +22,7 @@ import main.java.client.obj.unitHnadler.fragment.DialogShowHandler;
 import main.java.client.obj.unitHnadler.fragment.GetFragmentHandler;
 import main.java.client.obj.unitHnadler.fragment.LoadFunctionHandler;
 import main.java.client.obj.unitHnadler.fragment.ReplaceFunctionHandler;
+import main.java.client.obj.unitHnadler.fragment.SetAdapterHandler;
 import main.java.client.obj.unitHnadler.fragment.SetContentFunctionHandler;
 import soot.Scene;
 import soot.SootClass;
@@ -140,6 +141,8 @@ public class FragmentAnalyzerHelper implements AnalyzerHelper {
 
 		} else if (isPassOutMethod(unit)) {
 			return "PassOut";
+		} else if (isSetAdapter(unit)) {
+			return "SetAdapter";
 		}
 		// else if (isComponentFinishMethods(unit)) {
 		// return "componentReturn";
@@ -194,6 +197,8 @@ public class FragmentAnalyzerHelper implements AnalyzerHelper {
 
 		} else if (isDialogShow(unit)) {
 			return new DialogShowHandler();
+		} else if (isSetAdapter(unit)) {
+			return new SetAdapterHandler();
 		}
 
 		return null;
@@ -408,4 +413,17 @@ public class FragmentAnalyzerHelper implements AnalyzerHelper {
 		return false;
 	}
 
+	public boolean isSetAdapter(Unit u) {
+		// look for invocations of ViewPager.setAdapter
+
+		InvokeExpr invExpr = SootUtils.getInvokeExp(u);
+		if (invExpr == null)
+			return false;
+		// check whether setAdapter method is called
+		if (!invExpr.getMethod().getName().equals("setAdapter")
+				|| invExpr.getArgCount() != 1)
+			return false;
+
+		return true;
+	}
 }
